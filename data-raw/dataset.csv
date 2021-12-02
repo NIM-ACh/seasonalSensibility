@@ -1,0 +1,359 @@
+id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_sesion,ss_patron_verano,ss_patron_invierno,ss_patron_tipo,ss_index,ss_severidad,riff_autoaceptacion,riff_relaciones_positivas,riff_autonomia,riff_dominio_entorno,riff_crecimiento_personal,riff_proposito_vida
+1,Femenino,18-35,Si,> 2 veces,Media,240,3,2,Mixto,Normal,Leve,35,35,42,30,32,31
+2,Femenino,18-35,No,,,,7,6,Mixto,SAD,Importante,23,24,24,24,38,24
+3,Masculino,18-35,No,,,,0,0,,Normal,Moderado,31,35,46,23,37,24
+4,Masculino,> 35,No,,,,0,0,,Normal,No es problema,26,14,31,25,27,36
+5,Masculino,18-35,No,,,,8,0,Invierno,Normal,Moderado,27,36,48,30,40,29
+6,Femenino,18-35,Si,> 2 veces,Alta,590,0,0,,Winter blues,No es problema,34,19,41,22,37,21
+7,Femenino,18-35,Si,> 2 veces,Alta,240,10,1,Mixto,Normal,Importante,22,21,44,22,41,20
+8,Masculino,> 35,Si,> 2 veces,Media,285,6,5,Mixto,Normal,No es problema,34,29,45,23,39,31
+9,Femenino,18-35,Si,> 2 veces,Alta,360,1,2,Mixto,Winter blues,Importante,29,11,28,22,39,25
+10,Femenino,> 35,Si,2 veces,Media,120,2,1,Mixto,SAD,Importante,25,27,40,24,40,29
+11,Femenino,18-35,Si,> 2 veces,Media,200,3,2,Mixto,Normal,No es problema,30,21,43,25,33,25
+12,Masculino,18-35,Si,> 2 veces,Alta,360,10,4,Mixto,SAD,No es problema,35,32,47,30,37,31
+13,Masculino,> 35,No,1 vez,Alta,60,4,2,Mixto,Normal,No es problema,28,25,36,28,35,29
+14,Femenino,18-35,Si,2 veces,Media,240,4,6,Mixto,SAD,Moderado,23,26,28,21,35,26
+15,Femenino,> 35,No,,,,3,3,Mixto,Winter blues,No es problema,28,19,35,23,31,28
+16,Femenino,18-35,Si,> 2 veces,Alta,180,9,2,Mixto,Winter blues,No es problema,28,18,39,22,42,28
+17,Masculino,18-35,Si,2 veces,Alta,180,7,2,Mixto,Winter blues,No es problema,32,26,38,26,42,31
+18,Masculino,> 35,Si,> 2 veces,Alta,360,0,0,,Normal,No es problema,31,27,38,29,34,28
+19,Masculino,18-35,Si,2 veces,Media,150,2,1,Mixto,Normal,No es problema,28,25,41,24,30,22
+20,Masculino,18-35,Si,> 2 veces,Media,180,5,6,Mixto,Winter blues,No es problema,28,29,42,23,37,26
+21,Masculino,18-35,No,,,,4,2,Mixto,SAD,No es problema,31,35,45,26,37,30
+22,Masculino,18-35,Si,> 2 veces,Media,240,2,0,Invierno,Normal,No es problema,36,25,35,29,38,31
+23,Masculino,18-35,No,,,,4,2,Mixto,SAD,Leve,28,17,45,21,32,27
+24,Masculino,> 35,Si,> 2 veces,Media,180,6,6,Mixto,SAD,Severo,27,16,34,27,29,27
+25,Masculino,> 35,Si,> 2 veces,Alta,420,6,0,Invierno,SAD,Importante,33,27,37,26,38,30
+26,Masculino,> 35,No,,,,6,0,Invierno,Normal,No es problema,27,23,48,30,42,29
+27,Masculino,> 35,No,,,,12,0,Invierno,Winter blues,No es problema,28,23,39,24,30,27
+28,Masculino,18-35,No,,,,6,9,Mixto,SAD,No es problema,21,24,29,21,28,22
+29,Femenino,18-35,Si,> 2 veces,Media,720,3,1,Mixto,Normal,No es problema,27,33,38,24,35,23
+30,Femenino,> 35,No,,,,3,2,Mixto,Normal,No es problema,32,33,41,27,31,27
+31,Masculino,18-35,No,,,,8,4,Mixto,SAD,Moderado,24,31,38,22,40,25
+32,Masculino,18-35,Si,> 2 veces,Media,900,5,9,Mixto,SAD,Importante,31,27,38,25,39,31
+33,Femenino,18-35,Si,2 veces,Media,240,8,0,Invierno,Winter blues,No es problema,28,27,40,26,40,29
+34,Femenino,18-35,No,,,,7,2,Mixto,SAD,No es problema,19,23,32,25,34,23
+35,Femenino,> 35,Si,2 veces,Media,120,9,3,Mixto,Normal,Moderado,30,23,44,27,37,28
+36,Femenino,> 35,Si,> 2 veces,Alta,360,10,8,Mixto,SAD,Moderado,17,17,27,19,28,22
+37,Masculino,> 35,No,,,,0,0,,Normal,No es problema,35,30,43,25,37,24
+38,Femenino,18-35,No,,,,6,2,Mixto,Winter blues,Moderado,30,21,39,26,42,31
+39,Femenino,18-35,No,,,,0,0,,Normal,No es problema,35,35,43,30,37,31
+40,Masculino,> 35,No,,,,3,0,Invierno,Normal,No es problema,27,28,40,26,35,31
+41,Masculino,18-35,No,,,,2,1,Mixto,SAD,No es problema,24,26,29,13,26,30
+42,Femenino,> 35,No,,,,7,1,Mixto,SAD,Importante,35,27,47,28,41,31
+43,Masculino,18-35,Si,> 2 veces,Media,360,0,0,,SAD,Moderado,22,14,24,25,34,28
+44,Femenino,> 35,Si,> 2 veces,Alta,270,2,0,Invierno,Normal,No es problema,28,22,39,24,32,27
+45,Femenino,18-35,No,,,,9,4,Mixto,SAD,No es problema,26,25,32,24,29,27
+46,Femenino,18-35,Si,1 vez,Alta,40,5,1,Mixto,Normal,Moderado,34,36,46,30,40,31
+47,Masculino,> 35,Si,> 2 veces,Media,240,3,3,Mixto,SAD,No es problema,0,0,0,0,0,0
+48,Femenino,18-35,Si,> 2 veces,Media,240,6,0,Invierno,Normal,Importante,27,21,35,29,42,29
+49,Femenino,> 35,No,1 vez,Baja,60,6,3,Mixto,SAD,No es problema,29,27,35,25,39,28
+50,Femenino,> 35,Si,> 2 veces,Baja,90,3,2,Mixto,Winter blues,No es problema,32,29,32,23,31,29
+51,Femenino,> 35,No,1 vez,Baja,60,3,3,Mixto,Winter blues,No es problema,23,24,35,21,31,21
+52,Femenino,18-35,No,,,,9,1,Mixto,SAD,No es problema,21,33,28,18,31,24
+53,Masculino,> 35,Si,> 2 veces,Alta,330,0,0,,Normal,No es problema,31,28,44,29,37,31
+54,Femenino,> 35,Si,> 2 veces,Alta,300,4,6,Mixto,SAD,Moderado,27,33,35,25,29,24
+55,Masculino,> 35,No,1 vez,Media,60,4,0,Invierno,Winter blues,No es problema,20,25,38,23,39,26
+56,Femenino,> 35,No,1 vez,Baja,120,3,0,Invierno,Normal,No es problema,35,35,46,30,41,30
+57,Femenino,18-35,Si,> 2 veces,Media,190,3,2,Mixto,Normal,No es problema,25,21,44,22,34,21
+58,Femenino,> 35,Si,> 2 veces,Alta,180,12,4,Mixto,Winter blues,Leve,29,33,39,28,42,21
+59,Masculino,18-35,Si,2 veces,Media,180,4,2,Mixto,Normal,No es problema,34,28,41,29,38,30
+60,Masculino,> 35,No,,,,6,3,Mixto,Winter blues,No es problema,25,18,28,25,32,29
+61,Masculino,18-35,No,,,,3,4,Mixto,Winter blues,Moderado,20,15,26,18,26,26
+62,Masculino,18-35,Si,> 2 veces,Media,30,5,5,Mixto,SAD,Importante,27,10,34,28,36,27
+63,Masculino,> 35,No,,,,2,0,Invierno,SAD,Importante,34,32,34,28,36,28
+64,Femenino,> 35,No,,,,1,0,Invierno,Winter blues,Leve,23,20,28,25,34,32
+65,Masculino,> 35,Si,> 2 veces,Media,870,6,5,Mixto,SAD,Severo,29,29,43,23,27,31
+66,Femenino,18-35,No,,,,5,0,Invierno,SAD,Moderado,29,28,28,23,30,27
+67,Femenino,18-35,No,,,,5,1,Mixto,Winter blues,Moderado,22,24,28,21,27,22
+68,Femenino,18-35,No,,,,9,3,Mixto,SAD,Importante,22,20,32,20,34,22
+69,Masculino,> 35,Si,> 2 veces,Media,180,6,6,Mixto,SAD,Importante,30,29,37,22,32,26
+70,Femenino,> 35,Si,2 veces,Media,240,6,3,Mixto,SAD,No es problema,22,21,42,21,33,24
+71,Femenino,> 35,Si,> 2 veces,Alta,480,8,2,Mixto,Winter blues,Moderado,31,29,36,25,28,27
+72,Masculino,> 35,No,,,,2,0,Invierno,Winter blues,Importante,21,23,33,14,13,21
+73,Masculino,> 35,No,,,,6,5,Mixto,SAD,Moderado,24,22,38,23,31,26
+74,Masculino,> 35,Si,> 2 veces,Media,360,8,2,Mixto,Normal,No es problema,30,35,41,27,42,31
+75,Masculino,> 35,Si,2 veces,Media,120,7,6,Mixto,SAD,No es problema,25,19,29,26,39,25
+76,Masculino,18-35,No,,,,10,12,Mixto,SAD,Moderado,28,15,39,25,37,31
+77,Masculino,18-35,Si,> 2 veces,Alta,600,0,0,,Winter blues,Leve,32,30,38,27,41,29
+78,Femenino,> 35,No,,,,6,5,Mixto,SAD,Leve,31,29,41,27,34,28
+79,Femenino,> 35,Si,> 2 veces,Media,300,0,0,,Winter blues,No es problema,27,29,33,22,29,25
+80,Femenino,18-35,No,,,,3,0,Invierno,SAD,Moderado,34,27,38,24,37,31
+81,Femenino,> 35,No,,,,2,0,Invierno,SAD,Grave,24,26,40,20,31,24
+82,Femenino,> 35,No,,,,3,2,Mixto,SAD,Importante,26,26,28,20,30,27
+83,Femenino,18-35,Si,2 veces,Media,70,0,2,Verano,SAD,Moderado,20,16,39,20,27,20
+84,Masculino,> 35,No,,,,4,6,Mixto,SAD,Importante,26,20,30,23,26,32
+85,Masculino,> 35,No,,,,2,1,Mixto,Winter blues,Severo,22,16,41,21,29,26
+86,Masculino,> 35,No,,,,3,0,Invierno,SAD,Moderado,31,33,38,18,35,25
+87,Femenino,18-35,Si,> 2 veces,Alta,300,10,5,Mixto,SAD,Importante,27,33,34,16,34,23
+88,Femenino,18-35,Si,> 2 veces,Baja,60,0,2,Verano,Winter blues,Severo,24,24,30,21,33,20
+89,Femenino,> 35,No,,,,3,1,Mixto,SAD,Moderado,26,18,40,23,30,26
+90,Femenino,> 35,No,,,,12,9,Mixto,SAD,Moderado,26,28,32,18,28,21
+91,Masculino,> 35,No,,,,5,9,Mixto,SAD,,36,36,43,25,42,26
+92,Masculino,18-35,Si,1 vez,Media,90,10,4,Mixto,Winter blues,Leve,35,36,30,30,42,31
+93,Masculino,18-35,Si,2 veces,Media,180,10,11,Mixto,SAD,,28,33,33,23,40,29
+94,Masculino,> 35,No,,,,4,2,Mixto,SAD,Severo,33,30,33,28,36,31
+95,Masculino,18-35,Si,> 2 veces,Alta,60,3,6,Mixto,Winter blues,Importante,36,36,39,25,37,30
+96,Masculino,18-35,Si,2 veces,Media,90,14,8,Mixto,SAD,Severo,23,21,33,20,30,27
+97,Masculino,18-35,Si,2 veces,Baja,120,4,1,Mixto,SAD,Leve,30,25,38,26,31,27
+98,Masculino,> 35,No,,,,5,0,Invierno,SAD,Leve,27,20,38,25,26,26
+99,Femenino,> 35,No,,,,3,0,Invierno,SAD,Severo,25,23,33,22,31,24
+100,Masculino,> 35,Si,2 veces,Media,300,4,0,Invierno,Normal,Importante,31,29,44,26,30,24
+101,Masculino,> 35,Si,> 2 veces,Alta,480,6,2,Mixto,SAD,Severo,29,22,33,27,39,28
+102,Masculino,> 35,Si,> 2 veces,Media,360,2,0,Invierno,SAD,Grave,25,16,35,21,30,22
+103,Masculino,> 35,No,,,,6,3,Mixto,SAD,Severo,20,21,37,20,29,24
+104,Masculino,> 35,No,,,,7,2,Mixto,SAD,Severo,24,19,36,18,26,25
+105,Masculino,> 35,No,,Media,,0,0,,Winter blues,,27,12,23,25,28,35
+106,Femenino,18-35,Si,> 2 veces,Media,240,8,2,Mixto,Winter blues,Grave,31,21,34,23,30,29
+107,Masculino,18-35,Si,2 veces,Media,40,6,0,Invierno,SAD,,31,18,32,26,32,30
+108,Masculino,> 35,No,,,,1,3,Mixto,SAD,Leve,34,18,40,29,30,30
+109,Masculino,> 35,No,,,,3,2,Mixto,SAD,Leve,31,36,47,30,38,31
+110,Masculino,> 35,No,,,,5,3,Mixto,SAD,,27,20,35,20,27,26
+111,Masculino,> 35,No,,,,9,0,Invierno,SAD,Severo,19,18,32,23,22,21
+112,Femenino,> 35,No,,,,3,1,Mixto,Winter blues,Importante,36,24,44,29,41,31
+113,Masculino,> 35,No,,,,8,8,Mixto,Normal,Importante,35,36,42,30,42,31
+114,Masculino,> 35,No,,,,5,0,Invierno,SAD,Importante,22,25,29,22,27,30
+115,Masculino,18-35,Si,2 veces,Media,120,2,1,Mixto,Winter blues,Moderado,26,28,30,25,31,26
+116,Masculino,18-35,Si,2 veces,Baja,60,7,3,Mixto,SAD,Leve,33,29,48,25,39,31
+117,Masculino,18-35,Si,1 vez,Baja,90,2,1,Mixto,SAD,Severo,22,23,41,26,36,29
+118,Masculino,18-35,Si,1 vez,Media,120,8,1,Mixto,SAD,Severo,19,21,35,21,39,20
+119,Masculino,> 35,No,,,,8,1,Mixto,SAD,Severo,18,21,38,19,27,23
+120,Masculino,18-35,No,1 vez,Baja,15,6,0,Invierno,Winter blues,Severo,27,18,30,25,37,34
+121,Femenino,> 35,No,,,,5,4,Mixto,SAD,,24,28,30,22,29,24
+122,Femenino,18-35,Si,2 veces,Alta,120,2,0,Invierno,Normal,Leve,36,23,43,24,37,27
+123,Masculino,18-35,Si,2 veces,Media,120,5,1,Mixto,SAD,Severo,34,13,34,28,34,31
+124,Femenino,18-35,Si,> 2 veces,Media,30,2,0,Invierno,SAD,Grave,26,28,32,25,27,33
+125,Masculino,> 35,No,,,,3,4,Mixto,SAD,Grave,19,14,48,19,25,24
+126,Masculino,18-35,No,,Baja,20,3,1,Mixto,SAD,Importante,19,25,33,20,25,23
+127,Masculino,> 35,No,,,,7,6,Mixto,Winter blues,,36,36,39,25,42,31
+128,Masculino,> 35,No,,,,7,6,Mixto,SAD,Moderado,30,20,39,27,36,29
+129,Masculino,> 35,,,,,2,1,Mixto,,Moderado,32,27,41,26,34,29
+130,Masculino,18-35,Si,> 2 veces,Media,360,9,3,Mixto,SAD,Importante,30,29,42,11,36,26
+131,Masculino,18-35,Si,> 2 veces,Media,240,11,3,Mixto,SAD,Moderado,32,31,47,26,34,30
+132,Masculino,18-35,No,,,,6,0,Invierno,SAD,Grave,26,22,27,23,29,26
+133,Masculino,> 35,,,,,2,3,Mixto,Normal,Leve,35,27,44,30,37,25
+134,Masculino,> 35,No,,,,8,4,Mixto,SAD,Importante,27,24,29,26,38,28
+135,Masculino,18-35,Si,1 vez,Baja,90,4,2,Mixto,SAD,Leve,33,35,48,27,42,31
+136,Femenino,> 35,No,,,,7,3,Mixto,Winter blues,,33,35,42,22,40,29
+137,Masculino,> 35,No,,,,2,0,Invierno,Normal,Leve,36,34,43,30,37,31
+138,Masculino,18-35,Si,2 veces,Media,60,9,1,Mixto,Winter blues,Severo,30,30,34,22,32,27
+139,Masculino,> 35,No,,,,11,4,Mixto,SAD,Severo,33,25,38,27,33,34
+140,Masculino,18-35,Si,> 2 veces,Media,360,9,4,Mixto,SAD,Moderado,24,36,35,23,36,21
+141,Femenino,18-35,Si,> 2 veces,Alta,1260,0,0,Invierno,Normal,Leve,37,36,44,29,40,30
+142,Masculino,18-35,Si,> 2 veces,Baja,840,8,0,Invierno,SAD,Leve,30,36,40,22,37,31
+143,Masculino,> 35,No,,,,5,0,Invierno,SAD,Moderado,26,22,28,24,38,24
+144,Femenino,> 35,No,,,,7,6,Mixto,SAD,Leve,26,20,38,26,37,29
+145,Masculino,> 35,No,,,,9,4,Mixto,SAD,,33,20,38,28,39,31
+146,Masculino,> 35,No,,,,9,0,Invierno,SAD,Severo,34,34,36,30,37,28
+147,Masculino,> 35,No,,,,4,8,Mixto,SAD,,29,33,43,25,37,31
+148,Femenino,> 35,No,,,,4,3,Mixto,Winter blues,Importante,33,24,32,25,32,32
+149,Masculino,18-35,Si,> 2 veces,Baja,180,3,0,Invierno,SAD,Importante,30,33,40,26,35,25
+150,Masculino,18-35,Si,> 2 veces,Alta,300,4,2,Mixto,SAD,Leve,28,18,41,24,42,31
+151,Masculino,> 35,No,,,,6,0,Invierno,Normal,Grave,18,20,28,17,22,17
+152,Femenino,18-35,Si,1 vez,Baja,60,3,0,Invierno,Winter blues,,21,21,26,20,23,23
+153,Femenino,> 35,No,,,,12,0,Invierno,Normal,Leve,25,15,35,27,27,26
+154,Femenino,> 35,No,,,,14,5,Mixto,Normal,Leve,22,14,35,27,27,26
+155,Masculino,18-35,Si,2 veces,Media,60,12,4,Mixto,Normal,Moderado,26,16,35,27,30,25
+156,Masculino,18-35,Si,> 2 veces,Media,300,10,0,Invierno,SAD,Leve,33,30,41,24,37,30
+157,Masculino,> 35,No,,,,2,4,Mixto,SAD,Leve,32,35,46,30,34,30
+158,Femenino,> 35,No,,,,3,0,Invierno,Normal,Leve,32,31,47,30,36,29
+159,Femenino,18-35,Si,2 veces,Media,120,9,5,Mixto,SAD,Grave,31,25,39,28,33,31
+160,Femenino,18-35,Si,> 2 veces,Media,480,9,7,Mixto,SAD,Leve,30,29,39,28,33,31
+161,Masculino,> 35,No,,,,6,3,Mixto,SAD,Importante,30,35,40,29,33,33
+162,Femenino,> 35,No,,,,6,8,Mixto,SAD,Severo,28,30,38,23,29,25
+163,Femenino,> 35,No,,,,1,0,Invierno,Normal,Severo,34,31,48,25,37,31
+164,Masculino,> 35,No,,,,1,1,Mixto,SAD,Severo,18,21,35,22,19,15
+165,Masculino,18-35,Si,> 2 veces,Media,300,2,0,Invierno,SAD,,19,20,43,20,20,16
+166,Femenino,> 35,No,,,,2,2,Mixto,Winter blues,Leve,35,27,35,28,34,31
+167,Masculino,> 35,No,,,,2,2,Mixto,SAD,Moderado,30,22,26,28,36,30
+168,Masculino,> 35,No,,,,0,0,,SAD,Moderado,33,35,41,25,41,25
+169,Masculino,> 35,No,,,,0,0,,Winter blues,Severo,27,20,29,21,36,28
+170,Femenino,18-35,Si,1 vez,Media,40,8,3,Mixto,SAD,Moderado,36,34,31,23,35,26
+171,Masculino,> 35,No,,,,3,3,Mixto,SAD,Severo,25,31,31,20,31,35
+172,Masculino,> 35,No,,,,4,2,Mixto,SAD,Leve,29,28,45,27,41,31
+173,Femenino,> 35,No,,,,4,2,Mixto,Winter blues,Leve,32,28,42,30,40,31
+174,Masculino,> 35,No,,,,7,2,Mixto,SAD,Leve,34,36,42,28,41,28
+175,Masculino,18-35,Si,> 2 veces,Media,150,5,0,Invierno,SAD,Leve,35,34,46,30,42,31
+176,Masculino,> 35,No,,,,1,2,Mixto,SAD,Severo,34,27,45,27,42,31
+177,Masculino,18-35,Si,2 veces,Media,180,4,2,Mixto,SAD,Leve,36,36,43,30,42,31
+178,Masculino,18-35,Si,> 2 veces,Media,360,6,4,Mixto,SAD,,20,36,32,23,38,22
+179,Masculino,18-35,Si,2 veces,Media,120,6,1,Mixto,SAD,Severo,30,20,40,27,34,30
+180,Masculino,18-35,Si,1 vez,Media,60,5,0,Invierno,SAD,Leve,35,35,45,23,32,28
+181,Masculino,> 35,No,,,,1,0,Invierno,SAD,,23,24,33,26,30,20
+182,Masculino,18-35,Si,2 veces,Media,120,4,2,Mixto,Normal,Leve,34,29,47,26,40,30
+183,Masculino,> 35,No,,,,5,0,Invierno,Normal,,23,21,28,21,26,29
+184,Femenino,18-35,Si,> 2 veces,Alta,720,2,0,Invierno,Winter blues,Moderado,36,36,46,30,42,31
+185,Masculino,> 35,No,,Baja,,3,1,Mixto,SAD,Importante,30,26,37,24,34,27
+186,Masculino,> 35,No,,,,12,2,Mixto,SAD,Importante,30,26,42,29,37,31
+187,Masculino,> 35,,,,,3,1,Mixto,Winter blues,,36,31,44,25,37,31
+188,Masculino,> 35,No,,,,9,5,Mixto,SAD,Moderado,34,27,43,29,36,29
+189,Masculino,> 35,No,,,,9,0,Invierno,Normal,,0,0,0,0,0,0
+190,Femenino,18-35,Si,2 veces,Media,300,10,1,Mixto,Winter blues,Severo,34,26,34,27,35,28
+191,Masculino,18-35,Si,> 2 veces,Media,360,7,8,Mixto,Normal,Leve,36,27,45,30,26,28
+192,Masculino,18-35,Si,> 2 veces,Media,420,6,2,Mixto,Winter blues,Leve,29,30,38,30,41,30
+193,Masculino,18-35,Si,> 2 veces,Media,500,3,2,Mixto,SAD,Leve,35,25,48,29,40,29
+194,Femenino,18-35,Si,> 2 veces,Media,180,2,0,Invierno,Winter blues,Moderado,29,24,37,26,32,27
+195,Masculino,18-35,Si,> 2 veces,Media,360,2,0,Invierno,Normal,Leve,33,34,44,28,42,31
+196,Femenino,18-35,Si,> 2 veces,Media,240,7,0,Invierno,Normal,Leve,32,29,39,26,32,27
+197,Masculino,18-35,Si,2 veces,Media,60,5,0,Invierno,SAD,Grave,24,28,40,23,33,27
+198,Masculino,18-35,Si,1 vez,Media,60,3,0,Invierno,Normal,Leve,35,31,38,29,34,32
+199,Masculino,> 35,No,,,,2,1,Mixto,Normal,,35,22,42,25,32,30
+200,Masculino,18-35,Si,1 vez,Media,60,5,0,Invierno,Normal,Leve,35,23,34,27,33,34
+201,Masculino,> 35,No,,,,3,2,Mixto,SAD,Leve,27,28,47,25,39,26
+202,Femenino,> 35,No,,,,5,5,Mixto,SAD,Importante,29,21,33,25,34,29
+203,Femenino,18-35,Si,2 veces,Media,60,4,5,Mixto,SAD,Severo,30,35,36,30,33,28
+204,Masculino,18-35,Si,2 veces,Media,90,6,3,Mixto,SAD,Moderado,28,28,38,24,35,27
+205,Masculino,18-35,Si,> 2 veces,Media,360,4,0,Invierno,Normal,Moderado,33,28,35,26,34,26
+206,Femenino,18-35,Si,> 2 veces,Alta,90,0,0,,Normal,Leve,26,16,23,25,27,36
+207,Masculino,18-35,Si,> 2 veces,Media,60,8,3,Mixto,SAD,Moderado,34,19,39,29,37,27
+208,Femenino,18-35,Si,> 2 veces,Media,480,5,1,Mixto,SAD,Grave,33,26,48,28,32,31
+209,Femenino,18-35,Si,1 vez,Alta,60,3,1,Mixto,Winter blues,Leve,32,29,41,28,33,25
+210,Femenino,> 35,No,,Media,,1,0,Invierno,Winter blues,Severo,25,25,45,28,41,32
+211,Masculino,18-35,Si,2 veces,Media,120,2,0,Invierno,Normal,Importante,27,28,37,20,34,22
+212,Masculino,18-35,Si,> 2 veces,Media,45,2,0,Invierno,SAD,Leve,20,18,30,17,23,22
+213,Femenino,18-35,Si,1 vez,Media,60,9,7,Mixto,SAD,Severo,24,31,38,25,36,24
+214,Masculino,> 35,No,,,,2,0,Invierno,SAD,Grave,28,29,38,25,36,29
+215,Femenino,18-35,,1 vez,Baja,,1,0,Invierno,SAD,,25,16,27,19,26,27
+216,Femenino,18-35,Si,1 vez,Media,90,1,0,Invierno,SAD,Grave,17,11,24,18,20,26
+217,Femenino,> 35,No,,,,2,2,Mixto,Winter blues,Grave,25,18,46,28,27,24
+218,Femenino,> 35,No,,,,3,0,Invierno,SAD,Moderado,25,23,31,22,31,25
+219,Femenino,18-35,Si,1 vez,Media,90,1,0,Invierno,Normal,Moderado,31,23,42,28,36,30
+220,Femenino,18-35,Si,> 2 veces,Media,180,2,4,Mixto,SAD,Grave,18,15,32,20,35,19
+221,Femenino,18-35,Si,> 2 veces,Media,180,9,3,Mixto,SAD,Leve,30,29,32,26,39,28
+222,Femenino,18-35,Si,> 2 veces,Media,300,5,0,Invierno,Normal,Leve,31,35,41,22,35,28
+223,Masculino,18-35,Si,> 2 veces,Baja,90,7,0,Invierno,Normal,,28,36,48,22,41,26
+224,Femenino,> 35,No,,,,4,1,Mixto,Normal,Severo,33,32,43,24,29,28
+225,,> 35,,,,,3,1,Mixto,SAD,Leve,36,34,48,26,37,24
+226,Masculino,18-35,Si,1 vez,Media,90,0,0,,SAD,Grave,17,28,27,21,27,19
+227,Masculino,> 35,No,,,,1,0,Invierno,SAD,,15,26,32,15,13,18
+228,Femenino,> 35,No,,,,2,1,Mixto,Normal,Moderado,32,29,42,26,39,28
+229,Masculino,> 35,No,,,,0,1,Verano,SAD,Leve,26,36,45,27,37,31
+230,Masculino,> 35,No,,,,2,2,Mixto,Normal,Grave,22,28,37,24,29,29
+231,Masculino,> 35,No,,,,0,0,,Normal,Leve,36,31,48,30,42,31
+232,Femenino,> 35,No,,,,3,0,Invierno,SAD,Severo,36,25,41,28,37,31
+233,Femenino,18-35,Si,> 2 veces,Alta,480,0,0,,Normal,Grave,32,30,36,30,42,31
+234,Femenino,> 35,No,,,,5,3,Mixto,SAD,Moderado,29,16,36,25,31,30
+235,Femenino,> 35,No,,,,0,0,,SAD,Moderado,23,26,36,17,38,29
+236,Masculino,18-35,Si,1 vez,Baja,90,11,0,Invierno,Normal,Leve,30,17,37,25,40,30
+237,Masculino,18-35,Si,> 2 veces,Media,60,6,0,Invierno,Winter blues,,28,11,36,27,34,27
+238,Masculino,> 35,No,,,,0,0,,Normal,Leve,31,31,38,27,37,27
+239,Femenino,18-35,Si,> 2 veces,Media,480,2,6,Mixto,SAD,Severo,20,21,35,20,34,24
+240,Masculino,18-35,Si,> 2 veces,Media,60,1,0,Invierno,SAD,Leve,31,25,42,26,25,28
+241,Femenino,18-35,Si,> 2 veces,Media,120,8,3,Mixto,SAD,,20,16,29,17,31,24
+242,Masculino,> 35,No,,,,2,0,Invierno,Normal,Importante,22,19,39,14,33,19
+243,Masculino,18-35,Si,> 2 veces,Baja,30,6,0,Invierno,SAD,Severo,22,16,36,23,32,22
+244,Femenino,> 35,No,,,,6,3,Mixto,SAD,,36,28,43,29,37,31
+245,Femenino,18-35,Si,> 2 veces,Media,360,0,0,,Normal,Grave,22,20,29,19,28,21
+246,Masculino,> 35,No,,,,2,0,Invierno,Normal,,27,31,35,26,23,22
+247,Masculino,> 35,No,,Baja,180,6,6,Mixto,Normal,Grave,19,21,26,23,29,27
+248,Masculino,18-35,Si,1 vez,Media,60,5,2,Mixto,SAD,Leve,29,32,38,30,37,31
+249,Femenino,> 35,No,,,,10,2,Mixto,Normal,Leve,31,22,40,24,32,25
+250,Masculino,> 35,No,,,,5,5,Mixto,SAD,,32,21,33,25,33,30
+251,Masculino,18-35,Si,> 2 veces,Media,180,0,0,,SAD,Leve,25,34,38,26,35,26
+252,Masculino,> 35,No,,,,5,3,Mixto,SAD,Importante,27,19,38,13,41,31
+253,Femenino,18-35,Si,> 2 veces,Media,45,3,1,Mixto,Winter blues,Moderado,26,23,43,24,39,22
+254,Masculino,> 35,No,,,,6,2,Mixto,SAD,Severo,32,34,40,27,39,28
+255,Femenino,18-35,Si,> 2 veces,Media,180,1,0,Invierno,Winter blues,,24,27,46,21,32,23
+256,Femenino,18-35,Si,> 2 veces,Alta,840,0,0,,Normal,,0,0,0,0,0,0
+257,Femenino,18-35,Si,> 2 veces,Baja,550,13,2,Mixto,SAD,Leve,30,24,37,19,32,28
+258,Masculino,> 35,No,,,,2,0,Invierno,Normal,Leve,34,25,46,29,38,30
+259,Femenino,18-35,Si,> 2 veces,Media,240,9,7,Mixto,SAD,Severo,30,31,40,24,34,26
+260,Femenino,18-35,Si,1 vez,Baja,60,4,2,Mixto,SAD,Grave,26,14,25,20,27,26
+261,Femenino,18-35,Si,2 veces,Media,120,2,4,Mixto,SAD,,20,27,37,20,36,21
+262,Masculino,18-35,Si,2 veces,Alta,120,11,9,Mixto,SAD,Moderado,32,24,35,27,34,24
+263,Femenino,> 35,No,,,,7,13,Mixto,SAD,Grave,22,28,28,20,32,21
+264,Femenino,18-35,Si,1 vez,Alta,150,6,0,Invierno,Normal,Moderado,32,32,44,28,42,29
+265,Femenino,18-35,Si,1 vez,Baja,90,9,7,Mixto,SAD,Leve,22,28,34,20,33,27
+266,Femenino,18-35,Si,1 vez,Baja,30,4,3,Mixto,SAD,Severo,24,22,37,22,34,24
+267,Femenino,> 35,No,,,,1,0,Invierno,Normal,,36,31,48,30,42,31
+268,Femenino,> 35,No,,,,2,0,Invierno,SAD,Importante,25,28,29,20,37,21
+269,Femenino,18-35,Si,2 veces,Baja,180,3,3,Mixto,SAD,Grave,34,28,42,29,42,28
+270,Femenino,18-35,Si,> 2 veces,Alta,60,9,3,Mixto,SAD,Severo,25,16,37,25,34,31
+271,Femenino,18-35,Si,> 2 veces,Media,960,2,9,Mixto,SAD,Moderado,26,26,33,23,29,27
+272,Masculino,18-35,Si,> 2 veces,Media,360,8,1,Mixto,SAD,,18,12,33,23,29,27
+273,Masculino,18-35,Si,1 vez,Baja,60,3,2,Mixto,SAD,Severo,28,28,40,27,37,23
+274,Masculino,18-35,Si,> 2 veces,Baja,180,4,0,Invierno,SAD,Grave,25,28,39,22,36,24
+275,Masculino,18-35,Si,> 2 veces,Media,180,3,0,Invierno,SAD,,25,26,41,28,32,26
+276,Masculino,18-35,Si,1 vez,Baja,60,1,3,Mixto,SAD,Grave,31,35,32,24,36,20
+277,Masculino,18-35,Si,> 2 veces,Alta,720,7,2,Mixto,SAD,Moderado,21,18,27,18,31,24
+278,Masculino,> 35,No,,,0,10,2,Mixto,SAD,Grave,33,32,44,27,28,32
+279,Masculino,18-35,Si,> 2 veces,Media,300,8,6,Mixto,SAD,,27,23,33,28,27,32
+280,Masculino,18-35,Si,2 veces,Media,150,12,11,Mixto,SAD,Importante,15,18,23,9,8,12
+281,Femenino,18-35,No,1 vez,Baja,0,7,7,Mixto,SAD,Importante,34,28,41,27,38,31
+282,Femenino,> 35,No,,,,2,1,Mixto,SAD,Grave,25,18,14,20,22,22
+283,Masculino,18-35,Si,> 2 veces,Media,180,5,2,Mixto,Normal,Leve,31,35,39,28,34,25
+284,Femenino,18-35,Si,> 2 veces,Media,240,2,0,Invierno,SAD,Grave,27,25,34,25,35,28
+285,Femenino,> 35,No,,,,4,2,Mixto,SAD,Moderado,20,22,37,14,30,23
+286,Femenino,18-35,Si,2 veces,Media,120,2,7,Mixto,SAD,Importante,8,7,27,12,26,16
+287,Femenino,18-35,Si,1 vez,Baja,120,10,7,Mixto,SAD,Severo,33,28,34,25,42,21
+288,Femenino,> 35,No,,,,2,5,Mixto,SAD,,26,18,34,24,31,27
+289,Masculino,18-35,Si,> 2 veces,Media,240,3,3,Mixto,SAD,Moderado,33,32,39,25,41,28
+290,Masculino,> 35,No,,,,5,0,Invierno,Normal,Moderado,27,33,45,22,33,26
+291,Femenino,> 35,No,,,,6,4,Mixto,SAD,Leve,30,25,41,27,38,24
+292,Femenino,18-35,Si,2 veces,Media,150,5,0,Invierno,SAD,Leve,32,34,39,24,31,27
+293,Femenino,> 35,No,,,,0,0,Invierno,Normal,Moderado,24,24,24,20,28,29
+294,Femenino,18-35,Si,1 vez,Media,60,5,0,Invierno,SAD,Severo,21,24,30,19,23,18
+295,Femenino,> 35,No,,,,0,0,Invierno,Normal,Leve,26,29,30,23,32,23
+296,Masculino,18-35,Si,1 vez,Baja,30,1,0,Invierno,SAD,Grave,28,18,33,26,30,31
+297,Masculino,18-35,Si,2 veces,Media,240,4,0,Invierno,Winter blues,Leve,32,29,41,25,42,31
+298,Masculino,18-35,No,1 vez,Baja,,5,0,Invierno,Normal,Grave,18,24,31,13,26,12
+299,Femenino,18-35,Si,> 2 veces,Media,280,5,3,Mixto,SAD,Severo,26,26,33,21,28,22
+300,Femenino,18-35,Si,1 vez,Baja,60,7,7,Mixto,SAD,,23,20,39,23,32,17
+301,Femenino,18-35,Si,2 veces,Media,180,6,7,Mixto,SAD,,12,29,33,16,18,22
+302,Femenino,18-35,Si,1 vez,Baja,30,5,0,Invierno,SAD,,19,24,34,15,26,14
+303,Femenino,18-35,Si,> 2 veces,Alta,500,6,2,Mixto,SAD,Leve,33,30,42,30,37,31
+304,Femenino,18-35,Si,1 vez,Media,60,5,3,Mixto,SAD,Moderado,22,28,31,16,33,19
+305,Femenino,> 35,No,,,,9,3,Mixto,SAD,,18,22,25,15,37,22
+306,Femenino,18-35,Si,2 veces,Media,240,0,0,,Normal,Severo,16,26,33,10,22,6
+307,Femenino,18-35,Si,> 2 veces,Baja,120,6,0,Invierno,SAD,Importante,28,21,32,25,31,30
+308,Femenino,18-35,Si,> 2 veces,Media,180,4,6,Mixto,SAD,Grave,17,26,44,21,35,21
+309,Femenino,> 35,No,,,,7,3,Mixto,SAD,Moderado,25,21,46,24,30,25
+310,Femenino,18-35,Si,> 2 veces,Alta,360,9,7,Mixto,SAD,Grave,30,23,28,25,39,27
+311,Masculino,18-35,Si,> 2 veces,Media,540,2,3,Mixto,SAD,Leve,33,22,41,22,33,27
+312,Femenino,> 35,No,,,,6,4,Mixto,SAD,Severo,19,24,31,25,39,29
+313,Femenino,18-35,Si,> 2 veces,Media,90,6,5,Mixto,SAD,Leve,36,36,45,30,42,31
+314,Masculino,18-35,Si,> 2 veces,Alta,720,5,5,Mixto,SAD,,25,7,41,24,31,25
+315,Masculino,> 35,No,,,,0,0,,Normal,Importante,22,8,39,22,27,23
+316,Femenino,18-35,Si,2 veces,Media,120,4,2,Mixto,SAD,Severo,28,29,39,23,29,25
+317,Femenino,> 35,No,,,,5,0,Invierno,Normal,Severo,31,27,42,29,42,30
+318,Femenino,18-35,Si,> 2 veces,Media,300,10,4,Mixto,SAD,Grave,25,23,30,19,28,26
+319,Masculino,18-35,Si,> 2 veces,Media,420,6,4,Mixto,Normal,Importante,0,0,0,0,0,0
+320,Masculino,18-35,Si,> 2 veces,Media,180,2,0,Invierno,Winter blues,Leve,30,36,40,29,32,36
+321,Femenino,18-35,Si,1 vez,Baja,30,5,0,Invierno,Winter blues,Grave,34,25,48,23,42,30
+322,Masculino,18-35,Si,> 2 veces,Media,150,2,2,Mixto,Normal,Leve,36,36,48,30,42,31
+323,Femenino,18-35,Si,2 veces,Media,60,1,2,Mixto,Normal,Severo,33,25,41,30,40,31
+324,Femenino,18-35,Si,> 2 veces,Baja,120,5,3,Mixto,SAD,Grave,20,16,26,15,29,21
+325,Femenino,18-35,Si,> 2 veces,Media,120,7,1,Mixto,SAD,Grave,32,24,46,27,40,27
+326,Femenino,18-35,Si,> 2 veces,Media,420,6,7,Mixto,Winter blues,,25,26,46,20,33,24
+327,Femenino,18-35,Si,> 2 veces,Media,480,5,5,Mixto,SAD,Severo,28,32,33,19,25,29
+328,Femenino,18-35,Si,2 veces,Media,180,3,3,Mixto,SAD,Moderado,19,18,41,20,32,21
+329,Femenino,18-35,Si,> 2 veces,Alta,900,4,4,Mixto,Normal,Grave,25,21,26,21,29,29
+330,Masculino,18-35,Si,1 vez,Baja,30,6,7,Mixto,Normal,Leve,33,36,43,30,42,31
+331,Masculino,> 35,No,,,,8,4,Mixto,SAD,Grave,25,18,43,25,42,34
+332,Masculino,18-35,No,1 vez,Baja,120,8,4,Mixto,SAD,Grave,21,26,31,21,24,17
+333,Femenino,18-35,Si,2 veces,Media,180,4,1,Mixto,SAD,Moderado,32,33,41,21,35,26
+334,Masculino,18-35,No,1 vez,Baja,15,8,7,Mixto,SAD,Importante,29,16,32,24,33,25
+335,Masculino,18-35,No,1 vez,Baja,30,9,9,Mixto,SAD,Severo,24,22,24,21,26,27
+336,Femenino,18-35,Si,2 veces,Baja,90,7,2,Mixto,SAD,Severo,21,25,30,18,25,21
+337,Masculino,18-35,Si,1 vez,Alta,30,10,3,Mixto,Normal,Leve,24,21,40,23,36,25
+338,Masculino,> 35,No,,,,5,1,Mixto,SAD,Grave,27,30,37,27,42,27
+339,Masculino,> 35,No,,,,5,3,Mixto,SAD,,21,29,28,22,25,21
+340,Masculino,> 35,No,,,,4,3,Mixto,SAD,,21,29,28,22,25,21
+341,Masculino,18-35,Si,1 vez,Media,30,10,0,Invierno,Normal,Moderado,31,25,36,27,36,25
+342,Masculino,> 35,No,,,,4,3,Mixto,SAD,Moderado,23,26,30,21,27,30
+343,Masculino,18-35,Si,1 vez,Baja,15,7,2,Mixto,SAD,Severo,26,26,31,21,32,25
+344,Masculino,18-35,Si,1 vez,Media,60,8,2,Mixto,SAD,Importante,22,30,30,21,32,21
+345,Masculino,18-35,No,1 vez,Baja,10,11,6,Mixto,SAD,Severo,23,21,29,16,24,18
+346,Masculino,> 35,No,,,,0,0,,SAD,Grave,35,36,41,28,38,31
+347,Femenino,> 35,No,,,,6,2,Mixto,SAD,Grave,30,30,39,24,30,26
+348,Femenino,18-35,Si,2 veces,Media,90,6,3,Mixto,SAD,Importante,27,21,37,22,38,27
+349,Masculino,> 35,No,,,,0,0,,Normal,Moderado,31,17,34,25,35,26
+350,Masculino,18-35,Si,> 2 veces,Alta,480,0,0,,Winter blues,Grave,35,31,48,25,38,30
+351,Masculino,18-35,Si,2 veces,Media,240,5,3,Mixto,SAD,Grave,25,29,32,22,33,26
+352,Masculino,18-35,Si,2 veces,Baja,120,7,4,Mixto,SAD,Severo,28,34,34,29,42,25
+353,Masculino,18-35,Si,> 2 veces,Media,180,8,2,Mixto,SAD,Severo,27,29,37,21,33,27
+354,Masculino,> 35,No,,,,7,6,Mixto,SAD,Severo,18,21,32,15,21,18
+355,Masculino,18-35,Si,1 vez,Media,60,5,5,Mixto,SAD,Severo,35,32,42,26,36,31
+356,Masculino,18-35,Si,2 veces,Media,120,6,1,Mixto,Winter blues,Severo,34,27,46,30,38,25
+357,Masculino,18-35,Si,> 2 veces,Media,180,4,4,Mixto,SAD,Leve,25,32,40,30,37,28
+358,Femenino,> 35,No,,,,3,0,Invierno,Normal,Importante,29,33,47,25,37,25
