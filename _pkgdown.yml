@@ -1,4 +1,7 @@
 url: https://nim-ach.github.io/seasonalSensibility
+
 template:
   bootstrap: 5
+  params:
+    bootswatch: flatly
 
