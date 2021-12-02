@@ -1,0 +1,13 @@
+Package: seasonalSensibility
+Title: Data and analysis from the seasonal sensitivity study
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("Matías", "Castillo Aguilar", , "matcasti@umag.cl", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0001-7291-247X")),
+      person("Cristian", "Núñez Espinosa", , "cristian.nunez@umag.cl", role = c("rev", "dtc"),
+             comment = c(ORCID = "0000-0002-9896-7062")))
+Description: Data and analysis from the seasonal sensitivity study.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
