@@ -20,9 +20,9 @@ Useful links:
 \author{
 \strong{Maintainer}: Matías Castillo Aguilar \email{matcasti@umag.cl} (\href{https://orcid.org/0000-0001-7291-247X}{ORCID})
 
-Other contributors:
+Authors:
 \itemize{
-  \item Cristian Núñez Espinosa \email{cristian.nunez@umag.cl} (\href{https://orcid.org/0000-0002-9896-7062}{ORCID}) [reviewer, data contributor]
+  \item Cristian Núñez Espinosa \email{cristian.nunez@umag.cl} (\href{https://orcid.org/0000-0002-9896-7062}{ORCID}) [data contributor]
 }
 
 }

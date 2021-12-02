@@ -41,7 +41,7 @@ Las variables de interés en este caso son el sexo y la edad, en primera instanc
 library(gtsummary)
 theme_gtsummary_language("es")
   
-tbl <- tbl_summary(data = datos[, .SD, .SDcols = genero:edad])
+tbl <- tbl_summary(data = dataset[, .SD, .SDcols = genero:edad])
 bold_labels(x = tbl)
 ```
 :::
@@ -55,7 +55,7 @@ library(ggplot2)
 library(ggstatsplot)
 library(ggsci)
 
-ggstatsplot::ggpiestats(datos, deporte_dias_semana,
+ggstatsplot::ggpiestats(dataset, deporte_dias_semana,
   bf.message = F,
   legend.title = "Días de deporte a la semana",
   ggplot.component =
@@ -70,7 +70,7 @@ La duración de una sesión de ejercicio promedio reportada por el 58% de la mue
 
 :::{#tab2}
 ```{r tab2, echo=FALSE}
-tbl <- tbl_summary(data = datos[, .SD, .SDcols = deporte:deporte_minutos_sesion])
+tbl <- tbl_summary(data = dataset[, .SD, .SDcols = deporte:deporte_minutos_sesion])
 bold_labels(x = tbl)
 ```
 :::
@@ -81,7 +81,7 @@ En el caso de la sensibilidad estacional nos encontramos con las variables patr�
 
 :::{#tab3}
 ```{r tab3, echo=FALSE}
-tbl <- tbl_summary(data = datos[, .SD, .SDcols = ss_patron_verano:ss_severidad])
+tbl <- tbl_summary(data = dataset[, .SD, .SDcols = ss_patron_verano:ss_severidad])
 bold_labels(x = tbl)
 ```
 :::
@@ -98,6 +98,7 @@ En el caso de la clasificación de la severidad de la estacionalidad, observamos
 
 :::{#tab4}
 ```{r tab4, echo=FALSE}
-tbl_summary(data = datos[, .SD, .SDcols = names(datos) %like% "riff"])
+library(data.table)
+tbl_summary(data = dataset[, .SD, .SDcols = names(dataset) %like% "riff"])
 ```
 :::
