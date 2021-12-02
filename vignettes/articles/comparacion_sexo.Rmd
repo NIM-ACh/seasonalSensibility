@@ -1,0 +1,145 @@
+---
+title: "Análisis agrupados por género"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center"
+)
+```
+
+```{r setup}
+# Paquetes necesarios
+library(ggstatsplot)
+
+# Y por supuesto cargamos el paquete del estudio
+library(seasonalSensibility)
+```
+
+# Deporte
+
+```{r deporte-genero}
+ggstatsplot::ggbarstats(dataset, genero, deporte)
+```
+
+No hay una asociación significativa entre genero y deporte, sin embargo, observamos una proporción mayor de hombres en aquellos que no realizan deporte.
+
+## Días de la semana que realiza deporte
+
+```{r deporte_dias_semana-genero}
+ggstatsplot::ggbarstats(dataset, genero, deporte_dias_semana)
+```
+
+En el caso de la cantidad de deporte realizado de manera semanal tampoco vemos una asociación clara con el género.
+
+## Intensidad del deporte
+
+```{r deporte_intensidad-genero}
+ggstatsplot::ggbarstats(dataset, genero, deporte_intensidad)
+```
+
+Aunque para el caso de la intensidad en el deporte, pareciera ser que las mujeres tienden a hacer deporte de mayor intensidad mientras que los hombres de menor intensidad, sin embargo, esta asociación no es estadísticamente significativa.
+
+## Minutos por sesión
+
+```{r deporte_minutos_sesion-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, deporte_minutos_sesion, type = "np")
+```
+
+No se observaron diferencias en los minutos de deporte realizado por sesión deportiva.
+
+# Sensibilidad estacional
+
+## Patrón de verano
+
+```{r ss_patron_verano-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, ss_patron_verano, type = "np")
+```
+
+No se observaron diferencias en `ss_patron_verano` por género.
+
+## Patrón de invierno
+
+```{r ss_patron_invierno-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, ss_patron_invierno, type = "np")
+```
+
+No se observaron diferencias en `ss_patron_invierno` por género.
+
+## Tipo de patrón estacional
+
+```{r ss_patron_tipo-genero}
+ggstatsplot::ggbarstats(dataset, genero, ss_patron_tipo)
+```
+
+De primeras la proporción de personas con un patrón mixto es claramente superior al de aquellos en el grupo invierno y lo mismo de este último con aquellos con un patrón de verano. Pese a esto no observamos una asociación entre el tipo de patrón estacional y el género.
+
+## Índice de severidad estacional
+
+```{r ss_index-genero}
+ggstatsplot::ggbarstats(dataset, genero, ss_index)
+```
+
+No se observó una asociación entre el índice de severidad estacional y el género, sin embargo, la proporción de hombres en el grupos SAD fué mayor que el de las mujeres.
+
+## Clasificación de severidad de estacionalidad
+
+```{r ss_severidad-genero}
+ggstatsplot::ggbarstats(dataset, genero, ss_severidad)
+```
+
+No observamos una asociación entre la severidad de la estacionalidad y el género, sin embargo, la proporción de hombres en el grupo leve es mayor que el de mujeres.
+
+# Bienestar de Ryff
+
+## Autoaceptación
+
+```{r riff_autoaceptacion-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, riff_autoaceptacion, type = "np")
+```
+
+No observamos diferencias en el dominio de autoaceptación por género.
+
+## Relaciones positivas
+
+```{r riff_relaciones_positivas-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, riff_relaciones_positivas, type = "np")
+```
+
+No observamos diferencias en el dominio de relaciones positivas por género.
+
+## Autonomía
+
+```{r riff_autonomia-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, riff_autonomia, type = "np")
+```
+
+No observamos diferencias en el dominio de autonomía por género.
+
+## Dominio del entorno
+
+```{r riff_dominio_entorno-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, riff_dominio_entorno, type = "np")
+```
+
+Observamos diferencias en el dominio de dominio del entorno por género, en donde los sujetos masculinos calificaron con un puntaje más alto que las mujeres.
+
+## Crecimiento personal
+
+```{r riff_crecimiento_personal-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, riff_crecimiento_personal, type = "np")
+```
+
+No observamos diferencias en el dominio de crecimiento personal por género.
+
+## Propósito en la vida
+
+```{r riff_proposito_vida-genero}
+ggstatsplot::ggbetweenstats(dataset, genero, riff_proposito_vida, type = "np")
+```
+
+Observamos diferencias en el dominio de propósito en la vida por género, en donde los sujetos masculinos calificaron con un puntaje más alto que las mujeres.

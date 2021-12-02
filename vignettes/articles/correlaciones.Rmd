@@ -1,0 +1,52 @@
+---
+title: "Correlaciones"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center"
+)
+```
+
+```{r setup}
+library(data.table)
+library(correlation)
+library(kableExtra)
+library(seasonalSensibility)
+
+variables_numericas <- dataset[,
+  # Botamos la variable ID (no nos sirve ahora)
+  .SD[, -c("id")],
+  # Seleccionamos las variables numéricas
+  .SDcols = is.numeric]
+```
+
+Veamos todas las correlaciones de manera gráfica.
+
+```{r results='asis'}
+# Generamos las correlaciones
+cor_table <- correlation::correlation(variables_numericas, method = "spearman", p_adjust = "none")
+
+# Redondeamos a los tres decimales los valores numéricos
+cor_table <- as.data.table(cor_table)
+cor_table[, 3:8 := lapply(.SD, round, digits = 3), .SDcols = 3:8]
+
+# Seleccionamos las variables a presentar
+cor_table <- cor_table[, .(
+      `Parámetro 1` = Parameter1, 
+      `Parámetro 2` = Parameter2, 
+      rho = rho, 
+      `CI low` = CI_low, 
+      `CI high` = CI_high, 
+      `p-value` = p, 
+      n = n_Obs
+    )][order(-`p-value`)]
+
+# Armamos una tabla
+tbl <- kable(cor_table)
+kable_styling(tbl, bootstrap_options = c("condensed", "responsive", "hover"))
+```

@@ -36,11 +36,3 @@ Puedes instalar la versión de desarrollo de seasonalSensitivity desde
 # install.packages("devtools")
 devtools::install_github("NIM-ACh/seasonalSensibility")
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(seasonalSensibility)
-```

@@ -1,0 +1,113 @@
+---
+title: "Comprobación de la normalidad"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center"
+)
+```
+
+```{r pkg-setup}
+# Paquetes necesarios
+library(data.table)
+
+# Y por supuesto cargamos el paquete del estudio
+library(seasonalSensibility)
+```
+
+# Estructura de los datos
+
+En primera instancia podemos notar que los datos se componen de `r nrow(datos)` filas y `r ncol(datos)` columnas, las cuales constituyen las variables descritas en la documentación de los datos (ver documentación: `seasonalSensitivity::datos`)
+
+# Explorando la normalidad
+
+Para explorar si las variables continuas siguen una distribución aproximadamente normal, usaremos la función `seasonalSensitivity::is_normal_colwise()`, implementada dentro del mismo paquete. Esta función nos asistirá durante el proceso de selección de estadísticos apropiados.
+
+```{r}
+n_colwise(datos)
+
+is_normal_colwise(datos)
+```
+
+## Agrupando por sexo
+
+Después de la exploración analítica observamos que ninguna de las variables numéricas sigue una distribución normal, pero que tal si agrupamos por sexo.
+
+```{r}
+n_colwise(datos, .by = genero) # Tamaño muestral
+
+is_normal_colwise(datos, .by = genero) # Normalidad
+```
+
+## Agrupando por deporte
+
+Aun así apreciamos que no se cumple la normalidad para ambos géneros en ninguna variable. Evaluemos si esto ocurre de igual manera para la variable deporte (realiza o no deporte, variable dicotómica: Sí o No).
+
+```{r}
+n_colwise(datos, .by = deporte) # Tamaño muestral
+
+is_normal_colwise(datos, .by = deporte) # Normalidad
+```
+
+## Agrupando por cantidad de deporte que realizan a la semana
+
+Lo mismo se puede apreciar en los resultados anteriores, exploremos a continuación si se aplica también a la cantidad de deporte que realizan a la semana (factor, tres niveles: 1 vez, 2 veces o >2 veces).
+
+```{r}
+n_colwise(datos, .by = deporte_dias_semana) # Tamaño muestral
+
+is_normal_colwise(datos, .by = deporte_dias_semana) # Normalidad
+```
+
+Hasta el momento en todas las variables numéricas, en donde deseemos comparar grupos, estaríamos usando estadística no-paramétrica, aunque ojo, esto es cierto pero sólo bajo la exploración analítica de la normalidad, i.e. mediante pruebas como la de *Kolmogorov-Smirnov* o *Shapiro-Wilk*. Veamos los mismo con el resto de variables categóricas, intensidad de la práctica deportiva (`deporte_intensidad`), patrón estacional (`ss_patron_tipo`), clasificación del índice de estacionalidad (`ss_index`) y la clasificación de la severidad de la estacionalidad (`ss_severidad`).
+
+## Agrupando por intensidad de la práctica deportiva
+
+```{r}
+n_colwise(datos, .by = deporte_intensidad) # Tamaño muestral
+
+is_normal_colwise(datos, .by = deporte_intensidad) # Normalidad
+```
+
+Ninguna variable cumple con los criterios de normalidad ajustando por los niveles de la intensidad de la práctica deportiva.
+
+## Agrupando por patrón estacional
+
+```{r}
+n_colwise(datos, .by = ss_patron_tipo) # Tamaño muestral
+```
+
+Una exploración más detallada nos muestra que en el grupo con patrón estacional de Verano solo hay 2 y 3 observaciones, esto es insuficiente para explorar la normalidad de forma analítica e incluso para aplicar cualquier tipo de estadística inferencial. Otro enfoque es ignorar este último grupo de los análisis y sólo incluir a aquellos con un patrón estacional Mixto o de Invierno. Veamos que obtenemos al seguir esta última alternativa.
+
+```{r}
+datos[i = ss_patron_tipo %in% c("Mixto", "Invierno"),
+      j = -c("ss_patron_invierno", "ss_patron_verano")
+      ][j = is_normal_colwise(.data = .SD, .by = ss_patron_tipo)]
+```
+
+Ninguna variable cumple con los criterios de normalidad ajustando a un patron de estacionalidad de Invierno y Mixto.
+
+## Agrupando por clasificación del índice de estacionalidad
+
+```{r}
+n_colwise(datos, .by = ss_index) # Tamaño muestral
+
+is_normal_colwise(datos, .by = ss_index) # Normalidad
+```
+
+Ninguna variable cumple con los criterios de normalidad para todos los niveles del factor.
+
+## Agrupando por clasificación de la severidad de la estacionalidad
+
+```{r}
+n_colwise(datos, .by = ss_severidad) # Tamaño muestral
+
+is_normal_colwise(datos, .by = ss_severidad) # Normalidad
+```
+
+Al igual que con las variables mencionadas, podemos concluir que ninguna variable posee las características suficientes para la utilización de estadística paramétrica, la principal razón es la falta de normalidad, lo que fue comprobado de manera analítica usando la función `seasonalSensitivity::is_normal()`.
