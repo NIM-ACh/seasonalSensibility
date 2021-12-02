@@ -22,7 +22,7 @@ navbar:
       text: Artículos
       menu:
         - text: EDA
-        - href: articles/eda.html
+          href: articles/eda.html
 
     news:
       icon: fas fa-history fa-lg
