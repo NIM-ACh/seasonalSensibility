@@ -12,12 +12,25 @@ status](https://www.r-pkg.org/badges/version/seasonalSensibility)](https://CRAN.
 [![R-CMD-check](https://github.com/NIM-ACh/seasonalSensibility/workflows/R-CMD-check/badge.svg)](https://github.com/NIM-ACh/seasonalSensibility/actions)
 <!-- badges: end -->
 
-The goal of seasonalSensibility is to …
+Este paquete de <i class="fab fa-r-project"></i> contiene herramientas
+complementarias para la exploración y la reproducibilidad de los
+análisis llevados a cabo para el estudio de sensibilidad estacional.
+Este estudio es llevado a cabo por Matías Castillo Aguilar y Cristian
+Núñez Espinosa.
 
-## Installation
+## Sobre <i class="fab fa-r-project"></i>
 
-You can install the development version of seasonalSensibility from
-[GitHub](https://github.com/) with:
+<i class="fab fa-r-project"></i>, es un lenguaje de programación
+estadística de alto nivel usado para el análisis de datos, así como para
+el desarrollo de herramientas informáticas como sitios web, reportes,
+aplicaciones, libros digitales, etc. Para más información puedes visitar
+el sitio de [R-project](https://www.r-project.org/about.html).
+
+## Instalación
+
+Puedes instalar la versión de desarrollo de seasonalSensitivity desde
+[GitHub](https://github.com/) escribiendo lo siguiente en tu consola de
+`R`:
 
 ``` r
 # install.packages("devtools")
@@ -30,5 +43,4 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(seasonalSensibility)
-## basic example code
 ```

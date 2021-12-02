@@ -20,6 +20,9 @@ navbar:
     articles:
       icon: fa fa-fw fa-book fa-lg
       text: Artículos
+      menu:
+        - text: EDA
+        - href: articles/eda.html
 
     news:
       icon: fas fa-history fa-lg

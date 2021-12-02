@@ -1,0 +1,16 @@
+---
+title: "eda"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Análisis exploratorio
+
+```{r setup}
+library(seasonalSensibility)
+```
