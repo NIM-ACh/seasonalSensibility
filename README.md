@@ -1,15 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# seasonalSensibility
+# seasonalSensitivity
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
-status](https://www.r-pkg.org/badges/version/seasonalSensibility)](https://CRAN.R-project.org/package=seasonalSensibility)
-[![R-CMD-check](https://github.com/NIM-ACh/seasonalSensibility/workflows/R-CMD-check/badge.svg)](https://github.com/NIM-ACh/seasonalSensibility/actions)
+status](https://www.r-pkg.org/badges/version/seasonalSensitivity)](https://CRAN.R-project.org/package=seasonalSensitivity)
+[![R-CMD-check](https://github.com/NIM-ACh/seasonalSensitivity/workflows/R-CMD-check/badge.svg)](https://github.com/NIM-ACh/seasonalSensitivity/actions)
 <!-- badges: end -->
 
 Este paquete de <i class="fab fa-r-project"></i> contiene herramientas
@@ -34,5 +34,5 @@ Puedes instalar la versión de desarrollo de seasonalSensitivity desde
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("NIM-ACh/seasonalSensibility")
+devtools::install_github("NIM-ACh/seasonalSensitivity")
 ```

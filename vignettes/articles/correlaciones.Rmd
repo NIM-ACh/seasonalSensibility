@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 library(data.table)
 library(correlation)
 library(kableExtra)
-library(seasonalSensibility)
+library(seasonalSensitivity)
 
 variables_numericas <- dataset[,
   # Botamos la variable ID (no nos sirve ahora)

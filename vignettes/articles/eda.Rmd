@@ -18,7 +18,7 @@ Dentro del paquete `seasonalSensibility` se encuentran los datos usados para el 
 exists("dataset")
 
 # Cargamos nuestro paquete
-library(seasonalSensibility)
+library(seasonalSensitivity)
 
 # Esto hace que los datos queden disponibles para ser usados
 exists("dataset")

@@ -1,4 +1,4 @@
-url: https://nim-ach.github.io/seasonalSensibility
+url: https://nim-ach.github.io/seasonalSensitivity
 
 template:
   bootstrap: 5
@@ -29,5 +29,5 @@ navbar:
       href: news/index.html
     github:
       icon: fab fa-github fa-lg
-      href: https://github.com/NIM-ACh/seasonalSensibility/
+      href: https://github.com/NIM-ACh/seasonalSensitivity/
       aria-label: github

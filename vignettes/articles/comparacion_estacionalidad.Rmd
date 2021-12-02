@@ -18,7 +18,7 @@ library(data.table)
 library(ggstatsplot)
 
 # Y por supuesto cargamos el paquete del estudio
-library(seasonalSensibility)
+library(seasonalSensitivity)
 ```
 
 # Sexo

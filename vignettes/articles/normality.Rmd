@@ -17,12 +17,12 @@ knitr::opts_chunk$set(
 library(data.table)
 
 # Y por supuesto cargamos el paquete del estudio
-library(seasonalSensibility)
+library(seasonalSensitivity)
 ```
 
 # Estructura de los datos
 
-En primera instancia podemos notar que los datos se componen de `r nrow(dataset)` filas y `r ncol(dataset)` columnas, las cuales constituyen las variables descritas en la documentación de los datos (ver documentación: `seasonalSensibility::dataset`)
+En primera instancia podemos notar que los datos se componen de `r nrow(dataset)` filas y `r ncol(dataset)` columnas, las cuales constituyen las variables descritas en la documentación de los datos (ver documentación: `seasonalSensitivity::dataset`)
 
 # Explorando la normalidad
 

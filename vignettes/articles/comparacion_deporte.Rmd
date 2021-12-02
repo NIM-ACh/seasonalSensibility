@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 library(ggstatsplot)
 
 # Y por supuesto cargamos el paquete del estudio
-library(seasonalSensibility)
+library(seasonalSensitivity)
 ```
 
 # Deporte
