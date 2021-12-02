@@ -15,9 +15,14 @@ URL: https://github.com/NIM-ACh/seasonalSensibility,
     https://nim-ach.github.io/seasonalSensibility
 BugReports: https://github.com/NIM-ACh/seasonalSensibility/issues
 Imports: 
+    data.table,
     lifecycle
 Depends: 
-    R (>= 2.10)
+    R (>= 4.0)
 LazyData: true
 Suggests: 
+    ggsci,
+    ggplot2,
+    ggstatsplot,
+    gtsummary,
     rmarkdown
