@@ -21,8 +21,24 @@ navbar:
       icon: fa fa-fw fa-book fa-lg
       text: Artículos
       menu:
+        - text: Análisis preliminar
         - text: EDA
           href: articles/eda.html
+        - text: "----"
+        - text: Comprobación de supuestos
+        - text: Normalidad
+          href: articles/normality.html
+        - text: "----"
+        - text: Comparaciones entre grupos
+        - text: Sexo
+          href: articles/comparacion_sexo.html
+        - text: Deporte
+          href: articles/comparacion_deporte.html
+        - text: Estacionalidad
+          href: articles/comparacion_estacionalidad.html
+        - text: "----"
+        - text: Correlaciones
+          href: articles/correlaciones.html
 
     news:
       icon: fas fa-history fa-lg
