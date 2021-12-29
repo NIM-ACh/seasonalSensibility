@@ -21,5 +21,5 @@ Basado en el tamaño muestral, comprueba analíticamente si un vector numérico
 sigue una distribución normal, para el rechazo de la hipótesis nula usa un alfa
 del 0.05 o 5\%. Si el tamaño muestral es menor o igual a 50 usa la prueba de
 Shapiro-Wilk, y en caso contrario la prueba de Kolmogorov-Smirnov con corrección
-de Lilliefors del paquete \code{nortest}
+de Lilliefors del paquete \code{nortest}.
 }

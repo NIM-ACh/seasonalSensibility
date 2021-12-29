@@ -7,7 +7,7 @@
 #' sigue una distribución normal, para el rechazo de la hipótesis nula usa un alfa
 #' del 0.05 o 5%. Si el tamaño muestral es menor o igual a 50 usa la prueba de
 #' Shapiro-Wilk, y en caso contrario la prueba de Kolmogorov-Smirnov con corrección
-#' de Lilliefors del paquete `nortest`
+#' de Lilliefors del paquete `nortest`.
 #'
 #' @param x Un vector numérico.
 #' @param alpha El valor de alfa para el rechazo de la hipótesis nula de normalidad. Por defecto es 0.05.
