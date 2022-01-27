@@ -1,0 +1,15 @@
+pandoc: 2.14.0.3
+pkgdown: 2.0.1
+pkgdown_sha: ~
+articles:
+  comparacion_deporte: comparacion_deporte.html
+  comparacion_estacionalidad: comparacion_estacionalidad.html
+  comparacion_sexo: comparacion_sexo.html
+  correlaciones: correlaciones.html
+  eda: eda.html
+  normality: normality.html
+last_built: 2022-01-27T15:02Z
+urls:
+  reference: https://nim-ach.github.io/seasonalSensitivity/reference
+  article: https://nim-ach.github.io/seasonalSensitivity/articles
+
