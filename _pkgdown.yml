@@ -7,7 +7,7 @@ template:
 
 navbar:
   structure:
-    left: [intro, reference, articles, tutorials]
+    left: [home, reference, articles]
     right: [news, github]
   components:
     home:
@@ -19,9 +19,9 @@ navbar:
       href: reference/index.html
     articles:
       icon: fa fa-fw fa-book fa-lg
-      text: Artículos
+      text: Análisis
       menu:
-        - text: Análisis preliminar
+        - text: Preliminar
         - text: EDA
           href: articles/eda.html
         - text: "----"
