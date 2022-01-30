@@ -33,7 +33,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-2">
+    <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="../index.html">
@@ -94,6 +94,9 @@
   </div>
 </nav><div class="container template-article">
 
+
+
+
 <div class="row">
   <main id="main"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Comprobación de la normalidad</h1>
@@ -111,14 +114,14 @@
 
 <span class="co"># Y por supuesto cargamos el paquete del estudio</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NIM-ACh/seasonalSensitivity" class="external-link">seasonalSensitivity</a></span><span class="op">)</span></code></pre></div>
-<div class="section level1">
-<h1 id="estructura-de-los-datos">Estructura de los datos<a class="anchor" aria-label="anchor" href="#estructura-de-los-datos"></a>
-</h1>
+<div class="section level2">
+<h2 id="estructura-de-los-datos">Estructura de los datos<a class="anchor" aria-label="anchor" href="#estructura-de-los-datos"></a>
+</h2>
 <p>En primera instancia podemos notar que los datos se componen de 358 filas y 18 columnas, las cuales constituyen las variables descritas en la documentación de los datos (ver documentación: <code><a href="../reference/dataset.html">seasonalSensitivity::dataset</a></code>)</p>
 </div>
-<div class="section level1">
-<h1 id="explorando-la-normalidad">Explorando la normalidad<a class="anchor" aria-label="anchor" href="#explorando-la-normalidad"></a>
-</h1>
+<div class="section level2">
+<h2 id="explorando-la-normalidad">Explorando la normalidad<a class="anchor" aria-label="anchor" href="#explorando-la-normalidad"></a>
+</h2>
 <p>Para explorar si las variables continuas siguen una distribución aproximadamente normal, usaremos la función <code><a href="../reference/is_normal_colwise.html">seasonalSensitivity::is_normal_colwise()</a></code>, implementada dentro del mismo paquete. Esta función nos asistirá durante el proceso de selección de estadísticos apropiados.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span><span class="op">)</span>
@@ -154,9 +157,9 @@
 <span class="co">#&gt;  8:      riff_dominio_entorno FALSE</span>
 <span class="co">#&gt;  9: riff_crecimiento_personal FALSE</span>
 <span class="co">#&gt; 10:       riff_proposito_vida FALSE</span></code></pre></div>
-<div class="section level2">
-<h2 id="agrupando-por-sexo">Agrupando por sexo<a class="anchor" aria-label="anchor" href="#agrupando-por-sexo"></a>
-</h2>
+<div class="section level3">
+<h3 id="agrupando-por-sexo">Agrupando por sexo<a class="anchor" aria-label="anchor" href="#agrupando-por-sexo"></a>
+</h3>
 <p>Después de la exploración analítica observamos que ninguna de las variables numéricas sigue una distribución normal, pero que tal si agrupamos por sexo.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">genero</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
@@ -193,9 +196,9 @@
 <span class="co">#&gt;  9: riff_crecimiento_personal     TRUE     FALSE</span>
 <span class="co">#&gt; 10:       riff_proposito_vida    FALSE     FALSE</span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="agrupando-por-deporte">Agrupando por deporte<a class="anchor" aria-label="anchor" href="#agrupando-por-deporte"></a>
-</h2>
+<div class="section level3">
+<h3 id="agrupando-por-deporte">Agrupando por deporte<a class="anchor" aria-label="anchor" href="#agrupando-por-deporte"></a>
+</h3>
 <p>Aun así apreciamos que no se cumple la normalidad para ambos géneros en ninguna variable. Evaluemos si esto ocurre de igual manera para la variable deporte (realiza o no deporte, variable dicotómica: Sí o No).</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
@@ -232,9 +235,9 @@
 <span class="co">#&gt;  9: riff_crecimiento_personal FALSE FALSE</span>
 <span class="co">#&gt; 10:       riff_proposito_vida FALSE FALSE</span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="agrupando-por-cantidad-de-deporte-que-realizan-a-la-semana">Agrupando por cantidad de deporte que realizan a la semana<a class="anchor" aria-label="anchor" href="#agrupando-por-cantidad-de-deporte-que-realizan-a-la-semana"></a>
-</h2>
+<div class="section level3">
+<h3 id="agrupando-por-cantidad-de-deporte-que-realizan-a-la-semana">Agrupando por cantidad de deporte que realizan a la semana<a class="anchor" aria-label="anchor" href="#agrupando-por-cantidad-de-deporte-que-realizan-a-la-semana"></a>
+</h3>
 <p>Lo mismo se puede apreciar en los resultados anteriores, exploremos a continuación si se aplica también a la cantidad de deporte que realizan a la semana (factor, tres niveles: 1 vez, 2 veces o &gt;2 veces).</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_dias_semana</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
@@ -272,9 +275,9 @@
 <span class="co">#&gt; 10:       riff_proposito_vida     FALSE   FALSE FALSE</span></code></pre></div>
 <p>Hasta el momento en todas las variables numéricas, en donde deseemos comparar grupos, estaríamos usando estadística no-paramétrica, aunque ojo, esto es cierto pero sólo bajo la exploración analítica de la normalidad, i.e. mediante pruebas como la de <em>Kolmogorov-Smirnov</em> o <em>Shapiro-Wilk</em>. Veamos los mismo con el resto de variables categóricas, intensidad de la práctica deportiva (<code>deporte_intensidad</code>), patrón estacional (<code>ss_patron_tipo</code>), clasificación del índice de estacionalidad (<code>ss_index</code>) y la clasificación de la severidad de la estacionalidad (<code>ss_severidad</code>).</p>
 </div>
-<div class="section level2">
-<h2 id="agrupando-por-intensidad-de-la-práctica-deportiva">Agrupando por intensidad de la práctica deportiva<a class="anchor" aria-label="anchor" href="#agrupando-por-intensidad-de-la-pr%C3%A1ctica-deportiva"></a>
-</h2>
+<div class="section level3">
+<h3 id="agrupando-por-intensidad-de-la-práctica-deportiva">Agrupando por intensidad de la práctica deportiva<a class="anchor" aria-label="anchor" href="#agrupando-por-intensidad-de-la-pr%C3%A1ctica-deportiva"></a>
+</h3>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_intensidad</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
 <span class="co">#&gt;                          vars Media  NA Alta Baja</span>
@@ -311,9 +314,9 @@
 <span class="co">#&gt; 10:       riff_proposito_vida FALSE FALSE  TRUE</span></code></pre></div>
 <p>Ninguna variable cumple con los criterios de normalidad ajustando por los niveles de la intensidad de la práctica deportiva.</p>
 </div>
-<div class="section level2">
-<h2 id="agrupando-por-patrón-estacional">Agrupando por patrón estacional<a class="anchor" aria-label="anchor" href="#agrupando-por-patr%C3%B3n-estacional"></a>
-</h2>
+<div class="section level3">
+<h3 id="agrupando-por-patrón-estacional">Agrupando por patrón estacional<a class="anchor" aria-label="anchor" href="#agrupando-por-patr%C3%B3n-estacional"></a>
+</h3>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_patron_tipo</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
 <span class="co">#&gt;                          vars Mixto NA Invierno Verano</span>
@@ -351,9 +354,9 @@
 <span class="co">#&gt; 8:       riff_proposito_vida FALSE    FALSE</span></code></pre></div>
 <p>Ninguna variable cumple con los criterios de normalidad ajustando a un patron de estacionalidad de Invierno y Mixto.</p>
 </div>
-<div class="section level2">
-<h2 id="agrupando-por-clasificación-del-índice-de-estacionalidad">Agrupando por clasificación del índice de estacionalidad<a class="anchor" aria-label="anchor" href="#agrupando-por-clasificaci%C3%B3n-del-%C3%ADndice-de-estacionalidad"></a>
-</h2>
+<div class="section level3">
+<h3 id="agrupando-por-clasificación-del-índice-de-estacionalidad">Agrupando por clasificación del índice de estacionalidad<a class="anchor" aria-label="anchor" href="#agrupando-por-clasificaci%C3%B3n-del-%C3%ADndice-de-estacionalidad"></a>
+</h3>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_index</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
 <span class="co">#&gt;                          vars Normal SAD Winter blues NA</span>
@@ -390,9 +393,9 @@
 <span class="co">#&gt; 10:       riff_proposito_vida  FALSE FALSE         TRUE</span></code></pre></div>
 <p>Ninguna variable cumple con los criterios de normalidad para todos los niveles del factor.</p>
 </div>
-<div class="section level2">
-<h2 id="agrupando-por-clasificación-de-la-severidad-de-la-estacionalidad">Agrupando por clasificación de la severidad de la estacionalidad<a class="anchor" aria-label="anchor" href="#agrupando-por-clasificaci%C3%B3n-de-la-severidad-de-la-estacionalidad"></a>
-</h2>
+<div class="section level3">
+<h3 id="agrupando-por-clasificación-de-la-severidad-de-la-estacionalidad">Agrupando por clasificación de la severidad de la estacionalidad<a class="anchor" aria-label="anchor" href="#agrupando-por-clasificaci%C3%B3n-de-la-severidad-de-la-estacionalidad"></a>
+</h3>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_severidad</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
 <span class="co">#&gt;                          vars Leve Importante Moderado No es problema Severo</span>
@@ -473,7 +476,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
     </footer>

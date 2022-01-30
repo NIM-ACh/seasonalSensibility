@@ -33,7 +33,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-2">
+    <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="../index.html">
@@ -94,6 +94,9 @@
   </div>
 </nav><div class="container template-article">
 
+
+
+
 <div class="row">
   <main id="main"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Análisis agrupados por deporte</h1>
@@ -111,128 +114,128 @@
 
 <span class="co"># Y por supuesto cargamos el paquete del estudio</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NIM-ACh/seasonalSensitivity" class="external-link">seasonalSensitivity</a></span><span class="op">)</span></code></pre></div>
-<div class="section level1">
-<h1 id="deporte">Deporte<a class="anchor" aria-label="anchor" href="#deporte"></a>
-</h1>
+<div class="section level2">
+<h2 id="deporte">Deporte<a class="anchor" aria-label="anchor" href="#deporte"></a>
+</h2>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">genero</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/genero-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>Si bien no existe una asociación significativa entre factores, podemos ver que existe una proporción mayor de personas que realizan deporte en el grupo femenino.</p>
-<div class="section level2">
-<h2 id="días-de-la-semana-que-realiza-deporte">Días de la semana que realiza deporte<a class="anchor" aria-label="anchor" href="#d%C3%ADas-de-la-semana-que-realiza-deporte"></a>
-</h2>
+<div class="section level3">
+<h3 id="días-de-la-semana-que-realiza-deporte">Días de la semana que realiza deporte<a class="anchor" aria-label="anchor" href="#d%C3%ADas-de-la-semana-que-realiza-deporte"></a>
+</h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">deporte_dias_semana</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/deporte_dias_semana-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>De manera esperable, aquellos que sí hacen deporte son los que más deporte hacen dentro de la semana, aunque de manera un poco más inusual, vemos que aquellos que no hacen deporte igual manifestaron hacer deporte almenos una vez a la semana.</p>
 </div>
-<div class="section level2">
-<h2 id="intensidad-del-deporte">Intensidad del deporte<a class="anchor" aria-label="anchor" href="#intensidad-del-deporte"></a>
-</h2>
+<div class="section level3">
+<h3 id="intensidad-del-deporte">Intensidad del deporte<a class="anchor" aria-label="anchor" href="#intensidad-del-deporte"></a>
+</h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">deporte_intensidad</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/deporte_intensidad-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>La tendencia se repita con la intensidad del deporte realizado, si bien nos hallamos con lo obvio, aquellos que hacen deporte tienden a hacerlo de manera más intensa que aquellos que no hacen deporte, aún así no deja de ser llamativo por qué algunos que no hacen deporte manifiestan realizarlo a mediana o alta intensidad. Requiere mayor exploración.</p>
 </div>
-<div class="section level2">
-<h2 id="minutos-por-sesión">Minutos por sesión<a class="anchor" aria-label="anchor" href="#minutos-por-sesi%C3%B3n"></a>
-</h2>
+<div class="section level3">
+<h3 id="minutos-por-sesión">Minutos por sesión<a class="anchor" aria-label="anchor" href="#minutos-por-sesi%C3%B3n"></a>
+</h3>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">deporte_minutos_sesion</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/deporte_minutos_sesion-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>Similar a lo anterior, sigue apareciendo un cúmulo de personas que mencionaron que no hacían deporte, sin embargo, declaran dedicar algún tiempo para hacer deporte a la semana. Requiere mayor exploración.</p>
 </div>
 </div>
-<div class="section level1">
-<h1 id="sensibilidad-estacional">Sensibilidad estacional<a class="anchor" aria-label="anchor" href="#sensibilidad-estacional"></a>
-</h1>
 <div class="section level2">
-<h2 id="patrón-de-verano">Patrón de verano<a class="anchor" aria-label="anchor" href="#patr%C3%B3n-de-verano"></a>
+<h2 id="sensibilidad-estacional">Sensibilidad estacional<a class="anchor" aria-label="anchor" href="#sensibilidad-estacional"></a>
 </h2>
+<div class="section level3">
+<h3 id="patrón-de-verano">Patrón de verano<a class="anchor" aria-label="anchor" href="#patr%C3%B3n-de-verano"></a>
+</h3>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">ss_patron_verano</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/ss_patron_verano-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No se observaron diferencias en <code>ss_patron_verano</code> por deporte</p>
 </div>
-<div class="section level2">
-<h2 id="patrón-de-invierno">Patrón de invierno<a class="anchor" aria-label="anchor" href="#patr%C3%B3n-de-invierno"></a>
-</h2>
+<div class="section level3">
+<h3 id="patrón-de-invierno">Patrón de invierno<a class="anchor" aria-label="anchor" href="#patr%C3%B3n-de-invierno"></a>
+</h3>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">ss_patron_invierno</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/ss_patron_invierno-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No se observaron diferencias en <code>ss_patron_invierno</code> por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="tipo-de-patrón-estacional">Tipo de patrón estacional<a class="anchor" aria-label="anchor" href="#tipo-de-patr%C3%B3n-estacional"></a>
-</h2>
+<div class="section level3">
+<h3 id="tipo-de-patrón-estacional">Tipo de patrón estacional<a class="anchor" aria-label="anchor" href="#tipo-de-patr%C3%B3n-estacional"></a>
+</h3>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">ss_patron_tipo</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/ss_patron_tipo-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No se observaron diferencias en <code>ss_patron_tipo</code> por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="índice-de-severidad-estacional">Índice de severidad estacional<a class="anchor" aria-label="anchor" href="#%C3%ADndice-de-severidad-estacional"></a>
-</h2>
+<div class="section level3">
+<h3 id="índice-de-severidad-estacional">Índice de severidad estacional<a class="anchor" aria-label="anchor" href="#%C3%ADndice-de-severidad-estacional"></a>
+</h3>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">ss_index</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/ss_index-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No se observaron diferencias en <code>ss_index</code> por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="clasificación-de-severidad-de-estacionalidad">Clasificación de severidad de estacionalidad<a class="anchor" aria-label="anchor" href="#clasificaci%C3%B3n-de-severidad-de-estacionalidad"></a>
-</h2>
+<div class="section level3">
+<h3 id="clasificación-de-severidad-de-estacionalidad">Clasificación de severidad de estacionalidad<a class="anchor" aria-label="anchor" href="#clasificaci%C3%B3n-de-severidad-de-estacionalidad"></a>
+</h3>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">ss_severidad</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/ss_severidad-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No observamos una asociación entre la severidad de la estacionalidad y el deporte, sin embargo, la proporción de personas que realizan deporte es mayor en el grupo leve.</p>
 </div>
 </div>
-<div class="section level1">
-<h1 id="bienestar-de-ryff">Bienestar de Ryff<a class="anchor" aria-label="anchor" href="#bienestar-de-ryff"></a>
-</h1>
 <div class="section level2">
-<h2 id="autoaceptación">Autoaceptación<a class="anchor" aria-label="anchor" href="#autoaceptaci%C3%B3n"></a>
+<h2 id="bienestar-de-ryff">Bienestar de Ryff<a class="anchor" aria-label="anchor" href="#bienestar-de-ryff"></a>
 </h2>
+<div class="section level3">
+<h3 id="autoaceptación">Autoaceptación<a class="anchor" aria-label="anchor" href="#autoaceptaci%C3%B3n"></a>
+</h3>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">riff_autoaceptacion</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/riff_autoaceptacion-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No observamos diferencias en el dominio de autoaceptación por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="relaciones-positivas">Relaciones positivas<a class="anchor" aria-label="anchor" href="#relaciones-positivas"></a>
-</h2>
+<div class="section level3">
+<h3 id="relaciones-positivas">Relaciones positivas<a class="anchor" aria-label="anchor" href="#relaciones-positivas"></a>
+</h3>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">riff_relaciones_positivas</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/riff_relaciones_positivas-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No observamos diferencias en el dominio de relaciones positivas por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="autonomía">Autonomía<a class="anchor" aria-label="anchor" href="#autonom%C3%ADa"></a>
-</h2>
+<div class="section level3">
+<h3 id="autonomía">Autonomía<a class="anchor" aria-label="anchor" href="#autonom%C3%ADa"></a>
+</h3>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">riff_autonomia</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/riff_autonomia-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No observamos diferencias en el dominio de autonomía por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="dominio-del-entorno">Dominio del entorno<a class="anchor" aria-label="anchor" href="#dominio-del-entorno"></a>
-</h2>
+<div class="section level3">
+<h3 id="dominio-del-entorno">Dominio del entorno<a class="anchor" aria-label="anchor" href="#dominio-del-entorno"></a>
+</h3>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">riff_dominio_entorno</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/riff_dominio_entorno-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No observamos diferencias en el dominio de dominio del entorno por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="crecimiento-personal">Crecimiento personal<a class="anchor" aria-label="anchor" href="#crecimiento-personal"></a>
-</h2>
+<div class="section level3">
+<h3 id="crecimiento-personal">Crecimiento personal<a class="anchor" aria-label="anchor" href="#crecimiento-personal"></a>
+</h3>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">riff_crecimiento_personal</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/riff_crecimiento_personal-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>No observamos diferencias en el dominio de crecimiento personal por deporte.</p>
 </div>
-<div class="section level2">
-<h2 id="propósito-en-la-vida">Propósito en la vida<a class="anchor" aria-label="anchor" href="#prop%C3%B3sito-en-la-vida"></a>
-</h2>
+<div class="section level3">
+<h3 id="propósito-en-la-vida">Propósito en la vida<a class="anchor" aria-label="anchor" href="#prop%C3%B3sito-en-la-vida"></a>
+</h3>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">riff_proposito_vida</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/riff_proposito_vida-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
@@ -252,7 +255,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
     </footer>
