@@ -5,6 +5,8 @@ template:
   params:
     bootswatch: flatly
 
+lang: es
+
 navbar:
   structure:
     left: [home, reference, articles]

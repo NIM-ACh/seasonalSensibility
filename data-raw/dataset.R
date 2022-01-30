@@ -39,7 +39,7 @@ dataset[, `:=`(
 
 dataset[, `:=`(
   # Adicion de etiquetas para tablas usando gtsummary
-  # Variable                        # Idem                     # Atributo # Etiqueta
+  # Variable                        # Idem                     # Atributo # Valor
   id                        = `attr<-`(id,                        "label", "ID"),
   genero                    = `attr<-`(genero,                    "label", "Genero"),
   edad                      = `attr<-`(edad,                      "label", "Edad"),

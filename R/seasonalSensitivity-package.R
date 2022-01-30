@@ -2,7 +2,7 @@
 "_PACKAGE"
 
 ## usethis namespace: start
-#' @importFrom data.table :=
+#' @import data.table :=
 #' @importFrom data.table .BY
 #' @importFrom data.table %like%
 #' @importFrom data.table %chin%

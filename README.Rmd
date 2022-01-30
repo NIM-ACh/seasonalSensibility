@@ -25,7 +25,7 @@ Este paquete de <i class="fab fa-r-project"></i> contiene herramientas complemen
 
 ## Sobre <i class="fab fa-r-project"></i>
 
-<i class="fab fa-r-project"></i>, es un lenguaje de programación estadística de alto nivel usado para el análisis de datos, así como para el desarrollo de herramientas informáticas como sitios web, reportes, aplicaciones, libros digitales, etc. Para más información puedes visitar el sitio de [R-project](https://www.r-project.org/about.html).
+`R` es un lenguaje de programación estadística de alto nivel usado para el análisis de datos, así como para el desarrollo de herramientas informáticas como sitios web, reportes, aplicaciones, libros digitales, etc. Para más información puedes visitar el sitio de [R-project](https://www.r-project.org/about.html).
 
 ## Instalación
 
