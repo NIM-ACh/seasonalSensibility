@@ -22,7 +22,8 @@ Useful links:
 
 Authors:
 \itemize{
-  \item Cristian Núñez Espinosa \email{cristian.nunez@umag.cl} (\href{https://orcid.org/0000-0002-9896-7062}{ORCID}) [data contributor]
+  \item Cristian Núñez Espinosa \email{cristian.nunez@umag.cl} (\href{https://orcid.org/0000-0002-9896-7062}{ORCID})
+  \item Claudia Estrada Goic \email{claudia.estrada@umag.cl} (\href{https://orcid.org/0000-0002-9982-2025}{ORCID})
 }
 
 }

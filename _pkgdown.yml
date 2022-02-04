@@ -10,17 +10,17 @@ lang: es
 navbar:
   structure:
     left: [home, reference, articles]
-    right: [news, github]
+    right: [github]
   components:
     home:
       icon: fa fa-home fa-lg
       href: index.html
     reference:
-      icon: fab fa-r-project fa-lg
+      icon: fa fa-fw fa-book fa-lg
       text: Documentación
       href: reference/index.html
     articles:
-      icon: fa fa-fw fa-book fa-lg
+      icon: fab fa-r-project fa-lg
       text: Análisis
       menu:
         - text: Preliminar
@@ -42,10 +42,12 @@ navbar:
         - text: Correlaciones
           href: articles/correlaciones.html
 
-    news:
-      icon: fas fa-history fa-lg
-      href: news/index.html
     github:
       icon: fab fa-github fa-lg
       href: https://github.com/NIM-ACh/seasonalSensitivity/
       aria-label: github
+
+footer:
+  structure:
+    left: developed_by
+    right: package

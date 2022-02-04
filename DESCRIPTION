@@ -2,10 +2,12 @@ Package: seasonalSensitivity
 Title: Data and analysis from the seasonal sensitivity study
 Version: 0.0.0.9000
 Authors@R: 
-    c(person("Matías", "Castillo Aguilar", , "matcasti@umag.cl", role = c("aut", "cre"),
+    c(person("Cristian", "Núñez Espinosa", , "cristian.nunez@umag.cl", role = c("aut"),
+             comment = c(ORCID = "0000-0002-9896-7062")),
+      person("Matías", "Castillo Aguilar", , "matcasti@umag.cl", role = c("aut", "cre"),
              comment = c(ORCID = "0000-0001-7291-247X")),
-      person("Cristian", "Núñez Espinosa", , "cristian.nunez@umag.cl", role = c("aut", "dtc"),
-             comment = c(ORCID = "0000-0002-9896-7062")))
+      person("Claudia", "Estrada Goic", , "claudia.estrada@umag.cl", role = c("aut"),
+             comment = c(ORCID = "0000-0002-9982-2025")))
 Description: Data and analysis from the seasonal sensitivity study.
 License: GPL (>= 3)
 Encoding: UTF-8
