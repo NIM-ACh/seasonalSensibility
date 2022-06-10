@@ -102,7 +102,10 @@
 
     
     
-<p>Dentro del paquete <code>seasonalSensibility</code> se encuentran los datos usados para el análisis exploratorio bajo el nombre de <code>dataset</code>. Al cargar los datos, estos se vuelven disponibles en el ambiente de trabajo.</p>
+<p>Dentro del paquete <code>seasonalSensibility</code> se encuentran los
+datos usados para el análisis exploratorio bajo el nombre de
+<code>dataset</code>. Al cargar los datos, estos se vuelven disponibles
+en el ambiente de trabajo.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Si no cargamos el paquete, los datos no están disponibles</span>
 <span class="fu"><a href="https://rdrr.io/r/base/exists.html" class="external-link">exists</a></span><span class="op">(</span><span class="st">"dataset"</span><span class="op">)</span>
@@ -117,24 +120,40 @@
 <div class="section level2">
 <h2 id="estructura-de-los-datos">Estructura de los datos<a class="anchor" aria-label="anchor" href="#estructura-de-los-datos"></a>
 </h2>
-<p>En primera instancia podemos notar que los datos se componen de 358 filas y 18 columnas, las cuales constituyen las variables descritas en la documentación de los datos (ver documentación: <code><a href="../reference/dataset.html">seasonalSensitivity::dataset</a></code>)</p>
+<p>En primera instancia podemos notar que los datos se componen de 358
+filas y 18 columnas, las cuales constituyen las variables descritas en
+la documentación de los datos (ver documentación:
+<code><a href="../reference/dataset.html">seasonalSensitivity::dataset</a></code>)</p>
 </div>
 <div class="section level2">
 <h2 id="en-relación-a-la-estadística-">En relación a la estadística.<a class="anchor" aria-label="anchor" href="#en-relaci%C3%B3n-a-la-estad%C3%ADstica-"></a>
 </h2>
-<p>Los tamaños del efecto (i.e., <em>effect sizes</em>) usados para las pruebas estadísticas vienen del paquete <a href="https://easystats.github.io/effectsize/" class="external-link"><code>effectsize</code></a>. Puedes revisar con más detalle la <a href="https://easystats.github.io/effectsize/articles/interpret.html" class="external-link">interpretación</a> de los estadísticos usados en esta guía.</p>
+<p>Los tamaños del efecto (i.e., <em>effect sizes</em>) usados para las
+pruebas estadísticas vienen del paquete <a href="https://easystats.github.io/effectsize/" class="external-link"><code>effectsize</code></a>.
+Puedes revisar con más detalle la <a href="https://easystats.github.io/effectsize/articles/interpret.html" class="external-link">interpretación</a>
+de los estadísticos usados en esta guía.</p>
 </div>
 <div class="section level2">
 <h2 id="variables-sociodemográficas">Variables sociodemográficas<a class="anchor" aria-label="anchor" href="#variables-sociodemogr%C3%A1ficas"></a>
 </h2>
-<p>Las variables de interés en este caso son el sexo y la edad, en primera instancia observamos una proporción significativamente mayor de hombres que de mujeres en la muestra, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 5.67, <em>p</em> = 0.017, <span class="math inline">\(C_{~Pearson}\)</span> = 0.13, CI<sub>95%</sub>[0.04, 1.00]. Mientras que para la variable edad observamos que esta es una variable categórica de dos niveles, agrupando a los sujetos en 18 a 35 años o mayores de 35 años, y al igual que con el género, hallamos que la proporción de sujetos de 18 a 35 años es significativamente mayor que aquellos mayores de 35 años, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 4.93, <em>p</em> = 0.026, <span class="math inline">\(C_{~Pearson}\)</span> = 0.12, CI<sub>95%</sub>[0.03, 1.00]. Los detalles se pueden apreciar en la <a href="#tab1">Tabla 1</a></p>
+<p>Las variables de interés en este caso son el sexo y la edad, en
+primera instancia observamos una proporción significativamente mayor de
+hombres que de mujeres en la muestra, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 5.67, <em>p</em> =
+0.017, <span class="math inline">\(C_{~Pearson}\)</span> = 0.13,
+CI<sub>95%</sub>[0.04, 1.00]. Mientras que para la variable edad
+observamos que esta es una variable categórica de dos niveles, agrupando
+a los sujetos en 18 a 35 años o mayores de 35 años, y al igual que con
+el género, hallamos que la proporción de sujetos de 18 a 35 años es
+significativamente mayor que aquellos mayores de 35 años, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 4.93, <em>p</em> =
+0.026, <span class="math inline">\(C_{~Pearson}\)</span> = 0.12,
+CI<sub>95%</sub>[0.03, 1.00]. Los detalles se pueden apreciar en la <a href="#tab1">Tabla 1</a></p>
 <div id="tab1">
-<div id="szdygxnhvi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="zorxskuquq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#szdygxnhvi .gt_table {
+#zorxskuquq .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -159,7 +178,7 @@
   border-left-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_heading {
+#zorxskuquq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -171,33 +190,37 @@
   border-right-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_title {
+#zorxskuquq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
 
-#szdygxnhvi .gt_subtitle {
+#zorxskuquq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
   padding-top: 0;
   padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#szdygxnhvi .gt_bottom_border {
+#zorxskuquq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_col_headings {
+#zorxskuquq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -212,7 +235,7 @@
   border-right-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_col_heading {
+#zorxskuquq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -232,7 +255,7 @@
   overflow-x: hidden;
 }
 
-#szdygxnhvi .gt_column_spanner_outer {
+#zorxskuquq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -244,15 +267,15 @@
   padding-right: 4px;
 }
 
-#szdygxnhvi .gt_column_spanner_outer:first-child {
+#zorxskuquq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#szdygxnhvi .gt_column_spanner_outer:last-child {
+#zorxskuquq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#szdygxnhvi .gt_column_spanner {
+#zorxskuquq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -264,8 +287,11 @@
   width: 100%;
 }
 
-#szdygxnhvi .gt_group_heading {
-  padding: 8px;
+#zorxskuquq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -286,7 +312,7 @@
   vertical-align: middle;
 }
 
-#szdygxnhvi .gt_empty_group_heading {
+#zorxskuquq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -301,15 +327,15 @@
   vertical-align: middle;
 }
 
-#szdygxnhvi .gt_from_md > :first-child {
+#zorxskuquq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#szdygxnhvi .gt_from_md > :last-child {
+#zorxskuquq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#szdygxnhvi .gt_row {
+#zorxskuquq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -328,7 +354,7 @@
   overflow-x: hidden;
 }
 
-#szdygxnhvi .gt_stub {
+#zorxskuquq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -337,10 +363,29 @@
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
-  padding-left: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#szdygxnhvi .gt_summary_row {
+#zorxskuquq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#zorxskuquq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#zorxskuquq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -350,17 +395,26 @@
   padding-right: 5px;
 }
 
-#szdygxnhvi .gt_first_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
+#zorxskuquq .gt_first_summary_row {
   border-top-style: solid;
-  border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_grand_summary_row {
+#zorxskuquq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#zorxskuquq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zorxskuquq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -370,7 +424,7 @@
   padding-right: 5px;
 }
 
-#szdygxnhvi .gt_first_grand_summary_row {
+#zorxskuquq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -380,11 +434,11 @@
   border-top-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_striped {
+#zorxskuquq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#szdygxnhvi .gt_table_body {
+#zorxskuquq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -393,7 +447,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_footnotes {
+#zorxskuquq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -407,13 +461,16 @@
   border-right-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_footnote {
+#zorxskuquq .gt_footnote {
   margin: 0px;
   font-size: 90%;
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#szdygxnhvi .gt_sourcenotes {
+#zorxskuquq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,44 +484,80 @@
   border-right-color: #D3D3D3;
 }
 
-#szdygxnhvi .gt_sourcenote {
+#zorxskuquq .gt_sourcenote {
   font-size: 90%;
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#szdygxnhvi .gt_left {
+#zorxskuquq .gt_left {
   text-align: left;
 }
 
-#szdygxnhvi .gt_center {
+#zorxskuquq .gt_center {
   text-align: center;
 }
 
-#szdygxnhvi .gt_right {
+#zorxskuquq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#szdygxnhvi .gt_font_normal {
+#zorxskuquq .gt_font_normal {
   font-weight: normal;
 }
 
-#szdygxnhvi .gt_font_bold {
+#zorxskuquq .gt_font_bold {
   font-weight: bold;
 }
 
-#szdygxnhvi .gt_font_italic {
+#zorxskuquq .gt_font_italic {
   font-style: italic;
 }
 
-#szdygxnhvi .gt_super {
+#zorxskuquq .gt_super {
   font-size: 65%;
 }
 
-#szdygxnhvi .gt_footnote_marks {
+#zorxskuquq .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#zorxskuquq .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
-  font-size: 65%;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#zorxskuquq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#zorxskuquq .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#zorxskuquq .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#zorxskuquq .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
 }
 </style>
 <table class="table gt_table">
@@ -504,15 +597,9 @@
 <td class="gt_row gt_center">158 (44%)</td>
 </tr>
 </tbody>
-<tfoot><tr class="gt_footnotes">
-<td colspan="2">
-        <p class="gt_footnote">
-          <sup class="gt_footnote_marks"><em>1</em>
-          </sup>
-           
-          n (%)
-          <br></p>
-      </td>
+<tfoot class="gt_footnotes"><tr>
+<td class="gt_footnote" colspan="2">
+<sup class="gt_footnote_marks">1</sup> n (%)</td>
     </tr></tfoot>
 </table>
 </div>
@@ -520,16 +607,41 @@
 <div class="section level3">
 <h3 id="deporte-y-ejercicio-reportado">Deporte y ejercicio reportado<a class="anchor" aria-label="anchor" href="#deporte-y-ejercicio-reportado"></a>
 </h3>
-<p>Para el caso del deporte, hallamos que 38 (16%) reportaron realizar deporte, mientras que 194 (84%) no, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 104.90, <em>p</em> &lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.56, CI<sub>95%</sub>[0.49, 1.00]. Esto es especialmente curioso dado que si bien sólo una minoría reportó hacer deporte (n = 38), un 58% del total de la muestra (n = 207) declaró hacer ejercicio por lo menos una vez a la semana y, de estos, el 53% mencionó hacer ejercicio más de dos veces por semana (n = 110/207), mientras que una proporción homogénea declaró entrenar 1 y 2 veces a la semana (n = 49 y 48 respectivamente), la proporción entre los niveles de este factor no son homogeneos, <span class="math inline">\(\chi^2_{~gof}\)</span> (2) = 36.55, <em>p</em> &lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.39, CI<sub>95%</sub>[0.29, 1.00].</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">n</span> <span class="op">&lt;-</span> <span class="va">dataset</span><span class="op">[</span>, <span class="va">.N</span><span class="op">]</span>
+
+<span class="va">dataset</span><span class="op">[</span>, <span class="fu">.</span><span class="op">(</span><span class="va">.N</span>, <span class="st">"%"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">.N</span><span class="op">*</span><span class="fl">100</span><span class="op">/</span><span class="va">n</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span>, <span class="va">deporte</span><span class="op">]</span>
+<span class="va">dataset</span><span class="op">[</span>, <span class="fu">.</span><span class="op">(</span><span class="va">.N</span>, <span class="st">"%"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">.N</span><span class="op">*</span><span class="fl">100</span><span class="op">/</span><span class="va">n</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span>, <span class="va">deporte_dias_semana</span><span class="op">]</span>
+
+<span class="fu">statsExpressions</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/statsExpressions/reference/contingency_table.html" class="external-link">contingency_table</a></span><span class="op">(</span>
+  data <span class="op">=</span> <span class="va">dataset</span><span class="op">[</span><span class="va">deporte_dias_semana</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1 vez"</span>, <span class="st">"2 veces"</span><span class="op">)</span>, <span class="fu">.</span><span class="op">(</span>deporte_dias_semana <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">deporte_dias_semana</span><span class="op">)</span><span class="op">)</span><span class="op">]</span>, 
+  x <span class="op">=</span> <span class="st">"deporte_dias_semana"</span>
+<span class="op">)</span></code></pre></div>
+<p>Para el caso del deporte, hallamos que 194 (54.2%) reportaron
+realizar deporte, mientras que 194 (44.4%) no, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 3.47, <em>p</em> =
+0.063, <span class="math inline">\(C_{~Pearson}\)</span> = 0.10,
+CI<sub>95%</sub>[0.00, 1.00]. Esto es especialmente curioso dado que si
+bien un 57.8% del total de la muestra (n = 207) declaró hacer ejercicio
+por lo menos una vez a la semana y, de estos, el 53% mencionó hacer
+ejercicio más de dos veces por semana (n = 110/207), mientras que una
+proporción homogénea declaró entrenar 1 y 2 veces a la semana (n = 49 y
+48 respectivamente), <span class="math inline">\(\chi^2_{~gof}\)</span>
+(2) = 0.01, <em>p</em> = 0.919, <span class="math inline">\(C_{~Pearson}\)</span> = 0.01,
+CI<sub>95%</sub>[0.00, 1.00].</p>
 <p><img src="eda_files/figure-html/ddspie-1.png" width="700"></p>
-<p>La duración de una sesión de ejercicio promedio reportada por el 58% de la muestra (n = 208) fue de 180 minutos (3 horas) como mediana, observando que un 50% de los aquellos que respondieron, declararon entrenar entre 1 a 5 horas (i.e., rango intercuartil), lo cual personalmente encuentro impresionante. Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>.</p>
+<p>La duración de una sesión de ejercicio promedio reportada por el 58%
+de la muestra (n = 208) fue de 180 minutos (3 horas) como mediana,
+observando que un 50% de los aquellos que respondieron, declararon
+entrenar entre 1 a 5 horas (i.e., rango intercuartil), lo cual
+personalmente encuentro impresionante. Los detalles se pueden apreciar
+en la <a href="#tab2">Tabla 2</a>.</p>
 <div id="tab2">
-<div id="xrfyegocco" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="yfckjyyknj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xrfyegocco .gt_table {
+#yfckjyyknj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -554,7 +666,7 @@
   border-left-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_heading {
+#yfckjyyknj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -566,33 +678,37 @@
   border-right-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_title {
+#yfckjyyknj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
 
-#xrfyegocco .gt_subtitle {
+#yfckjyyknj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
   padding-top: 0;
   padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#xrfyegocco .gt_bottom_border {
+#yfckjyyknj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_col_headings {
+#yfckjyyknj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -607,7 +723,7 @@
   border-right-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_col_heading {
+#yfckjyyknj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -627,7 +743,7 @@
   overflow-x: hidden;
 }
 
-#xrfyegocco .gt_column_spanner_outer {
+#yfckjyyknj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -639,15 +755,15 @@
   padding-right: 4px;
 }
 
-#xrfyegocco .gt_column_spanner_outer:first-child {
+#yfckjyyknj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xrfyegocco .gt_column_spanner_outer:last-child {
+#yfckjyyknj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xrfyegocco .gt_column_spanner {
+#yfckjyyknj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -659,8 +775,11 @@
   width: 100%;
 }
 
-#xrfyegocco .gt_group_heading {
-  padding: 8px;
+#yfckjyyknj .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -681,7 +800,7 @@
   vertical-align: middle;
 }
 
-#xrfyegocco .gt_empty_group_heading {
+#yfckjyyknj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -696,15 +815,15 @@
   vertical-align: middle;
 }
 
-#xrfyegocco .gt_from_md > :first-child {
+#yfckjyyknj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xrfyegocco .gt_from_md > :last-child {
+#yfckjyyknj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xrfyegocco .gt_row {
+#yfckjyyknj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -723,7 +842,7 @@
   overflow-x: hidden;
 }
 
-#xrfyegocco .gt_stub {
+#yfckjyyknj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -732,10 +851,29 @@
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
-  padding-left: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#xrfyegocco .gt_summary_row {
+#yfckjyyknj .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#yfckjyyknj .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#yfckjyyknj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -745,17 +883,26 @@
   padding-right: 5px;
 }
 
-#xrfyegocco .gt_first_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
+#yfckjyyknj .gt_first_summary_row {
   border-top-style: solid;
-  border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_grand_summary_row {
+#yfckjyyknj .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#yfckjyyknj .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yfckjyyknj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -765,7 +912,7 @@
   padding-right: 5px;
 }
 
-#xrfyegocco .gt_first_grand_summary_row {
+#yfckjyyknj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -775,11 +922,11 @@
   border-top-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_striped {
+#yfckjyyknj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xrfyegocco .gt_table_body {
+#yfckjyyknj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -788,7 +935,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_footnotes {
+#yfckjyyknj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -802,13 +949,16 @@
   border-right-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_footnote {
+#yfckjyyknj .gt_footnote {
   margin: 0px;
   font-size: 90%;
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#xrfyegocco .gt_sourcenotes {
+#yfckjyyknj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -822,44 +972,80 @@
   border-right-color: #D3D3D3;
 }
 
-#xrfyegocco .gt_sourcenote {
+#yfckjyyknj .gt_sourcenote {
   font-size: 90%;
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#xrfyegocco .gt_left {
+#yfckjyyknj .gt_left {
   text-align: left;
 }
 
-#xrfyegocco .gt_center {
+#yfckjyyknj .gt_center {
   text-align: center;
 }
 
-#xrfyegocco .gt_right {
+#yfckjyyknj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xrfyegocco .gt_font_normal {
+#yfckjyyknj .gt_font_normal {
   font-weight: normal;
 }
 
-#xrfyegocco .gt_font_bold {
+#yfckjyyknj .gt_font_bold {
   font-weight: bold;
 }
 
-#xrfyegocco .gt_font_italic {
+#yfckjyyknj .gt_font_italic {
   font-style: italic;
 }
 
-#xrfyegocco .gt_super {
+#yfckjyyknj .gt_super {
   font-size: 65%;
 }
 
-#xrfyegocco .gt_footnote_marks {
+#yfckjyyknj .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#yfckjyyknj .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
-  font-size: 65%;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#yfckjyyknj .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#yfckjyyknj .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#yfckjyyknj .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#yfckjyyknj .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
 }
 </style>
 <table class="table gt_table">
@@ -935,15 +1121,9 @@
 <td class="gt_row gt_center">150</td>
 </tr>
 </tbody>
-<tfoot><tr class="gt_footnotes">
-<td colspan="2">
-        <p class="gt_footnote">
-          <sup class="gt_footnote_marks"><em>1</em>
-          </sup>
-           
-          n (%); Mediana (RIQ)
-          <br></p>
-      </td>
+<tfoot class="gt_footnotes"><tr>
+<td class="gt_footnote" colspan="2">
+<sup class="gt_footnote_marks">1</sup> n (%); Mediana (RIQ)</td>
     </tr></tfoot>
 </table>
 </div>
@@ -952,14 +1132,20 @@
 <div class="section level3">
 <h3 id="sensibilidad-estacional">Sensibilidad estacional<a class="anchor" aria-label="anchor" href="#sensibilidad-estacional"></a>
 </h3>
-<p>En el caso de la sensibilidad estacional nos encontramos con las variables patrón de verano (<code>ss_patron_verano</code>) e invierno (<code>ss_patron_invierno</code>), tipo de patron estacional (<code>ss_patron_tipo</code>), la clasificación del puntaje de estacionalidad (<code>ss_index</code>) y la clasificación de severidad de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla 3</a> muestra los estadísticos descriptivos de estas variables.</p>
+<p>En el caso de la sensibilidad estacional nos encontramos con las
+variables patrón de verano (<code>ss_patron_verano</code>) e invierno
+(<code>ss_patron_invierno</code>), tipo de patron estacional
+(<code>ss_patron_tipo</code>), la clasificación del puntaje de
+estacionalidad (<code>ss_index</code>) y la clasificación de severidad
+de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
+3</a> muestra los estadísticos descriptivos de estas variables.</p>
 <div id="tab3">
-<div id="xwypytvstp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="vsnlqbxkgi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xwypytvstp .gt_table {
+#vsnlqbxkgi .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -984,7 +1170,7 @@
   border-left-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_heading {
+#vsnlqbxkgi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -996,33 +1182,37 @@
   border-right-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_title {
+#vsnlqbxkgi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
 
-#xwypytvstp .gt_subtitle {
+#vsnlqbxkgi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
   padding-top: 0;
   padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#xwypytvstp .gt_bottom_border {
+#vsnlqbxkgi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_col_headings {
+#vsnlqbxkgi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1037,7 +1227,7 @@
   border-right-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_col_heading {
+#vsnlqbxkgi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1057,7 +1247,7 @@
   overflow-x: hidden;
 }
 
-#xwypytvstp .gt_column_spanner_outer {
+#vsnlqbxkgi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1069,15 +1259,15 @@
   padding-right: 4px;
 }
 
-#xwypytvstp .gt_column_spanner_outer:first-child {
+#vsnlqbxkgi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xwypytvstp .gt_column_spanner_outer:last-child {
+#vsnlqbxkgi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xwypytvstp .gt_column_spanner {
+#vsnlqbxkgi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1089,8 +1279,11 @@
   width: 100%;
 }
 
-#xwypytvstp .gt_group_heading {
-  padding: 8px;
+#vsnlqbxkgi .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1111,7 +1304,7 @@
   vertical-align: middle;
 }
 
-#xwypytvstp .gt_empty_group_heading {
+#vsnlqbxkgi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1126,15 +1319,15 @@
   vertical-align: middle;
 }
 
-#xwypytvstp .gt_from_md > :first-child {
+#vsnlqbxkgi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xwypytvstp .gt_from_md > :last-child {
+#vsnlqbxkgi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xwypytvstp .gt_row {
+#vsnlqbxkgi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1153,7 +1346,7 @@
   overflow-x: hidden;
 }
 
-#xwypytvstp .gt_stub {
+#vsnlqbxkgi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1162,10 +1355,29 @@
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
-  padding-left: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#xwypytvstp .gt_summary_row {
+#vsnlqbxkgi .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#vsnlqbxkgi .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#vsnlqbxkgi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1175,17 +1387,26 @@
   padding-right: 5px;
 }
 
-#xwypytvstp .gt_first_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
+#vsnlqbxkgi .gt_first_summary_row {
   border-top-style: solid;
-  border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_grand_summary_row {
+#vsnlqbxkgi .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#vsnlqbxkgi .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vsnlqbxkgi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1195,7 +1416,7 @@
   padding-right: 5px;
 }
 
-#xwypytvstp .gt_first_grand_summary_row {
+#vsnlqbxkgi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1205,11 +1426,11 @@
   border-top-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_striped {
+#vsnlqbxkgi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xwypytvstp .gt_table_body {
+#vsnlqbxkgi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1218,7 +1439,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_footnotes {
+#vsnlqbxkgi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1232,13 +1453,16 @@
   border-right-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_footnote {
+#vsnlqbxkgi .gt_footnote {
   margin: 0px;
   font-size: 90%;
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#xwypytvstp .gt_sourcenotes {
+#vsnlqbxkgi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1252,44 +1476,80 @@
   border-right-color: #D3D3D3;
 }
 
-#xwypytvstp .gt_sourcenote {
+#vsnlqbxkgi .gt_sourcenote {
   font-size: 90%;
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#xwypytvstp .gt_left {
+#vsnlqbxkgi .gt_left {
   text-align: left;
 }
 
-#xwypytvstp .gt_center {
+#vsnlqbxkgi .gt_center {
   text-align: center;
 }
 
-#xwypytvstp .gt_right {
+#vsnlqbxkgi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xwypytvstp .gt_font_normal {
+#vsnlqbxkgi .gt_font_normal {
   font-weight: normal;
 }
 
-#xwypytvstp .gt_font_bold {
+#vsnlqbxkgi .gt_font_bold {
   font-weight: bold;
 }
 
-#xwypytvstp .gt_font_italic {
+#vsnlqbxkgi .gt_font_italic {
   font-style: italic;
 }
 
-#xwypytvstp .gt_super {
+#vsnlqbxkgi .gt_super {
   font-size: 65%;
 }
 
-#xwypytvstp .gt_footnote_marks {
+#vsnlqbxkgi .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#vsnlqbxkgi .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
-  font-size: 65%;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#vsnlqbxkgi .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#vsnlqbxkgi .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#vsnlqbxkgi .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#vsnlqbxkgi .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
 }
 </style>
 <table class="table gt_table">
@@ -1381,34 +1641,58 @@
 <td class="gt_row gt_center">42</td>
 </tr>
 </tbody>
-<tfoot><tr class="gt_footnotes">
-<td colspan="2">
-        <p class="gt_footnote">
-          <sup class="gt_footnote_marks"><em>1</em>
-          </sup>
-           
-          Mediana (RIQ); n (%)
-          <br></p>
-      </td>
+<tfoot class="gt_footnotes"><tr>
+<td class="gt_footnote" colspan="2">
+<sup class="gt_footnote_marks">1</sup> Mediana (RIQ); n (%)</td>
     </tr></tfoot>
 </table>
 </div>
 </div>
-<p>La <a href="#tab3">Tabla 3</a> nos muestra que para el tipo de patrón sólo 3 personas (&lt; 1%) tienen un patrón de Verano, mientras que una proporción significativamente mayor tiene un patrón estacional Mixto por sobre uno de Invierno (70% vs 29%), <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 56.39, <em>p</em> &lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.38, CI<sub>95%</sub>[0.31, 1.00].</p>
-<p>Para la clasificación del puntaje de estacionalidad (i.e., Seasonal Score Index), la mayoría de las personas calificaron con en el grupo SAD (i.e., Trastorno afectivo estacional por sus siglas en inglés), <span class="math inline">\(\chi^2_{~gof}\)</span> (2) = 122.64, <em>p</em> &lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.51, CI<sub>95%</sub>[0.44, 1.00], mientras que la proporción de aquellos que calificaron en el grupo Normal (para los estándares del cuestionario de evaluación de patrones estacionales, o SPAQ) fue mayor a que la de aquellos que calificaron en <em>Winter blues</em> (24% vs 15%), <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 6.82, <em>p</em> = 0.009, <span class="math inline">\(C_{~Pearson}\)</span> = 0.21, CI<sub>95%</sub>[0.08, 1.00].</p>
-<p>En el caso de la clasificación de la severidad de la estacionalidad, observamos que la proporción entre los grupos no es homogénea, <span class="math inline">\(\chi^2_{~gof}\)</span> (5) = 13.35, <em>p</em> = 0.02, <span class="math inline">\(C_{~Pearson}\)</span> = 0.20, CI<sub>95%</sub>[0.06, 1.00]. Estimamos que cerca de un tercio de las personas evaluadas (32%, n = 100) tienen una estacionalidad severa o grave, mientras que sólo un 13% (n = 42) afirma que la estacionalidad no es un problema para ellos, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 23.69, <em>p</em> &lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.38, CI<sub>95%</sub>[0.26, 1.00].</p>
+<p>La <a href="#tab3">Tabla 3</a> nos muestra que para el tipo de patrón
+sólo 3 personas (&lt; 1%) tienen un patrón de Verano, mientras que una
+proporción significativamente mayor tiene un patrón estacional Mixto por
+sobre uno de Invierno (70% vs 29%), <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 56.39, <em>p</em>
+&lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.38,
+CI<sub>95%</sub>[0.31, 1.00].</p>
+<p>Para la clasificación del puntaje de estacionalidad (i.e., Seasonal
+Score Index), la mayoría de las personas calificaron con en el grupo SAD
+(i.e., Trastorno afectivo estacional por sus siglas en inglés), <span class="math inline">\(\chi^2_{~gof}\)</span> (2) = 122.64, <em>p</em>
+&lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.51,
+CI<sub>95%</sub>[0.44, 1.00], mientras que la proporción de aquellos que
+calificaron en el grupo Normal (para los estándares del cuestionario de
+evaluación de patrones estacionales, o SPAQ) fue mayor a que la de
+aquellos que calificaron en <em>Winter blues</em> (24% vs 15%), <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 6.82, <em>p</em> =
+0.009, <span class="math inline">\(C_{~Pearson}\)</span> = 0.21,
+CI<sub>95%</sub>[0.08, 1.00].</p>
+<p>En el caso de la clasificación de la severidad de la estacionalidad,
+observamos que la proporción entre los grupos no es homogénea, <span class="math inline">\(\chi^2_{~gof}\)</span> (5) = 13.35, <em>p</em> =
+0.02, <span class="math inline">\(C_{~Pearson}\)</span> = 0.20,
+CI<sub>95%</sub>[0.06, 1.00]. Estimamos que cerca de un tercio de las
+personas evaluadas (32%, n = 100) tienen una estacionalidad severa o
+grave, mientras que sólo un 13% (n = 42) afirma que la estacionalidad no
+es un problema para ellos, <span class="math inline">\(\chi^2_{~gof}\)</span> (1) = 23.69, <em>p</em>
+&lt; 0.001, <span class="math inline">\(C_{~Pearson}\)</span> = 0.38,
+CI<sub>95%</sub>[0.26, 1.00].</p>
 </div>
 <div class="section level3">
 <h3 id="bienestar-de-ryff">Bienestar de Ryff<a class="anchor" aria-label="anchor" href="#bienestar-de-ryff"></a>
 </h3>
-<p>Último en nuestra lista de variables se encuentran aquellas correspondientes al cuestionario de bienestar de Riff, en donde encontramos los dominios de Autoaceptación (<code>riff_autoaceptacion</code>), Relaciones positivas (<code>riff_relaciones_positivas</code>), Autonomía (<code>riff_autonomia</code>), Dominio del entorno (<code>riff_dominio_entorno</code>), Crecimiento personal (<code>riff_crecimiento_personal</code>) y Propósito en la vida (<code>riff_proposito_vida</code>). Para más detalle ver la <a href="#tab4">Tabla 4</a></p>
+<p>Último en nuestra lista de variables se encuentran aquellas
+correspondientes al cuestionario de bienestar de Riff, en donde
+encontramos los dominios de Autoaceptación
+(<code>riff_autoaceptacion</code>), Relaciones positivas
+(<code>riff_relaciones_positivas</code>), Autonomía
+(<code>riff_autonomia</code>), Dominio del entorno
+(<code>riff_dominio_entorno</code>), Crecimiento personal
+(<code>riff_crecimiento_personal</code>) y Propósito en la vida
+(<code>riff_proposito_vida</code>). Para más detalle ver la <a href="#tab4">Tabla 4</a></p>
 <div id="tab4">
-<div id="rwciiospgr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hhfqmkajib" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#rwciiospgr .gt_table {
+#hhfqmkajib .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1433,7 +1717,7 @@
   border-left-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_heading {
+#hhfqmkajib .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1445,33 +1729,37 @@
   border-right-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_title {
+#hhfqmkajib .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
 
-#rwciiospgr .gt_subtitle {
+#hhfqmkajib .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
   padding-top: 0;
   padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-#rwciiospgr .gt_bottom_border {
+#hhfqmkajib .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_col_headings {
+#hhfqmkajib .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1486,7 +1774,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_col_heading {
+#hhfqmkajib .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1506,7 +1794,7 @@
   overflow-x: hidden;
 }
 
-#rwciiospgr .gt_column_spanner_outer {
+#hhfqmkajib .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1518,15 +1806,15 @@
   padding-right: 4px;
 }
 
-#rwciiospgr .gt_column_spanner_outer:first-child {
+#hhfqmkajib .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rwciiospgr .gt_column_spanner_outer:last-child {
+#hhfqmkajib .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rwciiospgr .gt_column_spanner {
+#hhfqmkajib .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1538,8 +1826,11 @@
   width: 100%;
 }
 
-#rwciiospgr .gt_group_heading {
-  padding: 8px;
+#hhfqmkajib .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1560,7 +1851,7 @@
   vertical-align: middle;
 }
 
-#rwciiospgr .gt_empty_group_heading {
+#hhfqmkajib .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1575,15 +1866,15 @@
   vertical-align: middle;
 }
 
-#rwciiospgr .gt_from_md > :first-child {
+#hhfqmkajib .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rwciiospgr .gt_from_md > :last-child {
+#hhfqmkajib .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rwciiospgr .gt_row {
+#hhfqmkajib .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1602,7 +1893,7 @@
   overflow-x: hidden;
 }
 
-#rwciiospgr .gt_stub {
+#hhfqmkajib .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1611,10 +1902,29 @@
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
-  padding-left: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#rwciiospgr .gt_summary_row {
+#hhfqmkajib .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#hhfqmkajib .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#hhfqmkajib .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1624,17 +1934,26 @@
   padding-right: 5px;
 }
 
-#rwciiospgr .gt_first_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
+#hhfqmkajib .gt_first_summary_row {
   border-top-style: solid;
-  border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_grand_summary_row {
+#hhfqmkajib .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#hhfqmkajib .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hhfqmkajib .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1644,7 +1963,7 @@
   padding-right: 5px;
 }
 
-#rwciiospgr .gt_first_grand_summary_row {
+#hhfqmkajib .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1654,11 +1973,11 @@
   border-top-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_striped {
+#hhfqmkajib .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rwciiospgr .gt_table_body {
+#hhfqmkajib .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1667,7 +1986,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_footnotes {
+#hhfqmkajib .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1681,13 +2000,16 @@
   border-right-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_footnote {
+#hhfqmkajib .gt_footnote {
   margin: 0px;
   font-size: 90%;
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#rwciiospgr .gt_sourcenotes {
+#hhfqmkajib .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1701,44 +2023,80 @@
   border-right-color: #D3D3D3;
 }
 
-#rwciiospgr .gt_sourcenote {
+#hhfqmkajib .gt_sourcenote {
   font-size: 90%;
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#rwciiospgr .gt_left {
+#hhfqmkajib .gt_left {
   text-align: left;
 }
 
-#rwciiospgr .gt_center {
+#hhfqmkajib .gt_center {
   text-align: center;
 }
 
-#rwciiospgr .gt_right {
+#hhfqmkajib .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rwciiospgr .gt_font_normal {
+#hhfqmkajib .gt_font_normal {
   font-weight: normal;
 }
 
-#rwciiospgr .gt_font_bold {
+#hhfqmkajib .gt_font_bold {
   font-weight: bold;
 }
 
-#rwciiospgr .gt_font_italic {
+#hhfqmkajib .gt_font_italic {
   font-style: italic;
 }
 
-#rwciiospgr .gt_super {
+#hhfqmkajib .gt_super {
   font-size: 65%;
 }
 
-#rwciiospgr .gt_footnote_marks {
+#hhfqmkajib .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#hhfqmkajib .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
-  font-size: 65%;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#hhfqmkajib .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#hhfqmkajib .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#hhfqmkajib .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#hhfqmkajib .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
 }
 </style>
 <table class="table gt_table">
@@ -1774,15 +2132,9 @@
 <td class="gt_row gt_center">27.0 (24.0, 30.0)</td>
 </tr>
 </tbody>
-<tfoot><tr class="gt_footnotes">
-<td colspan="2">
-        <p class="gt_footnote">
-          <sup class="gt_footnote_marks"><em>1</em>
-          </sup>
-           
-          Mediana (RIQ)
-          <br></p>
-      </td>
+<tfoot class="gt_footnotes"><tr>
+<td class="gt_footnote" colspan="2">
+<sup class="gt_footnote_marks">1</sup> Mediana (RIQ)</td>
     </tr></tfoot>
 </table>
 </div>
