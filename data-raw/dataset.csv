@@ -11,7 +11,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 10,Femenino,> 35,Si,2 veces,Media,120,2,1,Mixto,SAD,Importante,25,27,40,24,40,29
 11,Femenino,18-35,Si,> 2 veces,Media,200,3,2,Mixto,Normal,No es problema,30,21,43,25,33,25
 12,Masculino,18-35,Si,> 2 veces,Alta,360,10,4,Mixto,SAD,No es problema,35,32,47,30,37,31
-13,Masculino,> 35,No,1 vez,Alta,60,4,2,Mixto,Normal,No es problema,28,25,36,28,35,29
+13,Masculino,> 35,No,,,,4,2,Mixto,Normal,No es problema,28,25,36,28,35,29
 14,Femenino,18-35,Si,2 veces,Media,240,4,6,Mixto,SAD,Moderado,23,26,28,21,35,26
 15,Femenino,> 35,No,,,,3,3,Mixto,Winter blues,No es problema,28,19,35,23,31,28
 16,Femenino,18-35,Si,> 2 veces,Alta,180,9,2,Mixto,Winter blues,No es problema,28,18,39,22,42,28
@@ -47,14 +47,14 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 46,Femenino,18-35,Si,1 vez,Alta,40,5,1,Mixto,Normal,Moderado,34,36,46,30,40,31
 47,Masculino,> 35,Si,> 2 veces,Media,240,3,3,Mixto,SAD,No es problema,0,0,0,0,0,0
 48,Femenino,18-35,Si,> 2 veces,Media,240,6,0,Invierno,Normal,Importante,27,21,35,29,42,29
-49,Femenino,> 35,No,1 vez,Baja,60,6,3,Mixto,SAD,No es problema,29,27,35,25,39,28
+49,Femenino,> 35,No,,,,6,3,Mixto,SAD,No es problema,29,27,35,25,39,28
 50,Femenino,> 35,Si,> 2 veces,Baja,90,3,2,Mixto,Winter blues,No es problema,32,29,32,23,31,29
-51,Femenino,> 35,No,1 vez,Baja,60,3,3,Mixto,Winter blues,No es problema,23,24,35,21,31,21
+51,Femenino,> 35,No,,,,3,3,Mixto,Winter blues,No es problema,23,24,35,21,31,21
 52,Femenino,18-35,No,,,,9,1,Mixto,SAD,No es problema,21,33,28,18,31,24
 53,Masculino,> 35,Si,> 2 veces,Alta,330,0,0,,Normal,No es problema,31,28,44,29,37,31
 54,Femenino,> 35,Si,> 2 veces,Alta,300,4,6,Mixto,SAD,Moderado,27,33,35,25,29,24
-55,Masculino,> 35,No,1 vez,Media,60,4,0,Invierno,Winter blues,No es problema,20,25,38,23,39,26
-56,Femenino,> 35,No,1 vez,Baja,120,3,0,Invierno,Normal,No es problema,35,35,46,30,41,30
+55,Masculino,> 35,No,,,,4,0,Invierno,Winter blues,No es problema,20,25,38,23,39,26
+56,Femenino,> 35,No,,,,3,0,Invierno,Normal,No es problema,35,35,46,30,41,30
 57,Femenino,18-35,Si,> 2 veces,Media,190,3,2,Mixto,Normal,No es problema,25,21,44,22,34,21
 58,Femenino,> 35,Si,> 2 veces,Alta,180,12,4,Mixto,Winter blues,Leve,29,33,39,28,42,21
 59,Masculino,18-35,Si,2 veces,Media,180,4,2,Mixto,Normal,No es problema,34,28,41,29,38,30
@@ -103,7 +103,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 102,Masculino,> 35,Si,> 2 veces,Media,360,2,0,Invierno,SAD,Grave,25,16,35,21,30,22
 103,Masculino,> 35,No,,,,6,3,Mixto,SAD,Severo,20,21,37,20,29,24
 104,Masculino,> 35,No,,,,7,2,Mixto,SAD,Severo,24,19,36,18,26,25
-105,Masculino,> 35,No,,Media,,0,0,,Winter blues,,27,12,23,25,28,35
+105,Masculino,> 35,No,,,,0,0,,Winter blues,,27,12,23,25,28,35
 106,Femenino,18-35,Si,> 2 veces,Media,240,8,2,Mixto,Winter blues,Grave,31,21,34,23,30,29
 107,Masculino,18-35,Si,2 veces,Media,40,6,0,Invierno,SAD,,31,18,32,26,32,30
 108,Masculino,> 35,No,,,,1,3,Mixto,SAD,Leve,34,18,40,29,30,30
@@ -118,13 +118,13 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 117,Masculino,18-35,Si,1 vez,Baja,90,2,1,Mixto,SAD,Severo,22,23,41,26,36,29
 118,Masculino,18-35,Si,1 vez,Media,120,8,1,Mixto,SAD,Severo,19,21,35,21,39,20
 119,Masculino,> 35,No,,,,8,1,Mixto,SAD,Severo,18,21,38,19,27,23
-120,Masculino,18-35,No,1 vez,Baja,15,6,0,Invierno,Winter blues,Severo,27,18,30,25,37,34
+120,Masculino,18-35,No,,,,6,0,Invierno,Winter blues,Severo,27,18,30,25,37,34
 121,Femenino,> 35,No,,,,5,4,Mixto,SAD,,24,28,30,22,29,24
 122,Femenino,18-35,Si,2 veces,Alta,120,2,0,Invierno,Normal,Leve,36,23,43,24,37,27
 123,Masculino,18-35,Si,2 veces,Media,120,5,1,Mixto,SAD,Severo,34,13,34,28,34,31
 124,Femenino,18-35,Si,> 2 veces,Media,30,2,0,Invierno,SAD,Grave,26,28,32,25,27,33
 125,Masculino,> 35,No,,,,3,4,Mixto,SAD,Grave,19,14,48,19,25,24
-126,Masculino,18-35,No,,Baja,20,3,1,Mixto,SAD,Importante,19,25,33,20,25,23
+126,Masculino,18-35,No,,,,3,1,Mixto,SAD,Importante,19,25,33,20,25,23
 127,Masculino,> 35,No,,,,7,6,Mixto,Winter blues,,36,36,39,25,42,31
 128,Masculino,> 35,No,,,,7,6,Mixto,SAD,Moderado,30,20,39,27,36,29
 129,Masculino,> 35,,,,,2,1,Mixto,,Moderado,32,27,41,26,34,29
@@ -183,7 +183,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 182,Masculino,18-35,Si,2 veces,Media,120,4,2,Mixto,Normal,Leve,34,29,47,26,40,30
 183,Masculino,> 35,No,,,,5,0,Invierno,Normal,,23,21,28,21,26,29
 184,Femenino,18-35,Si,> 2 veces,Alta,720,2,0,Invierno,Winter blues,Moderado,36,36,46,30,42,31
-185,Masculino,> 35,No,,Baja,,3,1,Mixto,SAD,Importante,30,26,37,24,34,27
+185,Masculino,> 35,No,,,,3,1,Mixto,SAD,Importante,30,26,37,24,34,27
 186,Masculino,> 35,No,,,,12,2,Mixto,SAD,Importante,30,26,42,29,37,31
 187,Masculino,> 35,,,,,3,1,Mixto,Winter blues,,36,31,44,25,37,31
 188,Masculino,> 35,No,,,,9,5,Mixto,SAD,Moderado,34,27,43,29,36,29
@@ -208,7 +208,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 207,Masculino,18-35,Si,> 2 veces,Media,60,8,3,Mixto,SAD,Moderado,34,19,39,29,37,27
 208,Femenino,18-35,Si,> 2 veces,Media,480,5,1,Mixto,SAD,Grave,33,26,48,28,32,31
 209,Femenino,18-35,Si,1 vez,Alta,60,3,1,Mixto,Winter blues,Leve,32,29,41,28,33,25
-210,Femenino,> 35,No,,Media,,1,0,Invierno,Winter blues,Severo,25,25,45,28,41,32
+210,Femenino,> 35,No,,,,1,0,Invierno,Winter blues,Severo,25,25,45,28,41,32
 211,Masculino,18-35,Si,2 veces,Media,120,2,0,Invierno,Normal,Importante,27,28,37,20,34,22
 212,Masculino,18-35,Si,> 2 veces,Media,45,2,0,Invierno,SAD,Leve,20,18,30,17,23,22
 213,Femenino,18-35,Si,1 vez,Media,60,9,7,Mixto,SAD,Severo,24,31,38,25,36,24
@@ -245,7 +245,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 244,Femenino,> 35,No,,,,6,3,Mixto,SAD,,36,28,43,29,37,31
 245,Femenino,18-35,Si,> 2 veces,Media,360,0,0,,Normal,Grave,22,20,29,19,28,21
 246,Masculino,> 35,No,,,,2,0,Invierno,Normal,,27,31,35,26,23,22
-247,Masculino,> 35,No,,Baja,180,6,6,Mixto,Normal,Grave,19,21,26,23,29,27
+247,Masculino,> 35,No,,,,6,6,Mixto,Normal,Grave,19,21,26,23,29,27
 248,Masculino,18-35,Si,1 vez,Media,60,5,2,Mixto,SAD,Leve,29,32,38,30,37,31
 249,Femenino,> 35,No,,,,10,2,Mixto,Normal,Leve,31,22,40,24,32,25
 250,Masculino,> 35,No,,,,5,5,Mixto,SAD,,32,21,33,25,33,30
@@ -276,10 +276,10 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 275,Masculino,18-35,Si,> 2 veces,Media,180,3,0,Invierno,SAD,,25,26,41,28,32,26
 276,Masculino,18-35,Si,1 vez,Baja,60,1,3,Mixto,SAD,Grave,31,35,32,24,36,20
 277,Masculino,18-35,Si,> 2 veces,Alta,720,7,2,Mixto,SAD,Moderado,21,18,27,18,31,24
-278,Masculino,> 35,No,,,0,10,2,Mixto,SAD,Grave,33,32,44,27,28,32
+278,Masculino,> 35,No,,,,10,2,Mixto,SAD,Grave,33,32,44,27,28,32
 279,Masculino,18-35,Si,> 2 veces,Media,300,8,6,Mixto,SAD,,27,23,33,28,27,32
 280,Masculino,18-35,Si,2 veces,Media,150,12,11,Mixto,SAD,Importante,15,18,23,9,8,12
-281,Femenino,18-35,No,1 vez,Baja,0,7,7,Mixto,SAD,Importante,34,28,41,27,38,31
+281,Femenino,18-35,No,,,,7,7,Mixto,SAD,Importante,34,28,41,27,38,31
 282,Femenino,> 35,No,,,,2,1,Mixto,SAD,Grave,25,18,14,20,22,22
 283,Masculino,18-35,Si,> 2 veces,Media,180,5,2,Mixto,Normal,Leve,31,35,39,28,34,25
 284,Femenino,18-35,Si,> 2 veces,Media,240,2,0,Invierno,SAD,Grave,27,25,34,25,35,28
@@ -296,7 +296,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 295,Femenino,> 35,No,,,,0,0,Invierno,Normal,Leve,26,29,30,23,32,23
 296,Masculino,18-35,Si,1 vez,Baja,30,1,0,Invierno,SAD,Grave,28,18,33,26,30,31
 297,Masculino,18-35,Si,2 veces,Media,240,4,0,Invierno,Winter blues,Leve,32,29,41,25,42,31
-298,Masculino,18-35,No,1 vez,Baja,,5,0,Invierno,Normal,Grave,18,24,31,13,26,12
+298,Masculino,18-35,No,,,,5,0,Invierno,Normal,Grave,18,24,31,13,26,12
 299,Femenino,18-35,Si,> 2 veces,Media,280,5,3,Mixto,SAD,Severo,26,26,33,21,28,22
 300,Femenino,18-35,Si,1 vez,Baja,60,7,7,Mixto,SAD,,23,20,39,23,32,17
 301,Femenino,18-35,Si,2 veces,Media,180,6,7,Mixto,SAD,,12,29,33,16,18,22
@@ -330,10 +330,10 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 329,Femenino,18-35,Si,> 2 veces,Alta,900,4,4,Mixto,Normal,Grave,25,21,26,21,29,29
 330,Masculino,18-35,Si,1 vez,Baja,30,6,7,Mixto,Normal,Leve,33,36,43,30,42,31
 331,Masculino,> 35,No,,,,8,4,Mixto,SAD,Grave,25,18,43,25,42,34
-332,Masculino,18-35,No,1 vez,Baja,120,8,4,Mixto,SAD,Grave,21,26,31,21,24,17
+332,Masculino,18-35,No,,,,8,4,Mixto,SAD,Grave,21,26,31,21,24,17
 333,Femenino,18-35,Si,2 veces,Media,180,4,1,Mixto,SAD,Moderado,32,33,41,21,35,26
-334,Masculino,18-35,No,1 vez,Baja,15,8,7,Mixto,SAD,Importante,29,16,32,24,33,25
-335,Masculino,18-35,No,1 vez,Baja,30,9,9,Mixto,SAD,Severo,24,22,24,21,26,27
+334,Masculino,18-35,No,,,,8,7,Mixto,SAD,Importante,29,16,32,24,33,25
+335,Masculino,18-35,No,,,,9,9,Mixto,SAD,Severo,24,22,24,21,26,27
 336,Femenino,18-35,Si,2 veces,Baja,90,7,2,Mixto,SAD,Severo,21,25,30,18,25,21
 337,Masculino,18-35,Si,1 vez,Alta,30,10,3,Mixto,Normal,Leve,24,21,40,23,36,25
 338,Masculino,> 35,No,,,,5,1,Mixto,SAD,Grave,27,30,37,27,42,27
@@ -343,7 +343,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 342,Masculino,> 35,No,,,,4,3,Mixto,SAD,Moderado,23,26,30,21,27,30
 343,Masculino,18-35,Si,1 vez,Baja,15,7,2,Mixto,SAD,Severo,26,26,31,21,32,25
 344,Masculino,18-35,Si,1 vez,Media,60,8,2,Mixto,SAD,Importante,22,30,30,21,32,21
-345,Masculino,18-35,No,1 vez,Baja,10,11,6,Mixto,SAD,Severo,23,21,29,16,24,18
+345,Masculino,18-35,No,,,,11,6,Mixto,SAD,Severo,23,21,29,16,24,18
 346,Masculino,> 35,No,,,,0,0,,SAD,Grave,35,36,41,28,38,31
 347,Femenino,> 35,No,,,,6,2,Mixto,SAD,Grave,30,30,39,24,30,26
 348,Femenino,18-35,Si,2 veces,Media,90,6,3,Mixto,SAD,Importante,27,21,37,22,38,27
