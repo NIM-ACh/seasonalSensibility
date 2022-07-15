@@ -213,7 +213,7 @@ id,genero,edad,deporte,deporte_dias_semana,deporte_intensidad,deporte_minutos_se
 212,Masculino,18-35,Si,> 2 veces,Media,45,2,0,Invierno,SAD,Leve,20,18,30,17,23,22
 213,Femenino,18-35,Si,1 vez,Media,60,9,7,Mixto,SAD,Severo,24,31,38,25,36,24
 214,Masculino,> 35,No,,,,2,0,Invierno,SAD,Grave,28,29,38,25,36,29
-215,Femenino,18-35,,1 vez,Baja,,1,0,Invierno,SAD,,25,16,27,19,26,27
+215,Femenino,18-35,,,,,1,0,Invierno,SAD,,25,16,27,19,26,27
 216,Femenino,18-35,Si,1 vez,Media,90,1,0,Invierno,SAD,Grave,17,11,24,18,20,26
 217,Femenino,> 35,No,,,,2,2,Mixto,Winter blues,Grave,25,18,46,28,27,24
 218,Femenino,> 35,No,,,,3,0,Invierno,SAD,Moderado,25,23,31,22,31,25

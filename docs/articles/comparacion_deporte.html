@@ -124,9 +124,7 @@ deporte en el grupo femenino.</p>
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">deporte_dias_semana</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/deporte_dias_semana-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>De manera esperable, aquellos que sí hacen deporte son los que más
-deporte hacen dentro de la semana, aunque de manera un poco más inusual,
-vemos que aquellos que no hacen deporte igual manifestaron hacer deporte
-almenos una vez a la semana.</p>
+deporte hacen dentro de la semana.</p>
 </div>
 <div class="section level3">
 <h3 id="intensidad-del-deporte">Intensidad del deporte<a class="anchor" aria-label="anchor" href="#intensidad-del-deporte"></a>
@@ -134,12 +132,7 @@ almenos una vez a la semana.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">deporte_intensidad</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/deporte_intensidad-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
-<p>La tendencia se repita con la intensidad del deporte realizado, si
-bien nos hallamos con lo obvio, aquellos que hacen deporte tienden a
-hacerlo de manera más intensa que aquellos que no hacen deporte, aún así
-no deja de ser llamativo por qué algunos que no hacen deporte
-manifiestan realizarlo a mediana o alta intensidad. Requiere mayor
-exploración.</p>
+<p>La tendencia se repita con la intensidad del deporte realizado.</p>
 </div>
 <div class="section level3">
 <h3 id="minutos-por-sesión">Minutos por sesión<a class="anchor" aria-label="anchor" href="#minutos-por-sesi%C3%B3n"></a>
@@ -147,9 +140,8 @@ exploración.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbetweenstats.html" class="external-link">ggbetweenstats</a></span><span class="op">(</span><span class="va">dataset</span>, <span class="va">deporte</span>, <span class="va">deporte_minutos_sesion</span>, type <span class="op">=</span> <span class="st">"np"</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_deporte_files/figure-html/deporte_minutos_sesion-deporte-1.png" width="700" style="display: block; margin: auto;"></p>
-<p>Similar a lo anterior, sigue apareciendo un cúmulo de personas que
-mencionaron que no hacían deporte, sin embargo, declaran dedicar algún
-tiempo para hacer deporte a la semana. Requiere mayor exploración.</p>
+<p>Similar a lo anterior, solo las personas que hacen deporte expresaron
+alguna duración de ejercicio.</p>
 </div>
 </div>
 <div class="section level2">

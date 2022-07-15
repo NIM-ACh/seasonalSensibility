@@ -23,9 +23,9 @@
   ## Para aquellos que relataron deporte 0, no debiera haber respuesta en otras respuestas rela-
   ## cionadas con el deporte.
   ind <- c("deporte_dias_semana", "deporte_intensidad", "deporte_minutos_sesion")
-  lapply(dataset[deporte == 0, .SD, .SDcols = ind], unique) # Inspección y comprobación
-  dataset[deporte == 0, (ind) := NA] # Modificación
-  lapply(dataset[deporte == 0, .SD, .SDcols = ind], unique) # Inspección y comprobación
+  lapply(dataset[deporte != 1 | is.na(deporte), .SD, .SDcols = ind], unique) # Inspección y comprobación
+  dataset[deporte != 1 | is.na(deporte), (ind) := NA] # Modificación
+  lapply(dataset[deporte != 1 | is.na(deporte), .SD, .SDcols = ind], unique) # Inspección y comprobación
 
 # Manipulacion de variables -------------------------------------------------------------------
 

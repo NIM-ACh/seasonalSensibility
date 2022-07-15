@@ -42,7 +42,7 @@ En el caso de la cantidad de deporte realizado de manera semanal tampoco vemos u
 ggstatsplot::ggbarstats(dataset, genero, deporte_intensidad)
 ```
 
-Aunque para el caso de la intensidad en el deporte, pareciera ser que las mujeres tienden a hacer deporte de mayor intensidad mientras que los hombres de menor intensidad, sin embargo, esta asociación no es estadísticamente significativa.
+No hay una asociación entre genero y la intensidad del deporte.
 
 ## Minutos por sesión
 
@@ -76,7 +76,7 @@ No se observaron diferencias en `ss_patron_invierno` por género.
 ggstatsplot::ggbarstats(dataset, genero, ss_patron_tipo)
 ```
 
-De primeras la proporción de personas con un patrón mixto es claramente superior al de aquellos en el grupo invierno y lo mismo de este último con aquellos con un patrón de verano. Pese a esto no observamos una asociación entre el tipo de patrón estacional y el género.
+No observamos una asociación entre el tipo de patrón estacional y el género.
 
 ## Índice de severidad estacional
 
@@ -84,7 +84,7 @@ De primeras la proporción de personas con un patrón mixto es claramente superi
 ggstatsplot::ggbarstats(dataset, genero, ss_index)
 ```
 
-No se observó una asociación entre el índice de severidad estacional y el género, sin embargo, la proporción de hombres en el grupos SAD fué mayor que el de las mujeres.
+No se observó una asociación entre el índice de severidad estacional y el género, sin embargo, la proporción de hombres fue mayor que el mujeres en el grupos SAD.
 
 ## Clasificación de severidad de estacionalidad
 
@@ -92,7 +92,7 @@ No se observó una asociación entre el índice de severidad estacional y el gé
 ggstatsplot::ggbarstats(dataset, genero, ss_severidad)
 ```
 
-No observamos una asociación entre la severidad de la estacionalidad y el género, sin embargo, la proporción de hombres en el grupo leve es mayor que el de mujeres.
+No observamos una asociación entre la severidad de la estacionalidad y el género, sin embargo, la proporción de hombres es mayor que el de mujeres en el grupo leve.
 
 # Bienestar de Ryff
 

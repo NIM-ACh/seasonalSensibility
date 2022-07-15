@@ -34,7 +34,7 @@ Si bien no existe una asociación significativa entre factores, podemos ver que 
 ggstatsplot::ggbarstats(dataset, deporte, deporte_dias_semana)
 ```
 
-De manera esperable, aquellos que sí hacen deporte son los que más deporte hacen dentro de la semana, aunque de manera un poco más inusual, vemos que aquellos que no hacen deporte igual manifestaron hacer deporte almenos una vez a la semana.
+De manera esperable, aquellos que sí hacen deporte son los que más deporte hacen dentro de la semana.
 
 ## Intensidad del deporte
 
@@ -42,7 +42,7 @@ De manera esperable, aquellos que sí hacen deporte son los que más deporte hac
 ggstatsplot::ggbarstats(dataset, deporte, deporte_intensidad)
 ```
 
-La tendencia se repita con la intensidad del deporte realizado, si bien nos hallamos con lo obvio, aquellos que hacen deporte tienden a hacerlo de manera más intensa que aquellos que no hacen deporte, aún así no deja de ser llamativo por qué algunos que no hacen deporte manifiestan realizarlo a mediana o alta intensidad. Requiere mayor exploración. 
+La tendencia se repita con la intensidad del deporte realizado. 
 
 ## Minutos por sesión
 
@@ -50,7 +50,7 @@ La tendencia se repita con la intensidad del deporte realizado, si bien nos hall
 ggstatsplot::ggbetweenstats(dataset, deporte, deporte_minutos_sesion, type = "np")
 ```
 
-Similar a lo anterior, sigue apareciendo un cúmulo de personas que mencionaron que no hacían deporte, sin embargo, declaran dedicar algún tiempo para hacer deporte a la semana. Requiere mayor exploración.
+Similar a lo anterior, solo las personas que hacen deporte expresaron alguna duración de ejercicio.
 
 # Sensibilidad estacional
 

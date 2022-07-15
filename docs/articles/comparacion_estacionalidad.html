@@ -149,7 +149,7 @@ una proporción heterogénea de cada uno de los niveles de
 la sensibilidad estacional, en donde aquellos que realizan ejercicio de
 baja intensidad hay una mayor proporción de personas con SAD, mientras
 que la proporción entre los niveles de <code>ss_index</code> se
-homogeniza a mayor intensidad. Quiere decir esto que una mayor
+homogeniza a mayor intensidad. ¿Quiere decir esto que una mayor
 intensidad durante el la realización de ejercicio podría vincularse a
 una menor sensibilidad estacional?</p>
 </div>
@@ -199,8 +199,7 @@ aquellos en el grupo Winter blues y Normal.</p>
 <p>A priori observamos que existe una asociación entre el tipo de patron
 estacional y el índice de severidad de sensibilidad estacional, sin
 embargo aquellos en el grupo Verano tienen un tamaño muestral muy bajo
-(n = 3). Veamos que sucede si replicamos la prueba eliminando este
-grupo.</p>
+(n = 3). Para esto replicaremos la prueba eliminando este grupo:</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">ggstatsplot</span><span class="fu">::</span><span class="fu"><a href="https://indrajeetpatil.github.io/ggstatsplot/reference/ggbarstats.html" class="external-link">ggbarstats</a></span><span class="op">(</span><span class="va">dataset</span><span class="op">[</span><span class="va">ss_patron_tipo</span> <span class="op">!=</span> <span class="st">"Verano"</span><span class="op">]</span>, <span class="va">ss_index</span>, <span class="va">ss_patron_tipo</span><span class="op">)</span></code></pre></div>
 <p><img src="comparacion_estacionalidad_files/figure-html/ss_patron_tipo-ss_index-2-1.png" width="700" style="display: block; margin: auto;"></p>
@@ -277,7 +276,7 @@ aquí.</p>
 <p>Un efecto más pequeño que los anteriores (<span class="math inline">\(\widehat{\epsilon}^2\)</span>, 0.02 vs 0.05, ambos
 pequeños), puede observarse aquí, en donde tener SAD se asoció a menor
 puntaje en el dominio de crecimiento personal comparado con aquellos en
-el grupo Winter blues y Normal.</p>
+el grupo Winter blues.</p>
 </div>
 <div class="section level3">
 <h3 id="propósito-en-la-vida">Propósito en la vida<a class="anchor" aria-label="anchor" href="#prop%C3%B3sito-en-la-vida"></a>

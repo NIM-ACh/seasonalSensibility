@@ -51,7 +51,7 @@ No se apreció una asociación entre factores, sin embargo, se observó una prop
 ggstatsplot::ggbarstats(dataset, ss_index, deporte_intensidad)
 ```
 
-Se aprecia una asociación entre la intensidad del deporte realizado y la sensibilidad estacional, en donde aquellos que realizan ejercicio de baja intensidad hay una mayor proporción de personas con SAD, mientras que la proporción entre los niveles de `ss_index` se homogeniza a mayor intensidad. Quiere decir esto que una mayor intensidad durante el la realización de ejercicio podría vincularse a una menor sensibilidad estacional?
+Se aprecia una asociación entre la intensidad del deporte realizado y la sensibilidad estacional, en donde aquellos que realizan ejercicio de baja intensidad hay una mayor proporción de personas con SAD, mientras que la proporción entre los niveles de `ss_index` se homogeniza a mayor intensidad. ¿Quiere decir esto que una mayor intensidad durante el la realización de ejercicio podría vincularse a una menor sensibilidad estacional?
 
 ## Minutos por sesión
 
@@ -88,7 +88,7 @@ Una tendencia similar se observó en relación a los hallazgos previos. El grupo
 ggstatsplot::ggbarstats(dataset, ss_index, ss_patron_tipo)
 ```
 
-A priori observamos que existe una asociación entre el tipo de patron estacional y el índice de severidad de sensibilidad estacional, sin embargo aquellos en el grupo Verano tienen un tamaño muestral muy bajo (n = 3). Veamos que sucede si replicamos la prueba eliminando este grupo.
+A priori observamos que existe una asociación entre el tipo de patron estacional y el índice de severidad de sensibilidad estacional, sin embargo aquellos en el grupo Verano tienen un tamaño muestral muy bajo (n = 3). Para esto replicaremos la prueba eliminando este grupo:
 
 ```{r ss_patron_tipo-ss_index-2}
 ggstatsplot::ggbarstats(dataset[ss_patron_tipo != "Verano"], ss_index, ss_patron_tipo)
@@ -149,7 +149,7 @@ ggstatsplot::ggbetweenstats(dataset, ss_index, riff_crecimiento_personal, type =
                             p.adjust.method = "none")
 ```
 
-Un efecto más pequeño que los anteriores ($\widehat{\epsilon}^2$, 0.02 vs 0.05, ambos pequeños), puede observarse aquí, en donde tener SAD se asoció a menor puntaje en el dominio de crecimiento personal comparado con aquellos en el grupo Winter blues y Normal.
+Un efecto más pequeño que los anteriores ($\widehat{\epsilon}^2$, 0.02 vs 0.05, ambos pequeños), puede observarse aquí, en donde tener SAD se asoció a menor puntaje en el dominio de crecimiento personal comparado con aquellos en el grupo Winter blues.
 
 ## Propósito en la vida
 

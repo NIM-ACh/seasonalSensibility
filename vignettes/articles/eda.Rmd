@@ -34,7 +34,12 @@ Los tamaños del efecto (i.e., *effect sizes*) usados para las pruebas estadíst
 
 ## Variables sociodemográficas
 
-Las variables de interés en este caso son el sexo y la edad, en primera instancia observamos una proporción significativamente mayor de hombres que de mujeres en la muestra, $\chi^2_{~gof}$ (1) = 5.67, *p* = 0.017, $C_{~Pearson}$ = 0.13, CI~95%~[0.04, 1.00]. Mientras que para la variable edad observamos que esta es una variable categórica de dos niveles, agrupando a los sujetos en 18 a 35 años o mayores de 35 años, y al igual que con el género, hallamos que la proporción de sujetos de 18 a 35 años es significativamente mayor que aquellos mayores de 35 años, $\chi^2_{~gof}$ (1) = 4.93, *p* = 0.026, $C_{~Pearson}$ = 0.12, CI~95%~[0.03, 1.00]. Los detalles se pueden apreciar en la [Tabla 1](#tab1)
+```{r}
+sex <- dataset[, table(genero) |> chisq.test() |> ASQ3::report_chi()]
+age <- dataset[, table(edad) |> chisq.test() |> ASQ3::report_chi()]
+```
+
+Las variables de interés en este caso son el sexo y la edad, en primera instancia observamos una proporción significativamente mayor de hombres que de mujeres en la muestra, `r sex`. Mientras que para la variable edad observamos que esta es una variable categórica de dos niveles, agrupando a los sujetos en 18 a 35 años o mayores de 35 años, y al igual que con el género, hallamos que la proporción de sujetos de 18 a 35 años es significativamente mayor que aquellos mayores de 35 años, `r age`. Los detalles se pueden apreciar en la [Tabla 1](#tab1)
 
 :::{#tab1}
 ```{r tab1, echo=FALSE}
@@ -48,19 +53,16 @@ bold_labels(x = tbl)
 
 ### Deporte y ejercicio reportado
 
-```{r eval=FALSE}
+```{r, include=FALSE}
 n <- dataset[, .N]
+sport <- dataset[, table(deporte) |> chisq.test() |> ASQ3::report_chi()]
+sport_days <- dataset[, table(deporte_dias_semana) |> chisq.test() |> ASQ3::report_chi()]
 
-dataset[, .(.N, "%" = round(.N*100/n, 1)), deporte]
-dataset[, .(.N, "%" = round(.N*100/n, 1)), deporte_dias_semana]
-
-statsExpressions::contingency_table(
-  data = dataset[deporte_dias_semana %in% c("1 vez", "2 veces"), .(deporte_dias_semana = factor(deporte_dias_semana))], 
-  x = "deporte_dias_semana"
-)
+# dataset[!is.na(deporte), .(.N, "%" = round(.N*100/n, 1)), deporte]
+# dataset[!is.na(deporte_dias_semana), .(.N, "%" = round(.N*100/n, 1)), deporte_dias_semana]
 ```
 
-Para el caso del deporte, hallamos que 194 (54.2%) reportaron realizar deporte, mientras que 194 (44.4%) no, $\chi^2_{~gof}$ (1) = 3.47, *p* = 0.063, $C_{~Pearson}$ = 0.10, CI~95%~[0.00, 1.00]. Esto es especialmente curioso dado que si bien un 57.8% del total de la muestra (n = 207) declaró hacer ejercicio por lo menos una vez a la semana y, de estos, el 53% mencionó hacer ejercicio más de dos veces por semana (n = 110/207), mientras que una proporción homogénea declaró entrenar 1 y 2 veces a la semana (n = 49 y 48 respectivamente), $\chi^2_{~gof}$ (2) = 0.01, *p* = 0.919, $C_{~Pearson}$ = 0.01, CI~95%~[0.00, 1.00].
+Para el caso del deporte, hallamos que 194 reportaron realizar deporte, mientras que 159 no, `r sport`. Del total de la muestra, 194 sujetos declararon hacer ejercicio por lo menos una vez a la semana y, de estos, el 56.7% (n = 110/194) mencionó hacer ejercicio más de dos veces por semana, mientras que una proporción homogénea declaró entrenar 1 y 2 veces a la semana (n = 36 y 48 respectivamente).
 
 ```{r ddspie, echo=FALSE}
 library(ggplot2)
@@ -78,7 +80,7 @@ ggstatsplot::ggpiestats(dataset, deporte_dias_semana,
 )
 ```
 
-La duración de una sesión de ejercicio promedio reportada por el 58% de la muestra (n = 208) fue de 180 minutos (3 horas) como mediana, observando que un 50% de los aquellos que respondieron, declararon entrenar entre 1 a 5 horas (i.e., rango intercuartil), lo cual personalmente encuentro impresionante. Los detalles se pueden apreciar en la [Tabla 2](#tab2).
+La duración de una sesión de ejercicio promedio fue de 180 minutos (3 horas) como mediana, observando que un 50% de los aquellos que respondieron, declararon entrenar entre 1.5 a 5 horas (i.e., rango intercuartil). Los detalles se pueden apreciar en la [Tabla 2](#tab2).
 
 :::{#tab2}
 ```{r tab2, echo=FALSE}
@@ -98,11 +100,19 @@ bold_labels(x = tbl)
 ```
 :::
 
-La [Tabla 3](#tab3) nos muestra que para el tipo de patrón sólo 3 personas (< 1%) tienen un patrón de Verano, mientras que una proporción significativamente mayor tiene un patrón estacional Mixto por sobre uno de Invierno (70% vs 29%), $\chi^2_{~gof}$ (1) = 56.39, *p* < 0.001, $C_{~Pearson}$ = 0.38, CI~95%~[0.31, 1.00].
+```{r, include=FALSE}
+patron <- chisq.test(c(96,232)) |> ASQ3::report_chi()
+ss <- dataset$ss_index |> table() |> chisq.test() |> ASQ3::report_chi()
+ss_2 <- chisq.test(c(86, 55)) |> ASQ3::report_chi()
+severity <- dataset$ss_severidad |> table() |> chisq.test() |> ASQ3::report_chi()
+severity_2 <- chisq.test(c(100, 42)) |> ASQ3::report_chi()
+```
 
-Para la clasificación del puntaje de estacionalidad (i.e., Seasonal Score Index), la mayoría de las personas calificaron con en el grupo SAD (i.e., Trastorno afectivo estacional por sus siglas en inglés), $\chi^2_{~gof}$ (2) = 122.64, *p* < 0.001, $C_{~Pearson}$ = 0.51, CI~95%~[0.44, 1.00], mientras que la proporción de aquellos que calificaron en el grupo Normal (para los estándares del cuestionario de evaluación de patrones estacionales, o SPAQ) fue mayor a que la de aquellos que calificaron en *Winter blues* (24% vs 15%), $\chi^2_{~gof}$ (1) = 6.82, *p* = 0.009, $C_{~Pearson}$ = 0.21, CI~95%~[0.08, 1.00].
+La [Tabla 3](#tab3) nos muestra que para el tipo de patrón sólo 3 personas (< 1%) tienen un patrón de Verano, mientras que una proporción significativamente mayor tiene un patrón estacional Mixto por sobre uno de Invierno (70% vs 29%), `r patron`.
 
-En el caso de la clasificación de la severidad de la estacionalidad, observamos que la proporción entre los grupos no es homogénea, $\chi^2_{~gof}$ (5) = 13.35, *p* = 0.02, $C_{~Pearson}$ = 0.20, CI~95%~[0.06, 1.00]. Estimamos que cerca de un tercio de las personas evaluadas (32%, n = 100) tienen una estacionalidad severa o grave, mientras que sólo un 13% (n = 42) afirma que la estacionalidad no es un problema para ellos, $\chi^2_{~gof}$ (1) = 23.69, *p* < 0.001, $C_{~Pearson}$ = 0.38, CI~95%~[0.26, 1.00].
+Para la clasificación del puntaje de estacionalidad (i.e., Seasonal Score Index), la mayoría de las personas calificaron con en el grupo SAD (i.e., Trastorno afectivo estacional por sus siglas en inglés), `r ss`, mientras que la proporción de aquellos que calificaron en el grupo Normal (para los estándares del cuestionario de evaluación de patrones estacionales, o SPAQ) fue mayor a que la de aquellos que calificaron en *Winter blues* (24% vs 15%), `r ss_2`.
+
+En el caso de la clasificación de la severidad de la estacionalidad, observamos que la proporción entre los grupos no es homogénea, `r severity`. Estimamos que cerca de un tercio de las personas evaluadas (32%, n = 100) tienen una estacionalidad severa o grave, mientras que sólo un 13% (n = 42) afirma que la estacionalidad no es un problema para ellos, `r severity_2`.
 
 ### Bienestar de Ryff
 

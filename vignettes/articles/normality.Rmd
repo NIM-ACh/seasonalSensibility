@@ -51,7 +51,10 @@ Aun así apreciamos que no se cumple la normalidad para ambos géneros en ningun
 ```{r}
 n_colwise(dataset, .by = deporte) # Tamaño muestral
 
-is_normal_colwise(dataset, .by = deporte) # Normalidad
+is_normal_colwise(
+  .data = dataset[j = -c("deporte_dias_semana", "deporte_intensidad", "deporte_minutos_sesion")], 
+  .by = deporte
+) # Normalidad
 ```
 
 ## Agrupando por cantidad de deporte que realizan a la semana
