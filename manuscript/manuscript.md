@@ -1,7 +1,7 @@
 ---
 title: ""
 bibliography: "misc/ref.bib"
-csl: "misc/apa.csl"
+csl: "misc/vancouver.csl"
 link-citations: yes
 output:
   word_document:
