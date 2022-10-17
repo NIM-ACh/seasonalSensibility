@@ -39,8 +39,6 @@ sex <- dataset[, table(genero) |> chisq.test() |> ASQ3::report_chi()]
 age <- dataset[, table(edad) |> chisq.test() |> ASQ3::report_chi()]
 ```
 
-Las variables de interés en este caso son el sexo y la edad, en primera instancia observamos una proporción significativamente mayor de hombres que de mujeres en la muestra, `r sex`. Mientras que para la variable edad observamos que esta es una variable categórica de dos niveles, agrupando a los sujetos en 18 a 35 años o mayores de 35 años, y al igual que con el género, hallamos que la proporción de sujetos de 18 a 35 años es significativamente mayor que aquellos mayores de 35 años, `r age`. Los detalles se pueden apreciar en la [Tabla 1](#tab1)
-
 :::{#tab1}
 ```{r tab1, echo=FALSE}
 library(gtsummary)
@@ -62,8 +60,6 @@ sport_days <- dataset[, table(deporte_dias_semana) |> chisq.test() |> ASQ3::repo
 # dataset[!is.na(deporte_dias_semana), .(.N, "%" = round(.N*100/n, 1)), deporte_dias_semana]
 ```
 
-Para el caso del deporte, hallamos que 194 reportaron realizar deporte, mientras que 159 no, `r sport`. Del total de la muestra, 194 sujetos declararon hacer ejercicio por lo menos una vez a la semana y, de estos, el 56.7% (n = 110/194) mencionó hacer ejercicio más de dos veces por semana, mientras que una proporción homogénea declaró entrenar 1 y 2 veces a la semana (n = 36 y 48 respectivamente).
-
 ```{r ddspie, echo=FALSE}
 library(ggplot2)
 library(ggstatsplot)
@@ -80,8 +76,6 @@ ggstatsplot::ggpiestats(dataset, deporte_dias_semana,
 )
 ```
 
-La duración de una sesión de ejercicio promedio fue de 180 minutos (3 horas) como mediana, observando que un 50% de los aquellos que respondieron, declararon entrenar entre 1.5 a 5 horas (i.e., rango intercuartil). Los detalles se pueden apreciar en la [Tabla 2](#tab2).
-
 :::{#tab2}
 ```{r tab2, echo=FALSE}
 tbl <- tbl_summary(data = dataset[, .SD, .SDcols = deporte:deporte_minutos_sesion])
@@ -91,7 +85,7 @@ bold_labels(x = tbl)
 
 ### Sensibilidad estacional
 
-En el caso de la sensibilidad estacional nos encontramos con las variables patrón de verano (`ss_patron_verano`) e invierno (`ss_patron_invierno`), tipo de patron estacional (`ss_patron_tipo`), la clasificación del puntaje de estacionalidad (`ss_index`) y la clasificación de severidad de estacionalidad (`ss_severidad`). La [Tabla 3](#tab3) muestra los estadísticos descriptivos de estas variables.
+En el caso de la sensibilidad estacional nos encontramos con las variables patrón de verano (`ss_patron_verano`) e invierno (`ss_patron_invierno`), tipo de patron estacional (`ss_patron_tipo`), la clasificación del puntaje de estacionalidad (`ss_index`) y la clasificación de severidad de estacionalidad (`ss_severidad`). 
 
 :::{#tab3}
 ```{r tab3, echo=FALSE}
@@ -108,15 +102,9 @@ severity <- dataset$ss_severidad |> table() |> chisq.test() |> ASQ3::report_chi(
 severity_2 <- chisq.test(c(100, 42)) |> ASQ3::report_chi()
 ```
 
-La [Tabla 3](#tab3) nos muestra que para el tipo de patrón sólo 3 personas (< 1%) tienen un patrón de Verano, mientras que una proporción significativamente mayor tiene un patrón estacional Mixto por sobre uno de Invierno (70% vs 29%), `r patron`.
-
-Para la clasificación del puntaje de estacionalidad (i.e., Seasonal Score Index), la mayoría de las personas calificaron con en el grupo SAD (i.e., Trastorno afectivo estacional por sus siglas en inglés), `r ss`, mientras que la proporción de aquellos que calificaron en el grupo Normal (para los estándares del cuestionario de evaluación de patrones estacionales, o SPAQ) fue mayor a que la de aquellos que calificaron en *Winter blues* (24% vs 15%), `r ss_2`.
-
-En el caso de la clasificación de la severidad de la estacionalidad, observamos que la proporción entre los grupos no es homogénea, `r severity`. Estimamos que cerca de un tercio de las personas evaluadas (32%, n = 100) tienen una estacionalidad severa o grave, mientras que sólo un 13% (n = 42) afirma que la estacionalidad no es un problema para ellos, `r severity_2`.
-
 ### Bienestar de Ryff
 
-Último en nuestra lista de variables se encuentran aquellas correspondientes al cuestionario de bienestar de Riff, en donde encontramos los dominios de Autoaceptación (`riff_autoaceptacion`), Relaciones positivas (`riff_relaciones_positivas`), Autonomía (`riff_autonomia`), Dominio del entorno (`riff_dominio_entorno`), Crecimiento personal (`riff_crecimiento_personal`) y Propósito en la vida (`riff_proposito_vida`). Para más detalle ver la [Tabla 4](#tab4)
+Último en nuestra lista de variables se encuentran aquellas correspondientes al cuestionario de bienestar de Riff, en donde encontramos los dominios de Autoaceptación (`riff_autoaceptacion`), Relaciones positivas (`riff_relaciones_positivas`), Autonomía (`riff_autonomia`), Dominio del entorno (`riff_dominio_entorno`), Crecimiento personal (`riff_crecimiento_personal`) y Propósito en la vida (`riff_proposito_vida`).
 
 :::{#tab4}
 ```{r tab4, echo=FALSE}

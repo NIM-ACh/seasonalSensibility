@@ -26,15 +26,11 @@ library(seasonalSensitivity)
 ggstatsplot::ggbarstats(dataset, deporte, genero)
 ```
 
-Si bien no existe una asociación significativa entre factores, podemos ver que existe una proporción mayor de personas que realizan deporte en el grupo femenino.
-
 ## Días de la semana que realiza deporte
 
 ```{r deporte_dias_semana-deporte}
 ggstatsplot::ggbarstats(dataset, deporte, deporte_dias_semana)
 ```
-
-De manera esperable, aquellos que sí hacen deporte son los que más deporte hacen dentro de la semana.
 
 ## Intensidad del deporte
 
@@ -42,15 +38,11 @@ De manera esperable, aquellos que sí hacen deporte son los que más deporte hac
 ggstatsplot::ggbarstats(dataset, deporte, deporte_intensidad)
 ```
 
-La tendencia se repita con la intensidad del deporte realizado. 
-
 ## Minutos por sesión
 
 ```{r deporte_minutos_sesion-deporte}
 ggstatsplot::ggbetweenstats(dataset, deporte, deporte_minutos_sesion, type = "np")
 ```
-
-Similar a lo anterior, solo las personas que hacen deporte expresaron alguna duración de ejercicio.
 
 # Sensibilidad estacional
 
@@ -60,15 +52,11 @@ Similar a lo anterior, solo las personas que hacen deporte expresaron alguna dur
 ggstatsplot::ggbetweenstats(dataset, deporte, ss_patron_verano, type = "np")
 ```
 
-No se observaron diferencias en `ss_patron_verano` por deporte
-
 ## Patrón de invierno
 
 ```{r ss_patron_invierno-deporte}
 ggstatsplot::ggbetweenstats(dataset, deporte, ss_patron_invierno, type = "np")
 ```
-
-No se observaron diferencias en `ss_patron_invierno` por deporte.
 
 ## Tipo de patrón estacional
 
@@ -76,23 +64,17 @@ No se observaron diferencias en `ss_patron_invierno` por deporte.
 ggstatsplot::ggbarstats(dataset, deporte, ss_patron_tipo)
 ```
 
-No se observaron diferencias en `ss_patron_tipo` por deporte.
-
 ## Índice de severidad estacional
 
 ```{r ss_index-deporte}
 ggstatsplot::ggbarstats(dataset, deporte, ss_index)
 ```
 
-No se observaron diferencias en `ss_index` por deporte.
-
 ## Clasificación de severidad de estacionalidad
 
 ```{r ss_severidad-deporte}
 ggstatsplot::ggbarstats(dataset, deporte, ss_severidad)
 ```
-
-No observamos una asociación entre la severidad de la estacionalidad y el deporte, sin embargo, la proporción de personas que realizan deporte es mayor en el grupo leve.
 
 # Bienestar de Ryff
 
@@ -102,15 +84,11 @@ No observamos una asociación entre la severidad de la estacionalidad y el depor
 ggstatsplot::ggbetweenstats(dataset, deporte, riff_autoaceptacion, type = "np")
 ```
 
-No observamos diferencias en el dominio de autoaceptación por deporte.
-
 ## Relaciones positivas
 
 ```{r riff_relaciones_positivas-deporte}
 ggstatsplot::ggbetweenstats(dataset, deporte, riff_relaciones_positivas, type = "np")
 ```
-
-No observamos diferencias en el dominio de relaciones positivas por deporte.
 
 ## Autonomía
 
@@ -118,15 +96,11 @@ No observamos diferencias en el dominio de relaciones positivas por deporte.
 ggstatsplot::ggbetweenstats(dataset, deporte, riff_autonomia, type = "np")
 ```
 
-No observamos diferencias en el dominio de autonomía por deporte.
-
 ## Dominio del entorno
 
 ```{r riff_dominio_entorno-deporte}
 ggstatsplot::ggbetweenstats(dataset, deporte, riff_dominio_entorno, type = "np")
 ```
-
-No observamos diferencias en el dominio de dominio del entorno por deporte.
 
 ## Crecimiento personal
 
@@ -134,12 +108,8 @@ No observamos diferencias en el dominio de dominio del entorno por deporte.
 ggstatsplot::ggbetweenstats(dataset, deporte, riff_crecimiento_personal, type = "np")
 ```
 
-No observamos diferencias en el dominio de crecimiento personal por deporte.
-
 ## Propósito en la vida
 
 ```{r riff_proposito_vida-deporte}
 ggstatsplot::ggbetweenstats(dataset, deporte, riff_proposito_vida, type = "np")
 ```
-
-No observamos diferencias en el dominio de propósito en la vida por deporte.

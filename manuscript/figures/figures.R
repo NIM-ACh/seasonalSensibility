@@ -3,7 +3,75 @@ library(ggstatsplot)
 library(ggplot2)
 
 
-# Figure 1 ------------------------------------------------------------------------------------
+# Figure 1 ----------------------------------------------------------------
+
+fig1 <- ggstatsplot::ggbarstats(
+  data = dataset,
+  x = ss_index,
+  y = deporte_intensidad,
+  results.subtitle = FALSE,
+  caption = NULL,
+  xlab = "Intensity",
+  legend.title = "SSI",
+  package = "ggsci",
+  palette = "default_jama",
+  ggplot.component = ggplot2::theme(plot.caption = ggplot2::element_blank(),
+                                    legend.position = "top")
+)
+
+tiff(filename = "manuscript/figures/fig1.TIFF", width = 5, height = 7.5, units = "in", res = 450)
+print(fig1)
+dev.off()
+
+pdf(file = "manuscript/figures/fig1.pdf", width = 5, height = 7.5)
+print(fig1)
+dev.off()
+
+# Figure 2 ------------------------------------------------------------------------------------
+
+xlevels <- c("No problem", "Mild", "Moderate", "Major", "Serious", "Severe")
+a <- ggstatsplot::ggbarstats(
+  data = data.table::copy(dataset)[, ss_severidad := `levels<-`(ss_severidad, xlevels)][],
+  x = ss_index,
+  y = ss_severidad,
+  results.subtitle = FALSE,
+  bf.message = FALSE,
+  legend.title = "SSI",
+  xlab = "Severity",
+  package = "ggsci",
+  palette = "default_jama"
+)
+
+xlevels <- c("Summer", "Winter", "Mixed")
+b <- ggstatsplot::ggbarstats(
+  data = data.table::copy(dataset)[, ss_patron_tipo := `levels<-`(ss_patron_tipo, xlevels)][],
+  x = ss_index,
+  y = ss_patron_tipo,
+  results.subtitle = FALSE,
+  bf.message = FALSE,
+  legend.title = "SSI",
+  xlab = "Pattern",
+  package = "ggsci",
+  palette = "default_jama"
+)
+
+fig2 <- ggpubr::ggarrange(
+  plotlist = list(a, b),
+  nrow = 1,
+  align = "hv",
+  labels = paste0(LETTERS[1:2], "."),
+  common.legend = TRUE
+)
+
+tiff(filename = "manuscript/figures/fig2.TIFF", width = 10, height = 7.5, units = "in", res = 450)
+print(fig2)
+dev.off()
+
+pdf(file = "manuscript/figures/fig2.pdf", width = 10, height = 7.5)
+print(fig2)
+dev.off()
+
+# Figure 3 ------------------------------------------------------------------------------------
 
 a <- ggstatsplot::ggbetweenstats(
   data = dataset,
@@ -88,62 +156,19 @@ f <- ggstatsplot::ggbetweenstats(
   results.subtitle = FALSE
 )
 
-fig1 <- ggpubr::ggarrange(
+fig3 <- ggpubr::ggarrange(
   plotlist = list(a, b, c, d, e, f),
   ncol = 2, nrow = 3,
   align = "hv",
   labels = paste0(LETTERS[1:6], ".")
 )
 
-tiff(filename = "manuscript/figures/fig1.TIFF", width = 12, height = 16, units = "in", res = 450)
-print(fig1)
+tiff(filename = "manuscript/figures/fig3.TIFF", width = 12, height = 16, units = "in", res = 450)
+print(fig3)
 dev.off()
 
-pdf(file = "manuscript/figures/fig1.pdf", width = 12, height = 16)
-print(fig1)
+pdf(file = "manuscript/figures/fig3.pdf", width = 12, height = 16)
+print(fig3)
 dev.off()
 
 
-# Figure 2 ------------------------------------------------------------------------------------
-
-xlevels <- c("No problem", "Mild", "Moderate", "Major", "Serious", "Severe")
-a <- ggstatsplot::ggbarstats(
-  data = data.table::copy(dataset)[, ss_severidad := `levels<-`(ss_severidad, xlevels)][],
-  x = ss_index,
-  y = ss_severidad,
-  results.subtitle = FALSE,
-  bf.message = FALSE,
-  legend.title = "SSI",
-  xlab = "Severity",
-  package = "ggsci",
-  palette = "default_jama"
-)
-
-xlevels <- c("Summer", "Winter", "Mixed")
-b <- ggstatsplot::ggbarstats(
-  data = data.table::copy(dataset)[, ss_patron_tipo := `levels<-`(ss_patron_tipo, xlevels)][],
-  x = ss_index,
-  y = ss_patron_tipo,
-  results.subtitle = FALSE,
-  bf.message = FALSE,
-  legend.title = "SSI",
-  xlab = "Pattern",
-  package = "ggsci",
-  palette = "default_jama"
-)
-
-fig2 <- ggpubr::ggarrange(
-  plotlist = list(a, b),
-  nrow = 1,
-  align = "hv",
-  labels = paste0(LETTERS[1:2], "."),
-  common.legend = TRUE
-)
-
-tiff(filename = "manuscript/figures/fig2.TIFF", width = 10, height = 7.5, units = "in", res = 450)
-print(fig2)
-dev.off()
-
-pdf(file = "manuscript/figures/fig2.pdf", width = 10, height = 7.5)
-print(fig2)
-dev.off()

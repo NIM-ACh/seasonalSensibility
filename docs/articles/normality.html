@@ -8,8 +8,8 @@
 <meta name="description" content="seasonalSensitivity">
 <title>Comprobación de la normalidad • seasonalSensitivity</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="../deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Comprobación de la normalidad">
 <meta property="og:description" content="seasonalSensitivity">
@@ -92,7 +92,7 @@
 
 
 <div class="row">
-  <main id="main"><div class="page-header">
+  <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Comprobación de la normalidad</h1>
             
       
@@ -103,11 +103,11 @@
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Paquetes necesarios</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-datatable.com" class="external-link">data.table</a></span><span class="op">)</span>
-
-<span class="co"># Y por supuesto cargamos el paquete del estudio</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NIM-ACh/seasonalSensitivity" class="external-link">seasonalSensitivity</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Paquetes necesarios</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-datatable.com" class="external-link">data.table</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Y por supuesto cargamos el paquete del estudio</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NIM-ACh/seasonalSensitivity" class="external-link">seasonalSensitivity</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="estructura-de-los-datos">Estructura de los datos<a class="anchor" aria-label="anchor" href="#estructura-de-los-datos"></a>
 </h2>
@@ -125,39 +125,39 @@ aproximadamente normal, usaremos la función
 dentro del mismo paquete. Esta función nos asistirá durante el proceso
 de selección de estadísticos apropiados.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span><span class="op">)</span>
-<span class="co">#&gt;                          vars  V1</span>
-<span class="co">#&gt;  1:                        id 358</span>
-<span class="co">#&gt;  2:                    genero 357</span>
-<span class="co">#&gt;  3:                      edad 358</span>
-<span class="co">#&gt;  4:                   deporte 353</span>
-<span class="co">#&gt;  5:       deporte_dias_semana 194</span>
-<span class="co">#&gt;  6:        deporte_intensidad 194</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion 194</span>
-<span class="co">#&gt;  8:          ss_patron_verano 358</span>
-<span class="co">#&gt;  9:        ss_patron_invierno 358</span>
-<span class="co">#&gt; 10:            ss_patron_tipo 331</span>
-<span class="co">#&gt; 11:                  ss_index 357</span>
-<span class="co">#&gt; 12:              ss_severidad 316</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion 358</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas 358</span>
-<span class="co">#&gt; 15:            riff_autonomia 358</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno 358</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal 358</span>
-<span class="co">#&gt; 18:       riff_proposito_vida 358</span>
-
-<span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span><span class="op">)</span>
-<span class="co">#&gt;                          vars    V1</span>
-<span class="co">#&gt;  1:                        id FALSE</span>
-<span class="co">#&gt;  2:    deporte_minutos_sesion FALSE</span>
-<span class="co">#&gt;  3:          ss_patron_verano FALSE</span>
-<span class="co">#&gt;  4:        ss_patron_invierno FALSE</span>
-<span class="co">#&gt;  5:       riff_autoaceptacion FALSE</span>
-<span class="co">#&gt;  6: riff_relaciones_positivas FALSE</span>
-<span class="co">#&gt;  7:            riff_autonomia FALSE</span>
-<span class="co">#&gt;  8:      riff_dominio_entorno FALSE</span>
-<span class="co">#&gt;  9: riff_crecimiento_personal FALSE</span>
-<span class="co">#&gt; 10:       riff_proposito_vida FALSE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span><span class="op">)</span></span>
+<span><span class="co">#&gt;                          vars  V1</span></span>
+<span><span class="co">#&gt;  1:                        id 358</span></span>
+<span><span class="co">#&gt;  2:                    genero 357</span></span>
+<span><span class="co">#&gt;  3:                      edad 358</span></span>
+<span><span class="co">#&gt;  4:                   deporte 353</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana 194</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad 194</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion 194</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano 358</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno 358</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo 331</span></span>
+<span><span class="co">#&gt; 11:                  ss_index 357</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad 316</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion 358</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas 358</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia 358</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno 358</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal 358</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida 358</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span><span class="op">)</span></span>
+<span><span class="co">#&gt;                          vars    V1</span></span>
+<span><span class="co">#&gt;  1:                        id FALSE</span></span>
+<span><span class="co">#&gt;  2:    deporte_minutos_sesion FALSE</span></span>
+<span><span class="co">#&gt;  3:          ss_patron_verano FALSE</span></span>
+<span><span class="co">#&gt;  4:        ss_patron_invierno FALSE</span></span>
+<span><span class="co">#&gt;  5:       riff_autoaceptacion FALSE</span></span>
+<span><span class="co">#&gt;  6: riff_relaciones_positivas FALSE</span></span>
+<span><span class="co">#&gt;  7:            riff_autonomia FALSE</span></span>
+<span><span class="co">#&gt;  8:      riff_dominio_entorno FALSE</span></span>
+<span><span class="co">#&gt;  9: riff_crecimiento_personal FALSE</span></span>
+<span><span class="co">#&gt; 10:       riff_proposito_vida FALSE</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="agrupando-por-sexo">Agrupando por sexo<a class="anchor" aria-label="anchor" href="#agrupando-por-sexo"></a>
 </h3>
@@ -165,39 +165,39 @@ de selección de estadísticos apropiados.</p>
 variables numéricas sigue una distribución normal, pero que tal si
 agrupamos por sexo.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">genero</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
-<span class="co">#&gt;                          vars Femenino Masculino NA</span>
-<span class="co">#&gt;  1:                        id      156       201  1</span>
-<span class="co">#&gt;  2:                    genero      156       201  0</span>
-<span class="co">#&gt;  3:                      edad      156       201  1</span>
-<span class="co">#&gt;  4:                   deporte      155       198  0</span>
-<span class="co">#&gt;  5:       deporte_dias_semana       93       101  0</span>
-<span class="co">#&gt;  6:        deporte_intensidad       93       101  0</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion       93       101  0</span>
-<span class="co">#&gt;  8:          ss_patron_verano      156       201  1</span>
-<span class="co">#&gt;  9:        ss_patron_invierno      156       201  1</span>
-<span class="co">#&gt; 10:            ss_patron_tipo      147       183  1</span>
-<span class="co">#&gt; 11:                  ss_index      156       200  1</span>
-<span class="co">#&gt; 12:              ss_severidad      140       175  1</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion      156       201  1</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas      156       201  1</span>
-<span class="co">#&gt; 15:            riff_autonomia      156       201  1</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno      156       201  1</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal      156       201  1</span>
-<span class="co">#&gt; 18:       riff_proposito_vida      156       201  1</span>
-
-<span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">genero</span><span class="op">)</span> <span class="co"># Normalidad</span>
-<span class="co">#&gt;                          vars Femenino Masculino</span>
-<span class="co">#&gt;  1:                        id    FALSE      TRUE</span>
-<span class="co">#&gt;  2:    deporte_minutos_sesion    FALSE     FALSE</span>
-<span class="co">#&gt;  3:          ss_patron_verano    FALSE     FALSE</span>
-<span class="co">#&gt;  4:        ss_patron_invierno    FALSE     FALSE</span>
-<span class="co">#&gt;  5:       riff_autoaceptacion    FALSE     FALSE</span>
-<span class="co">#&gt;  6: riff_relaciones_positivas     TRUE     FALSE</span>
-<span class="co">#&gt;  7:            riff_autonomia    FALSE     FALSE</span>
-<span class="co">#&gt;  8:      riff_dominio_entorno    FALSE     FALSE</span>
-<span class="co">#&gt;  9: riff_crecimiento_personal     TRUE     FALSE</span>
-<span class="co">#&gt; 10:       riff_proposito_vida    FALSE     FALSE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">genero</span><span class="op">)</span> <span class="co"># Tamaño muestral</span></span>
+<span><span class="co">#&gt;                          vars Femenino Masculino NA</span></span>
+<span><span class="co">#&gt;  1:                        id      156       201  1</span></span>
+<span><span class="co">#&gt;  2:                    genero      156       201  0</span></span>
+<span><span class="co">#&gt;  3:                      edad      156       201  1</span></span>
+<span><span class="co">#&gt;  4:                   deporte      155       198  0</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana       93       101  0</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad       93       101  0</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion       93       101  0</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano      156       201  1</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno      156       201  1</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo      147       183  1</span></span>
+<span><span class="co">#&gt; 11:                  ss_index      156       200  1</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad      140       175  1</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion      156       201  1</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas      156       201  1</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia      156       201  1</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno      156       201  1</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal      156       201  1</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida      156       201  1</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">genero</span><span class="op">)</span> <span class="co"># Normalidad</span></span>
+<span><span class="co">#&gt;                          vars Femenino Masculino</span></span>
+<span><span class="co">#&gt;  1:                        id    FALSE      TRUE</span></span>
+<span><span class="co">#&gt;  2:    deporte_minutos_sesion    FALSE     FALSE</span></span>
+<span><span class="co">#&gt;  3:          ss_patron_verano    FALSE     FALSE</span></span>
+<span><span class="co">#&gt;  4:        ss_patron_invierno    FALSE     FALSE</span></span>
+<span><span class="co">#&gt;  5:       riff_autoaceptacion    FALSE     FALSE</span></span>
+<span><span class="co">#&gt;  6: riff_relaciones_positivas     TRUE     FALSE</span></span>
+<span><span class="co">#&gt;  7:            riff_autonomia    FALSE     FALSE</span></span>
+<span><span class="co">#&gt;  8:      riff_dominio_entorno    FALSE     FALSE</span></span>
+<span><span class="co">#&gt;  9: riff_crecimiento_personal     TRUE     FALSE</span></span>
+<span><span class="co">#&gt; 10:       riff_proposito_vida    FALSE     FALSE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="agrupando-por-deporte">Agrupando por deporte<a class="anchor" aria-label="anchor" href="#agrupando-por-deporte"></a>
@@ -207,41 +207,41 @@ en ninguna variable. Evaluemos si esto ocurre de igual manera para la
 variable deporte (realiza o no deporte, variable dicotómica: Sí o
 No).</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
-<span class="co">#&gt;                          vars  Si  No NA</span>
-<span class="co">#&gt;  1:                        id 194 159  5</span>
-<span class="co">#&gt;  2:                    genero 194 159  4</span>
-<span class="co">#&gt;  3:                      edad 194 159  5</span>
-<span class="co">#&gt;  4:                   deporte 194 159  0</span>
-<span class="co">#&gt;  5:       deporte_dias_semana 194   0  0</span>
-<span class="co">#&gt;  6:        deporte_intensidad 194   0  0</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion 194   0  0</span>
-<span class="co">#&gt;  8:          ss_patron_verano 194 159  5</span>
-<span class="co">#&gt;  9:        ss_patron_invierno 194 159  5</span>
-<span class="co">#&gt; 10:            ss_patron_tipo 180 146  5</span>
-<span class="co">#&gt; 11:                  ss_index 194 159  4</span>
-<span class="co">#&gt; 12:              ss_severidad 175 138  3</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion 194 159  5</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas 194 159  5</span>
-<span class="co">#&gt; 15:            riff_autonomia 194 159  5</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno 194 159  5</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal 194 159  5</span>
-<span class="co">#&gt; 18:       riff_proposito_vida 194 159  5</span>
-
-<span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span>
-  .data <span class="op">=</span> <span class="va">dataset</span><span class="op">[</span>j <span class="op">=</span> <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"deporte_dias_semana"</span>, <span class="st">"deporte_intensidad"</span>, <span class="st">"deporte_minutos_sesion"</span><span class="op">)</span><span class="op">]</span>, 
-  .by <span class="op">=</span> <span class="va">deporte</span>
-<span class="op">)</span> <span class="co"># Normalidad</span>
-<span class="co">#&gt;                         vars    Si    No</span>
-<span class="co">#&gt; 1:                        id FALSE  TRUE</span>
-<span class="co">#&gt; 2:          ss_patron_verano FALSE FALSE</span>
-<span class="co">#&gt; 3:        ss_patron_invierno FALSE FALSE</span>
-<span class="co">#&gt; 4:       riff_autoaceptacion FALSE  TRUE</span>
-<span class="co">#&gt; 5: riff_relaciones_positivas FALSE  TRUE</span>
-<span class="co">#&gt; 6:            riff_autonomia FALSE FALSE</span>
-<span class="co">#&gt; 7:      riff_dominio_entorno FALSE FALSE</span>
-<span class="co">#&gt; 8: riff_crecimiento_personal FALSE FALSE</span>
-<span class="co">#&gt; 9:       riff_proposito_vida FALSE FALSE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte</span><span class="op">)</span> <span class="co"># Tamaño muestral</span></span>
+<span><span class="co">#&gt;                          vars  Si  No NA</span></span>
+<span><span class="co">#&gt;  1:                        id 194 159  5</span></span>
+<span><span class="co">#&gt;  2:                    genero 194 159  4</span></span>
+<span><span class="co">#&gt;  3:                      edad 194 159  5</span></span>
+<span><span class="co">#&gt;  4:                   deporte 194 159  0</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana 194   0  0</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad 194   0  0</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion 194   0  0</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano 194 159  5</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno 194 159  5</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo 180 146  5</span></span>
+<span><span class="co">#&gt; 11:                  ss_index 194 159  4</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad 175 138  3</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion 194 159  5</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas 194 159  5</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia 194 159  5</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno 194 159  5</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal 194 159  5</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida 194 159  5</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span></span>
+<span>  .data <span class="op">=</span> <span class="va">dataset</span><span class="op">[</span>j <span class="op">=</span> <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"deporte_dias_semana"</span>, <span class="st">"deporte_intensidad"</span>, <span class="st">"deporte_minutos_sesion"</span><span class="op">)</span><span class="op">]</span>, </span>
+<span>  .by <span class="op">=</span> <span class="va">deporte</span></span>
+<span><span class="op">)</span> <span class="co"># Normalidad</span></span>
+<span><span class="co">#&gt;                         vars    Si    No</span></span>
+<span><span class="co">#&gt; 1:                        id FALSE  TRUE</span></span>
+<span><span class="co">#&gt; 2:          ss_patron_verano FALSE FALSE</span></span>
+<span><span class="co">#&gt; 3:        ss_patron_invierno FALSE FALSE</span></span>
+<span><span class="co">#&gt; 4:       riff_autoaceptacion FALSE  TRUE</span></span>
+<span><span class="co">#&gt; 5: riff_relaciones_positivas FALSE  TRUE</span></span>
+<span><span class="co">#&gt; 6:            riff_autonomia FALSE FALSE</span></span>
+<span><span class="co">#&gt; 7:      riff_dominio_entorno FALSE FALSE</span></span>
+<span><span class="co">#&gt; 8: riff_crecimiento_personal FALSE FALSE</span></span>
+<span><span class="co">#&gt; 9:       riff_proposito_vida FALSE FALSE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="agrupando-por-cantidad-de-deporte-que-realizan-a-la-semana">Agrupando por cantidad de deporte que realizan a la semana<a class="anchor" aria-label="anchor" href="#agrupando-por-cantidad-de-deporte-que-realizan-a-la-semana"></a>
@@ -250,39 +250,39 @@ No).</p>
 continuación si se aplica también a la cantidad de deporte que realizan
 a la semana (factor, tres niveles: 1 vez, 2 veces o &gt;2 veces).</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_dias_semana</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
-<span class="co">#&gt;                          vars &gt; 2 veces  NA 2 veces 1 vez</span>
-<span class="co">#&gt;  1:                        id       110 164      48    36</span>
-<span class="co">#&gt;  2:                    genero       110 163      48    36</span>
-<span class="co">#&gt;  3:                      edad       110 164      48    36</span>
-<span class="co">#&gt;  4:                   deporte       110 159      48    36</span>
-<span class="co">#&gt;  5:       deporte_dias_semana       110   0      48    36</span>
-<span class="co">#&gt;  6:        deporte_intensidad       110   0      48    36</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion       110   0      48    36</span>
-<span class="co">#&gt;  8:          ss_patron_verano       110 164      48    36</span>
-<span class="co">#&gt;  9:        ss_patron_invierno       110 164      48    36</span>
-<span class="co">#&gt; 10:            ss_patron_tipo        98 151      47    35</span>
-<span class="co">#&gt; 11:                  ss_index       110 163      48    36</span>
-<span class="co">#&gt; 12:              ss_severidad        98 141      44    33</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion       110 164      48    36</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas       110 164      48    36</span>
-<span class="co">#&gt; 15:            riff_autonomia       110 164      48    36</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno       110 164      48    36</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal       110 164      48    36</span>
-<span class="co">#&gt; 18:       riff_proposito_vida       110 164      48    36</span>
-
-<span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_dias_semana</span><span class="op">)</span> <span class="co"># Normalidad</span>
-<span class="co">#&gt;                          vars &gt; 2 veces 2 veces 1 vez</span>
-<span class="co">#&gt;  1:                        id     FALSE   FALSE  TRUE</span>
-<span class="co">#&gt;  2:    deporte_minutos_sesion     FALSE   FALSE FALSE</span>
-<span class="co">#&gt;  3:          ss_patron_verano     FALSE    TRUE  TRUE</span>
-<span class="co">#&gt;  4:        ss_patron_invierno     FALSE   FALSE FALSE</span>
-<span class="co">#&gt;  5:       riff_autoaceptacion     FALSE   FALSE FALSE</span>
-<span class="co">#&gt;  6: riff_relaciones_positivas     FALSE   FALSE  TRUE</span>
-<span class="co">#&gt;  7:            riff_autonomia     FALSE    TRUE  TRUE</span>
-<span class="co">#&gt;  8:      riff_dominio_entorno     FALSE   FALSE  TRUE</span>
-<span class="co">#&gt;  9: riff_crecimiento_personal     FALSE   FALSE FALSE</span>
-<span class="co">#&gt; 10:       riff_proposito_vida     FALSE   FALSE  TRUE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_dias_semana</span><span class="op">)</span> <span class="co"># Tamaño muestral</span></span>
+<span><span class="co">#&gt;                          vars &gt; 2 veces  NA 2 veces 1 vez</span></span>
+<span><span class="co">#&gt;  1:                        id       110 164      48    36</span></span>
+<span><span class="co">#&gt;  2:                    genero       110 163      48    36</span></span>
+<span><span class="co">#&gt;  3:                      edad       110 164      48    36</span></span>
+<span><span class="co">#&gt;  4:                   deporte       110 159      48    36</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana       110   0      48    36</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad       110   0      48    36</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion       110   0      48    36</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano       110 164      48    36</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno       110 164      48    36</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo        98 151      47    35</span></span>
+<span><span class="co">#&gt; 11:                  ss_index       110 163      48    36</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad        98 141      44    33</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion       110 164      48    36</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas       110 164      48    36</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia       110 164      48    36</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno       110 164      48    36</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal       110 164      48    36</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida       110 164      48    36</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_dias_semana</span><span class="op">)</span> <span class="co"># Normalidad</span></span>
+<span><span class="co">#&gt;                          vars &gt; 2 veces 2 veces 1 vez</span></span>
+<span><span class="co">#&gt;  1:                        id     FALSE   FALSE  TRUE</span></span>
+<span><span class="co">#&gt;  2:    deporte_minutos_sesion     FALSE   FALSE FALSE</span></span>
+<span><span class="co">#&gt;  3:          ss_patron_verano     FALSE    TRUE  TRUE</span></span>
+<span><span class="co">#&gt;  4:        ss_patron_invierno     FALSE   FALSE FALSE</span></span>
+<span><span class="co">#&gt;  5:       riff_autoaceptacion     FALSE   FALSE FALSE</span></span>
+<span><span class="co">#&gt;  6: riff_relaciones_positivas     FALSE   FALSE  TRUE</span></span>
+<span><span class="co">#&gt;  7:            riff_autonomia     FALSE    TRUE  TRUE</span></span>
+<span><span class="co">#&gt;  8:      riff_dominio_entorno     FALSE   FALSE  TRUE</span></span>
+<span><span class="co">#&gt;  9: riff_crecimiento_personal     FALSE   FALSE FALSE</span></span>
+<span><span class="co">#&gt; 10:       riff_proposito_vida     FALSE   FALSE  TRUE</span></span></code></pre></div>
 <p>Hasta el momento en todas las variables numéricas, en donde deseemos
 comparar grupos, estaríamos usando estadística no-paramétrica, aunque
 ojo, esto es cierto pero sólo bajo la exploración analítica de la
@@ -298,39 +298,39 @@ severidad de la estacionalidad (<code>ss_severidad</code>).</p>
 <h3 id="agrupando-por-intensidad-de-la-práctica-deportiva">Agrupando por intensidad de la práctica deportiva<a class="anchor" aria-label="anchor" href="#agrupando-por-intensidad-de-la-pr%C3%A1ctica-deportiva"></a>
 </h3>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_intensidad</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
-<span class="co">#&gt;                          vars Media  NA Alta Baja</span>
-<span class="co">#&gt;  1:                        id   126 164   37   31</span>
-<span class="co">#&gt;  2:                    genero   126 163   37   31</span>
-<span class="co">#&gt;  3:                      edad   126 164   37   31</span>
-<span class="co">#&gt;  4:                   deporte   126 159   37   31</span>
-<span class="co">#&gt;  5:       deporte_dias_semana   126   0   37   31</span>
-<span class="co">#&gt;  6:        deporte_intensidad   126   0   37   31</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion   126   0   37   31</span>
-<span class="co">#&gt;  8:          ss_patron_verano   126 164   37   31</span>
-<span class="co">#&gt;  9:        ss_patron_invierno   126 164   37   31</span>
-<span class="co">#&gt; 10:            ss_patron_tipo   120 151   29   31</span>
-<span class="co">#&gt; 11:                  ss_index   126 163   37   31</span>
-<span class="co">#&gt; 12:              ss_severidad   113 141   35   27</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion   126 164   37   31</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas   126 164   37   31</span>
-<span class="co">#&gt; 15:            riff_autonomia   126 164   37   31</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno   126 164   37   31</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal   126 164   37   31</span>
-<span class="co">#&gt; 18:       riff_proposito_vida   126 164   37   31</span>
-
-<span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_intensidad</span><span class="op">)</span> <span class="co"># Normalidad</span>
-<span class="co">#&gt;                          vars Media  Alta  Baja</span>
-<span class="co">#&gt;  1:                        id  TRUE FALSE FALSE</span>
-<span class="co">#&gt;  2:    deporte_minutos_sesion FALSE FALSE FALSE</span>
-<span class="co">#&gt;  3:          ss_patron_verano FALSE FALSE  TRUE</span>
-<span class="co">#&gt;  4:        ss_patron_invierno FALSE FALSE FALSE</span>
-<span class="co">#&gt;  5:       riff_autoaceptacion FALSE FALSE  TRUE</span>
-<span class="co">#&gt;  6: riff_relaciones_positivas FALSE  TRUE  TRUE</span>
-<span class="co">#&gt;  7:            riff_autonomia FALSE FALSE  TRUE</span>
-<span class="co">#&gt;  8:      riff_dominio_entorno FALSE FALSE  TRUE</span>
-<span class="co">#&gt;  9: riff_crecimiento_personal FALSE FALSE  TRUE</span>
-<span class="co">#&gt; 10:       riff_proposito_vida FALSE FALSE  TRUE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_intensidad</span><span class="op">)</span> <span class="co"># Tamaño muestral</span></span>
+<span><span class="co">#&gt;                          vars Media  NA Alta Baja</span></span>
+<span><span class="co">#&gt;  1:                        id   126 164   37   31</span></span>
+<span><span class="co">#&gt;  2:                    genero   126 163   37   31</span></span>
+<span><span class="co">#&gt;  3:                      edad   126 164   37   31</span></span>
+<span><span class="co">#&gt;  4:                   deporte   126 159   37   31</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana   126   0   37   31</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad   126   0   37   31</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion   126   0   37   31</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano   126 164   37   31</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno   126 164   37   31</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo   120 151   29   31</span></span>
+<span><span class="co">#&gt; 11:                  ss_index   126 163   37   31</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad   113 141   35   27</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion   126 164   37   31</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas   126 164   37   31</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia   126 164   37   31</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno   126 164   37   31</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal   126 164   37   31</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida   126 164   37   31</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">deporte_intensidad</span><span class="op">)</span> <span class="co"># Normalidad</span></span>
+<span><span class="co">#&gt;                          vars Media  Alta  Baja</span></span>
+<span><span class="co">#&gt;  1:                        id  TRUE FALSE FALSE</span></span>
+<span><span class="co">#&gt;  2:    deporte_minutos_sesion FALSE FALSE FALSE</span></span>
+<span><span class="co">#&gt;  3:          ss_patron_verano FALSE FALSE  TRUE</span></span>
+<span><span class="co">#&gt;  4:        ss_patron_invierno FALSE FALSE FALSE</span></span>
+<span><span class="co">#&gt;  5:       riff_autoaceptacion FALSE FALSE  TRUE</span></span>
+<span><span class="co">#&gt;  6: riff_relaciones_positivas FALSE  TRUE  TRUE</span></span>
+<span><span class="co">#&gt;  7:            riff_autonomia FALSE FALSE  TRUE</span></span>
+<span><span class="co">#&gt;  8:      riff_dominio_entorno FALSE FALSE  TRUE</span></span>
+<span><span class="co">#&gt;  9: riff_crecimiento_personal FALSE FALSE  TRUE</span></span>
+<span><span class="co">#&gt; 10:       riff_proposito_vida FALSE FALSE  TRUE</span></span></code></pre></div>
 <p>Ninguna variable cumple con los criterios de normalidad ajustando por
 los niveles de la intensidad de la práctica deportiva.</p>
 </div>
@@ -338,26 +338,26 @@ los niveles de la intensidad de la práctica deportiva.</p>
 <h3 id="agrupando-por-patrón-estacional">Agrupando por patrón estacional<a class="anchor" aria-label="anchor" href="#agrupando-por-patr%C3%B3n-estacional"></a>
 </h3>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_patron_tipo</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
-<span class="co">#&gt;                          vars Mixto NA Invierno Verano</span>
-<span class="co">#&gt;  1:                        id   232 27       96      3</span>
-<span class="co">#&gt;  2:                    genero   231 27       96      3</span>
-<span class="co">#&gt;  3:                      edad   232 27       96      3</span>
-<span class="co">#&gt;  4:                   deporte   228 27       95      3</span>
-<span class="co">#&gt;  5:       deporte_dias_semana   128 14       50      2</span>
-<span class="co">#&gt;  6:        deporte_intensidad   128 14       50      2</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion   128 14       50      2</span>
-<span class="co">#&gt;  8:          ss_patron_verano   232 27       96      3</span>
-<span class="co">#&gt;  9:        ss_patron_invierno   232 27       96      3</span>
-<span class="co">#&gt; 10:            ss_patron_tipo   232  0       96      3</span>
-<span class="co">#&gt; 11:                  ss_index   231 27       96      3</span>
-<span class="co">#&gt; 12:              ss_severidad   207 25       81      3</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion   232 27       96      3</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas   232 27       96      3</span>
-<span class="co">#&gt; 15:            riff_autonomia   232 27       96      3</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno   232 27       96      3</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal   232 27       96      3</span>
-<span class="co">#&gt; 18:       riff_proposito_vida   232 27       96      3</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_patron_tipo</span><span class="op">)</span> <span class="co"># Tamaño muestral</span></span>
+<span><span class="co">#&gt;                          vars Mixto NA Invierno Verano</span></span>
+<span><span class="co">#&gt;  1:                        id   232 27       96      3</span></span>
+<span><span class="co">#&gt;  2:                    genero   231 27       96      3</span></span>
+<span><span class="co">#&gt;  3:                      edad   232 27       96      3</span></span>
+<span><span class="co">#&gt;  4:                   deporte   228 27       95      3</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana   128 14       50      2</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad   128 14       50      2</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion   128 14       50      2</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano   232 27       96      3</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno   232 27       96      3</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo   232  0       96      3</span></span>
+<span><span class="co">#&gt; 11:                  ss_index   231 27       96      3</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad   207 25       81      3</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion   232 27       96      3</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas   232 27       96      3</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia   232 27       96      3</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno   232 27       96      3</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal   232 27       96      3</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida   232 27       96      3</span></span></code></pre></div>
 <p>Una exploración más detallada nos muestra que en el grupo con patrón
 estacional de Verano solo hay 2 y 3 observaciones, esto es insuficiente
 para explorar la normalidad de forma analítica e incluso para aplicar
@@ -366,18 +366,18 @@ cualquier tipo de estadística inferencial. Otro enfoque es ignorar este
 estacional Mixto o de Invierno. Veamos que obtenemos al seguir esta
 última alternativa.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">dataset</span><span class="op">[</span>i <span class="op">=</span> <span class="va">ss_patron_tipo</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Mixto"</span>, <span class="st">"Invierno"</span><span class="op">)</span>,
-      j <span class="op">=</span> <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ss_patron_invierno"</span>, <span class="st">"ss_patron_verano"</span><span class="op">)</span>
-      <span class="op">]</span><span class="op">[</span>j <span class="op">=</span> <span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span>.data <span class="op">=</span> <span class="va">.SD</span>, .by <span class="op">=</span> <span class="va">ss_patron_tipo</span><span class="op">)</span><span class="op">]</span>
-<span class="co">#&gt;                         vars Mixto Invierno</span>
-<span class="co">#&gt; 1:                        id FALSE     TRUE</span>
-<span class="co">#&gt; 2:    deporte_minutos_sesion FALSE    FALSE</span>
-<span class="co">#&gt; 3:       riff_autoaceptacion FALSE     TRUE</span>
-<span class="co">#&gt; 4: riff_relaciones_positivas FALSE     TRUE</span>
-<span class="co">#&gt; 5:            riff_autonomia FALSE     TRUE</span>
-<span class="co">#&gt; 6:      riff_dominio_entorno FALSE    FALSE</span>
-<span class="co">#&gt; 7: riff_crecimiento_personal FALSE    FALSE</span>
-<span class="co">#&gt; 8:       riff_proposito_vida FALSE    FALSE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">dataset</span><span class="op">[</span>i <span class="op">=</span> <span class="va">ss_patron_tipo</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Mixto"</span>, <span class="st">"Invierno"</span><span class="op">)</span>,</span>
+<span>      j <span class="op">=</span> <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ss_patron_invierno"</span>, <span class="st">"ss_patron_verano"</span><span class="op">)</span></span>
+<span>      <span class="op">]</span><span class="op">[</span>j <span class="op">=</span> <span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span>.data <span class="op">=</span> <span class="va">.SD</span>, .by <span class="op">=</span> <span class="va">ss_patron_tipo</span><span class="op">)</span><span class="op">]</span></span>
+<span><span class="co">#&gt;                         vars Mixto Invierno</span></span>
+<span><span class="co">#&gt; 1:                        id FALSE     TRUE</span></span>
+<span><span class="co">#&gt; 2:    deporte_minutos_sesion FALSE    FALSE</span></span>
+<span><span class="co">#&gt; 3:       riff_autoaceptacion FALSE     TRUE</span></span>
+<span><span class="co">#&gt; 4: riff_relaciones_positivas FALSE     TRUE</span></span>
+<span><span class="co">#&gt; 5:            riff_autonomia FALSE     TRUE</span></span>
+<span><span class="co">#&gt; 6:      riff_dominio_entorno FALSE    FALSE</span></span>
+<span><span class="co">#&gt; 7: riff_crecimiento_personal FALSE    FALSE</span></span>
+<span><span class="co">#&gt; 8:       riff_proposito_vida FALSE    FALSE</span></span></code></pre></div>
 <p>Ninguna variable cumple con los criterios de normalidad ajustando a
 un patron de estacionalidad de Invierno y Mixto.</p>
 </div>
@@ -385,39 +385,39 @@ un patron de estacionalidad de Invierno y Mixto.</p>
 <h3 id="agrupando-por-clasificación-del-índice-de-estacionalidad">Agrupando por clasificación del índice de estacionalidad<a class="anchor" aria-label="anchor" href="#agrupando-por-clasificaci%C3%B3n-del-%C3%ADndice-de-estacionalidad"></a>
 </h3>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_index</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
-<span class="co">#&gt;                          vars Normal SAD Winter blues NA</span>
-<span class="co">#&gt;  1:                        id     86 216           55  1</span>
-<span class="co">#&gt;  2:                    genero     86 215           55  1</span>
-<span class="co">#&gt;  3:                      edad     86 216           55  1</span>
-<span class="co">#&gt;  4:                   deporte     85 214           54  0</span>
-<span class="co">#&gt;  5:       deporte_dias_semana     46 116           32  0</span>
-<span class="co">#&gt;  6:        deporte_intensidad     46 116           32  0</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion     46 116           32  0</span>
-<span class="co">#&gt;  8:          ss_patron_verano     86 216           55  1</span>
-<span class="co">#&gt;  9:        ss_patron_invierno     86 216           55  1</span>
-<span class="co">#&gt; 10:            ss_patron_tipo     71 210           49  1</span>
-<span class="co">#&gt; 11:                  ss_index     86 216           55  0</span>
-<span class="co">#&gt; 12:              ss_severidad     79 189           47  1</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion     86 216           55  1</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas     86 216           55  1</span>
-<span class="co">#&gt; 15:            riff_autonomia     86 216           55  1</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno     86 216           55  1</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal     86 216           55  1</span>
-<span class="co">#&gt; 18:       riff_proposito_vida     86 216           55  1</span>
-
-<span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_index</span><span class="op">)</span> <span class="co"># Normalidad</span>
-<span class="co">#&gt;                          vars Normal   SAD Winter blues</span>
-<span class="co">#&gt;  1:                        id  FALSE FALSE         TRUE</span>
-<span class="co">#&gt;  2:    deporte_minutos_sesion  FALSE FALSE        FALSE</span>
-<span class="co">#&gt;  3:          ss_patron_verano  FALSE FALSE        FALSE</span>
-<span class="co">#&gt;  4:        ss_patron_invierno  FALSE FALSE        FALSE</span>
-<span class="co">#&gt;  5:       riff_autoaceptacion  FALSE FALSE         TRUE</span>
-<span class="co">#&gt;  6: riff_relaciones_positivas  FALSE FALSE         TRUE</span>
-<span class="co">#&gt;  7:            riff_autonomia  FALSE FALSE         TRUE</span>
-<span class="co">#&gt;  8:      riff_dominio_entorno  FALSE FALSE        FALSE</span>
-<span class="co">#&gt;  9: riff_crecimiento_personal  FALSE FALSE         TRUE</span>
-<span class="co">#&gt; 10:       riff_proposito_vida  FALSE FALSE         TRUE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_index</span><span class="op">)</span> <span class="co"># Tamaño muestral</span></span>
+<span><span class="co">#&gt;                          vars Normal SAD Winter blues NA</span></span>
+<span><span class="co">#&gt;  1:                        id     86 216           55  1</span></span>
+<span><span class="co">#&gt;  2:                    genero     86 215           55  1</span></span>
+<span><span class="co">#&gt;  3:                      edad     86 216           55  1</span></span>
+<span><span class="co">#&gt;  4:                   deporte     85 214           54  0</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana     46 116           32  0</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad     46 116           32  0</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion     46 116           32  0</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano     86 216           55  1</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno     86 216           55  1</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo     71 210           49  1</span></span>
+<span><span class="co">#&gt; 11:                  ss_index     86 216           55  0</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad     79 189           47  1</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion     86 216           55  1</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas     86 216           55  1</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia     86 216           55  1</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno     86 216           55  1</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal     86 216           55  1</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida     86 216           55  1</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_index</span><span class="op">)</span> <span class="co"># Normalidad</span></span>
+<span><span class="co">#&gt;                          vars Normal   SAD Winter blues</span></span>
+<span><span class="co">#&gt;  1:                        id  FALSE FALSE         TRUE</span></span>
+<span><span class="co">#&gt;  2:    deporte_minutos_sesion  FALSE FALSE        FALSE</span></span>
+<span><span class="co">#&gt;  3:          ss_patron_verano  FALSE FALSE        FALSE</span></span>
+<span><span class="co">#&gt;  4:        ss_patron_invierno  FALSE FALSE        FALSE</span></span>
+<span><span class="co">#&gt;  5:       riff_autoaceptacion  FALSE FALSE         TRUE</span></span>
+<span><span class="co">#&gt;  6: riff_relaciones_positivas  FALSE FALSE         TRUE</span></span>
+<span><span class="co">#&gt;  7:            riff_autonomia  FALSE FALSE         TRUE</span></span>
+<span><span class="co">#&gt;  8:      riff_dominio_entorno  FALSE FALSE        FALSE</span></span>
+<span><span class="co">#&gt;  9: riff_crecimiento_personal  FALSE FALSE         TRUE</span></span>
+<span><span class="co">#&gt; 10:       riff_proposito_vida  FALSE FALSE         TRUE</span></span></code></pre></div>
 <p>Ninguna variable cumple con los criterios de normalidad para todos
 los niveles del factor.</p>
 </div>
@@ -426,69 +426,69 @@ los niveles del factor.</p>
 estacionalidad<a class="anchor" aria-label="anchor" href="#agrupando-por-clasificaci%C3%B3n-de-la-severidad-de-la-estacionalidad"></a>
 </h3>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_severidad</span><span class="op">)</span> <span class="co"># Tamaño muestral</span>
-<span class="co">#&gt;                          vars Leve Importante Moderado No es problema Severo</span>
-<span class="co">#&gt;  1:                        id   72         44       58             42     57</span>
-<span class="co">#&gt;  2:                    genero   71         44       58             42     57</span>
-<span class="co">#&gt;  3:                      edad   72         44       58             42     57</span>
-<span class="co">#&gt;  4:                   deporte   70         44       57             42     57</span>
-<span class="co">#&gt;  5:       deporte_dias_semana   46         20       29             22     32</span>
-<span class="co">#&gt;  6:        deporte_intensidad   46         20       29             22     32</span>
-<span class="co">#&gt;  7:    deporte_minutos_sesion   46         20       29             22     32</span>
-<span class="co">#&gt;  8:          ss_patron_verano   72         44       58             42     57</span>
-<span class="co">#&gt;  9:        ss_patron_invierno   72         44       58             42     57</span>
-<span class="co">#&gt; 10:            ss_patron_tipo   67         43       53             35     55</span>
-<span class="co">#&gt; 11:                  ss_index   72         44       57             42     57</span>
-<span class="co">#&gt; 12:              ss_severidad   72         44       58             42     57</span>
-<span class="co">#&gt; 13:       riff_autoaceptacion   72         44       58             42     57</span>
-<span class="co">#&gt; 14: riff_relaciones_positivas   72         44       58             42     57</span>
-<span class="co">#&gt; 15:            riff_autonomia   72         44       58             42     57</span>
-<span class="co">#&gt; 16:      riff_dominio_entorno   72         44       58             42     57</span>
-<span class="co">#&gt; 17: riff_crecimiento_personal   72         44       58             42     57</span>
-<span class="co">#&gt; 18:       riff_proposito_vida   72         44       58             42     57</span>
-<span class="co">#&gt;     Grave NA</span>
-<span class="co">#&gt;  1:    43 42</span>
-<span class="co">#&gt;  2:    43 42</span>
-<span class="co">#&gt;  3:    43 42</span>
-<span class="co">#&gt;  4:    43 40</span>
-<span class="co">#&gt;  5:    26 19</span>
-<span class="co">#&gt;  6:    26 19</span>
-<span class="co">#&gt;  7:    26 19</span>
-<span class="co">#&gt;  8:    43 42</span>
-<span class="co">#&gt;  9:    43 42</span>
-<span class="co">#&gt; 10:    38 40</span>
-<span class="co">#&gt; 11:    43 42</span>
-<span class="co">#&gt; 12:    43  0</span>
-<span class="co">#&gt; 13:    43 42</span>
-<span class="co">#&gt; 14:    43 42</span>
-<span class="co">#&gt; 15:    43 42</span>
-<span class="co">#&gt; 16:    43 42</span>
-<span class="co">#&gt; 17:    43 42</span>
-<span class="co">#&gt; 18:    43 42</span>
-
-<span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_severidad</span><span class="op">)</span> <span class="co"># Normalidad</span>
-<span class="co">#&gt;                          vars  Leve Importante Moderado No es problema Severo</span>
-<span class="co">#&gt;  1:                        id  TRUE      FALSE    FALSE           TRUE   TRUE</span>
-<span class="co">#&gt;  2:    deporte_minutos_sesion FALSE      FALSE    FALSE          FALSE  FALSE</span>
-<span class="co">#&gt;  3:          ss_patron_verano FALSE       TRUE     TRUE          FALSE   TRUE</span>
-<span class="co">#&gt;  4:        ss_patron_invierno FALSE      FALSE    FALSE          FALSE  FALSE</span>
-<span class="co">#&gt;  5:       riff_autoaceptacion FALSE      FALSE    FALSE          FALSE   TRUE</span>
-<span class="co">#&gt;  6: riff_relaciones_positivas FALSE      FALSE     TRUE          FALSE   TRUE</span>
-<span class="co">#&gt;  7:            riff_autonomia FALSE      FALSE     TRUE          FALSE   TRUE</span>
-<span class="co">#&gt;  8:      riff_dominio_entorno FALSE      FALSE    FALSE          FALSE   TRUE</span>
-<span class="co">#&gt;  9: riff_crecimiento_personal FALSE      FALSE     TRUE          FALSE   TRUE</span>
-<span class="co">#&gt; 10:       riff_proposito_vida FALSE      FALSE     TRUE          FALSE   TRUE</span>
-<span class="co">#&gt;     Grave</span>
-<span class="co">#&gt;  1: FALSE</span>
-<span class="co">#&gt;  2: FALSE</span>
-<span class="co">#&gt;  3: FALSE</span>
-<span class="co">#&gt;  4: FALSE</span>
-<span class="co">#&gt;  5:  TRUE</span>
-<span class="co">#&gt;  6:  TRUE</span>
-<span class="co">#&gt;  7:  TRUE</span>
-<span class="co">#&gt;  8:  TRUE</span>
-<span class="co">#&gt;  9:  TRUE</span>
-<span class="co">#&gt; 10:  TRUE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/n_colwise.html">n_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_severidad</span><span class="op">)</span> <span class="co"># Tamaño muestral</span></span>
+<span><span class="co">#&gt;                          vars Leve Importante Moderado No es problema Severo</span></span>
+<span><span class="co">#&gt;  1:                        id   72         44       58             42     57</span></span>
+<span><span class="co">#&gt;  2:                    genero   71         44       58             42     57</span></span>
+<span><span class="co">#&gt;  3:                      edad   72         44       58             42     57</span></span>
+<span><span class="co">#&gt;  4:                   deporte   70         44       57             42     57</span></span>
+<span><span class="co">#&gt;  5:       deporte_dias_semana   46         20       29             22     32</span></span>
+<span><span class="co">#&gt;  6:        deporte_intensidad   46         20       29             22     32</span></span>
+<span><span class="co">#&gt;  7:    deporte_minutos_sesion   46         20       29             22     32</span></span>
+<span><span class="co">#&gt;  8:          ss_patron_verano   72         44       58             42     57</span></span>
+<span><span class="co">#&gt;  9:        ss_patron_invierno   72         44       58             42     57</span></span>
+<span><span class="co">#&gt; 10:            ss_patron_tipo   67         43       53             35     55</span></span>
+<span><span class="co">#&gt; 11:                  ss_index   72         44       57             42     57</span></span>
+<span><span class="co">#&gt; 12:              ss_severidad   72         44       58             42     57</span></span>
+<span><span class="co">#&gt; 13:       riff_autoaceptacion   72         44       58             42     57</span></span>
+<span><span class="co">#&gt; 14: riff_relaciones_positivas   72         44       58             42     57</span></span>
+<span><span class="co">#&gt; 15:            riff_autonomia   72         44       58             42     57</span></span>
+<span><span class="co">#&gt; 16:      riff_dominio_entorno   72         44       58             42     57</span></span>
+<span><span class="co">#&gt; 17: riff_crecimiento_personal   72         44       58             42     57</span></span>
+<span><span class="co">#&gt; 18:       riff_proposito_vida   72         44       58             42     57</span></span>
+<span><span class="co">#&gt;     Grave NA</span></span>
+<span><span class="co">#&gt;  1:    43 42</span></span>
+<span><span class="co">#&gt;  2:    43 42</span></span>
+<span><span class="co">#&gt;  3:    43 42</span></span>
+<span><span class="co">#&gt;  4:    43 40</span></span>
+<span><span class="co">#&gt;  5:    26 19</span></span>
+<span><span class="co">#&gt;  6:    26 19</span></span>
+<span><span class="co">#&gt;  7:    26 19</span></span>
+<span><span class="co">#&gt;  8:    43 42</span></span>
+<span><span class="co">#&gt;  9:    43 42</span></span>
+<span><span class="co">#&gt; 10:    38 40</span></span>
+<span><span class="co">#&gt; 11:    43 42</span></span>
+<span><span class="co">#&gt; 12:    43  0</span></span>
+<span><span class="co">#&gt; 13:    43 42</span></span>
+<span><span class="co">#&gt; 14:    43 42</span></span>
+<span><span class="co">#&gt; 15:    43 42</span></span>
+<span><span class="co">#&gt; 16:    43 42</span></span>
+<span><span class="co">#&gt; 17:    43 42</span></span>
+<span><span class="co">#&gt; 18:    43 42</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/is_normal_colwise.html">is_normal_colwise</a></span><span class="op">(</span><span class="va">dataset</span>, .by <span class="op">=</span> <span class="va">ss_severidad</span><span class="op">)</span> <span class="co"># Normalidad</span></span>
+<span><span class="co">#&gt;                          vars  Leve Importante Moderado No es problema Severo</span></span>
+<span><span class="co">#&gt;  1:                        id  TRUE      FALSE    FALSE           TRUE   TRUE</span></span>
+<span><span class="co">#&gt;  2:    deporte_minutos_sesion FALSE      FALSE    FALSE          FALSE  FALSE</span></span>
+<span><span class="co">#&gt;  3:          ss_patron_verano FALSE       TRUE     TRUE          FALSE   TRUE</span></span>
+<span><span class="co">#&gt;  4:        ss_patron_invierno FALSE      FALSE    FALSE          FALSE  FALSE</span></span>
+<span><span class="co">#&gt;  5:       riff_autoaceptacion FALSE      FALSE    FALSE          FALSE   TRUE</span></span>
+<span><span class="co">#&gt;  6: riff_relaciones_positivas FALSE      FALSE     TRUE          FALSE   TRUE</span></span>
+<span><span class="co">#&gt;  7:            riff_autonomia FALSE      FALSE     TRUE          FALSE   TRUE</span></span>
+<span><span class="co">#&gt;  8:      riff_dominio_entorno FALSE      FALSE    FALSE          FALSE   TRUE</span></span>
+<span><span class="co">#&gt;  9: riff_crecimiento_personal FALSE      FALSE     TRUE          FALSE   TRUE</span></span>
+<span><span class="co">#&gt; 10:       riff_proposito_vida FALSE      FALSE     TRUE          FALSE   TRUE</span></span>
+<span><span class="co">#&gt;     Grave</span></span>
+<span><span class="co">#&gt;  1: FALSE</span></span>
+<span><span class="co">#&gt;  2: FALSE</span></span>
+<span><span class="co">#&gt;  3: FALSE</span></span>
+<span><span class="co">#&gt;  4: FALSE</span></span>
+<span><span class="co">#&gt;  5:  TRUE</span></span>
+<span><span class="co">#&gt;  6:  TRUE</span></span>
+<span><span class="co">#&gt;  7:  TRUE</span></span>
+<span><span class="co">#&gt;  8:  TRUE</span></span>
+<span><span class="co">#&gt;  9:  TRUE</span></span>
+<span><span class="co">#&gt; 10:  TRUE</span></span></code></pre></div>
 <p>Al igual que con las variables mencionadas, podemos concluir que
 ninguna variable posee las características suficientes para la
 utilización de estadística paramétrica, la principal razón es la falta

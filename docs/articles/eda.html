@@ -8,8 +8,8 @@
 <meta name="description" content="seasonalSensitivity">
 <title>Análisis exploratorio • seasonalSensitivity</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="../deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Análisis exploratorio">
 <meta property="og:description" content="seasonalSensitivity">
@@ -92,7 +92,7 @@
 
 
 <div class="row">
-  <main id="main"><div class="page-header">
+  <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Análisis exploratorio</h1>
             
       
@@ -107,16 +107,16 @@ datos usados para el análisis exploratorio bajo el nombre de
 <code>dataset</code>. Al cargar los datos, estos se vuelven disponibles
 en el ambiente de trabajo.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Si no cargamos el paquete, los datos no están disponibles</span>
-<span class="fu"><a href="https://rdrr.io/r/base/exists.html" class="external-link">exists</a></span><span class="op">(</span><span class="st">"dataset"</span><span class="op">)</span>
-<span class="co">#&gt; [1] FALSE</span>
-
-<span class="co"># Cargamos nuestro paquete</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NIM-ACh/seasonalSensitivity" class="external-link">seasonalSensitivity</a></span><span class="op">)</span>
-
-<span class="co"># Esto hace que los datos queden disponibles para ser usados</span>
-<span class="fu"><a href="https://rdrr.io/r/base/exists.html" class="external-link">exists</a></span><span class="op">(</span><span class="st">"dataset"</span><span class="op">)</span>
-<span class="co">#&gt; [1] TRUE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Si no cargamos el paquete, los datos no están disponibles</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/exists.html" class="external-link">exists</a></span><span class="op">(</span><span class="st">"dataset"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] FALSE</span></span>
+<span></span>
+<span><span class="co"># Cargamos nuestro paquete</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NIM-ACh/seasonalSensitivity" class="external-link">seasonalSensitivity</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Esto hace que los datos queden disponibles para ser usados</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/exists.html" class="external-link">exists</a></span><span class="op">(</span><span class="st">"dataset"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="estructura-de-los-datos">Estructura de los datos<a class="anchor" aria-label="anchor" href="#estructura-de-los-datos"></a>
 </h2>
@@ -137,26 +137,15 @@ de los estadísticos usados en esta guía.</p>
 <h2 id="variables-sociodemográficas">Variables sociodemográficas<a class="anchor" aria-label="anchor" href="#variables-sociodemogr%C3%A1ficas"></a>
 </h2>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">sex</span> <span class="op">&lt;-</span> <span class="va">dataset</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">genero</span><span class="op">)</span> |&gt; <span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html" class="external-link">chisq.test</a></span><span class="op">(</span><span class="op">)</span> |&gt; <span class="fu">ASQ3</span><span class="fu">::</span><span class="fu"><a href="https://nim-ach.github.io/ASQ3/reference/report_chi.html" class="external-link">report_chi</a></span><span class="op">(</span><span class="op">)</span><span class="op">]</span>
-<span class="va">age</span> <span class="op">&lt;-</span> <span class="va">dataset</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">edad</span><span class="op">)</span> |&gt; <span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html" class="external-link">chisq.test</a></span><span class="op">(</span><span class="op">)</span> |&gt; <span class="fu">ASQ3</span><span class="fu">::</span><span class="fu"><a href="https://nim-ach.github.io/ASQ3/reference/report_chi.html" class="external-link">report_chi</a></span><span class="op">(</span><span class="op">)</span><span class="op">]</span></code></pre></div>
-<p>Las variables de interés en este caso son el sexo y la edad, en
-primera instancia observamos una proporción significativamente mayor de
-hombres que de mujeres en la muestra, <span class="math inline">\(\chi^2_{gof}\)</span> (1) = 5.67, <em>p</em> =
-0.017, <span class="math inline">\(C_{Pearson}\)</span> = 0.13,
-CI<sub>0.95%</sub>[0.04, 1]. Mientras que para la variable edad
-observamos que esta es una variable categórica de dos niveles, agrupando
-a los sujetos en 18 a 35 años o mayores de 35 años, y al igual que con
-el género, hallamos que la proporción de sujetos de 18 a 35 años es
-significativamente mayor que aquellos mayores de 35 años, <span class="math inline">\(\chi^2_{gof}\)</span> (1) = 4.93, <em>p</em> =
-0.026, <span class="math inline">\(C_{Pearson}\)</span> = 0.12,
-CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab1">Tabla 1</a></p>
+<code class="sourceCode R"><span><span class="va">sex</span> <span class="op">&lt;-</span> <span class="va">dataset</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">genero</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html" class="external-link">chisq.test</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">ASQ3</span><span class="fu">::</span><span class="fu"><a href="https://nim-ach.github.io/ASQ3/reference/report_chi.html" class="external-link">report_chi</a></span><span class="op">(</span><span class="op">)</span><span class="op">]</span></span>
+<span><span class="va">age</span> <span class="op">&lt;-</span> <span class="va">dataset</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">edad</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html" class="external-link">chisq.test</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">ASQ3</span><span class="fu">::</span><span class="fu"><a href="https://nim-ach.github.io/ASQ3/reference/report_chi.html" class="external-link">report_chi</a></span><span class="op">(</span><span class="op">)</span><span class="op">]</span></span></code></pre></div>
 <div id="tab1">
-<div id="xhakdyszyn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rbahgbxzms" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xhakdyszyn .gt_table {
+#rbahgbxzms .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -181,7 +170,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-left-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_heading {
+#rbahgbxzms .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -193,7 +182,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-right-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_title {
+#rbahgbxzms .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -205,7 +194,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-bottom-width: 0;
 }
 
-#xhakdyszyn .gt_subtitle {
+#rbahgbxzms .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -217,13 +206,13 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-top-width: 0;
 }
 
-#xhakdyszyn .gt_bottom_border {
+#rbahgbxzms .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_col_headings {
+#rbahgbxzms .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -238,7 +227,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-right-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_col_heading {
+#rbahgbxzms .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -258,7 +247,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   overflow-x: hidden;
 }
 
-#xhakdyszyn .gt_column_spanner_outer {
+#rbahgbxzms .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -270,15 +259,15 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   padding-right: 4px;
 }
 
-#xhakdyszyn .gt_column_spanner_outer:first-child {
+#rbahgbxzms .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xhakdyszyn .gt_column_spanner_outer:last-child {
+#rbahgbxzms .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xhakdyszyn .gt_column_spanner {
+#rbahgbxzms .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -290,7 +279,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   width: 100%;
 }
 
-#xhakdyszyn .gt_group_heading {
+#rbahgbxzms .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -315,7 +304,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   vertical-align: middle;
 }
 
-#xhakdyszyn .gt_empty_group_heading {
+#rbahgbxzms .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -330,15 +319,15 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   vertical-align: middle;
 }
 
-#xhakdyszyn .gt_from_md > :first-child {
+#rbahgbxzms .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xhakdyszyn .gt_from_md > :last-child {
+#rbahgbxzms .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xhakdyszyn .gt_row {
+#rbahgbxzms .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +346,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   overflow-x: hidden;
 }
 
-#xhakdyszyn .gt_stub {
+#rbahgbxzms .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -370,7 +359,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   padding-right: 5px;
 }
 
-#xhakdyszyn .gt_stub_row_group {
+#rbahgbxzms .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -384,11 +373,11 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   vertical-align: top;
 }
 
-#xhakdyszyn .gt_row_group_first td {
+#rbahgbxzms .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xhakdyszyn .gt_summary_row {
+#rbahgbxzms .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -398,16 +387,16 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   padding-right: 5px;
 }
 
-#xhakdyszyn .gt_first_summary_row {
+#rbahgbxzms .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_first_summary_row.thick {
+#rbahgbxzms .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xhakdyszyn .gt_last_summary_row {
+#rbahgbxzms .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -417,7 +406,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-bottom-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_grand_summary_row {
+#rbahgbxzms .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -427,7 +416,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   padding-right: 5px;
 }
 
-#xhakdyszyn .gt_first_grand_summary_row {
+#rbahgbxzms .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -437,11 +426,11 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-top-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_striped {
+#rbahgbxzms .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xhakdyszyn .gt_table_body {
+#rbahgbxzms .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -450,7 +439,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-bottom-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_footnotes {
+#rbahgbxzms .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -464,7 +453,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-right-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_footnote {
+#rbahgbxzms .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -473,7 +462,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   padding-right: 5px;
 }
 
-#xhakdyszyn .gt_sourcenotes {
+#rbahgbxzms .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -487,7 +476,7 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   border-right-color: #D3D3D3;
 }
 
-#xhakdyszyn .gt_sourcenote {
+#rbahgbxzms .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -495,78 +484,71 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
   padding-right: 5px;
 }
 
-#xhakdyszyn .gt_left {
+#rbahgbxzms .gt_left {
   text-align: left;
 }
 
-#xhakdyszyn .gt_center {
+#rbahgbxzms .gt_center {
   text-align: center;
 }
 
-#xhakdyszyn .gt_right {
+#rbahgbxzms .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xhakdyszyn .gt_font_normal {
+#rbahgbxzms .gt_font_normal {
   font-weight: normal;
 }
 
-#xhakdyszyn .gt_font_bold {
+#rbahgbxzms .gt_font_bold {
   font-weight: bold;
 }
 
-#xhakdyszyn .gt_font_italic {
+#rbahgbxzms .gt_font_italic {
   font-style: italic;
 }
 
-#xhakdyszyn .gt_super {
+#rbahgbxzms .gt_super {
   font-size: 65%;
 }
 
-#xhakdyszyn .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#xhakdyszyn .gt_footnote_marks {
+#rbahgbxzms .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#xhakdyszyn .gt_asterisk {
+#rbahgbxzms .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xhakdyszyn .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+#rbahgbxzms .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#xhakdyszyn .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+#rbahgbxzms .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#xhakdyszyn .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+#rbahgbxzms .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#rbahgbxzms .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#rbahgbxzms .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="table gt_table">
 <thead class="gt_col_headings"><tr>
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Característica</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Característica</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">
 <strong>N = 358</strong><sup class="gt_footnote_marks">1</sup>
 </th>
     </tr></thead>
@@ -576,15 +558,15 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Masculino</td>
+<td class="gt_row gt_left">    Masculino</td>
 <td class="gt_row gt_center">201 (56%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Femenino</td>
+<td class="gt_row gt_left">    Femenino</td>
 <td class="gt_row gt_center">156 (44%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">1</td>
 </tr>
 <tr>
@@ -592,11 +574,11 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">18-35</td>
+<td class="gt_row gt_left">    18-35</td>
 <td class="gt_row gt_center">200 (56%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">&gt; 35</td>
+<td class="gt_row gt_left">    &gt; 35</td>
 <td class="gt_row gt_center">158 (44%)</td>
 </tr>
 </tbody>
@@ -610,26 +592,14 @@ CI<sub>0.95%</sub>[0.03, 1]. Los detalles se pueden apreciar en la <a href="#tab
 <div class="section level3">
 <h3 id="deporte-y-ejercicio-reportado">Deporte y ejercicio reportado<a class="anchor" aria-label="anchor" href="#deporte-y-ejercicio-reportado"></a>
 </h3>
-<p>Para el caso del deporte, hallamos que 194 reportaron realizar
-deporte, mientras que 159 no, <span class="math inline">\(\chi^2_{gof}\)</span> (1) = 3.47, <em>p</em> =
-0.062, <span class="math inline">\(C_{Pearson}\)</span> = 0.1,
-CI<sub>0.95%</sub>[0, 1]. Del total de la muestra, 194 sujetos
-declararon hacer ejercicio por lo menos una vez a la semana y, de estos,
-el 56.7% (n = 110/194) mencionó hacer ejercicio más de dos veces por
-semana, mientras que una proporción homogénea declaró entrenar 1 y 2
-veces a la semana (n = 36 y 48 respectivamente).</p>
 <p><img src="eda_files/figure-html/ddspie-1.png" width="700"></p>
-<p>La duración de una sesión de ejercicio promedio fue de 180 minutos (3
-horas) como mediana, observando que un 50% de los aquellos que
-respondieron, declararon entrenar entre 1.5 a 5 horas (i.e., rango
-intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>.</p>
 <div id="tab2">
-<div id="kenyihjdsn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ozlkwkdkkf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#kenyihjdsn .gt_table {
+#ozlkwkdkkf .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -654,7 +624,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-left-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_heading {
+#ozlkwkdkkf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -666,7 +636,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-right-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_title {
+#ozlkwkdkkf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -678,7 +648,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-bottom-width: 0;
 }
 
-#kenyihjdsn .gt_subtitle {
+#ozlkwkdkkf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -690,13 +660,13 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-top-width: 0;
 }
 
-#kenyihjdsn .gt_bottom_border {
+#ozlkwkdkkf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_col_headings {
+#ozlkwkdkkf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -711,7 +681,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-right-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_col_heading {
+#ozlkwkdkkf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -731,7 +701,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   overflow-x: hidden;
 }
 
-#kenyihjdsn .gt_column_spanner_outer {
+#ozlkwkdkkf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -743,15 +713,15 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   padding-right: 4px;
 }
 
-#kenyihjdsn .gt_column_spanner_outer:first-child {
+#ozlkwkdkkf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kenyihjdsn .gt_column_spanner_outer:last-child {
+#ozlkwkdkkf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kenyihjdsn .gt_column_spanner {
+#ozlkwkdkkf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -763,7 +733,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   width: 100%;
 }
 
-#kenyihjdsn .gt_group_heading {
+#ozlkwkdkkf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -788,7 +758,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   vertical-align: middle;
 }
 
-#kenyihjdsn .gt_empty_group_heading {
+#ozlkwkdkkf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -803,15 +773,15 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   vertical-align: middle;
 }
 
-#kenyihjdsn .gt_from_md > :first-child {
+#ozlkwkdkkf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kenyihjdsn .gt_from_md > :last-child {
+#ozlkwkdkkf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kenyihjdsn .gt_row {
+#ozlkwkdkkf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -830,7 +800,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   overflow-x: hidden;
 }
 
-#kenyihjdsn .gt_stub {
+#ozlkwkdkkf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -843,7 +813,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   padding-right: 5px;
 }
 
-#kenyihjdsn .gt_stub_row_group {
+#ozlkwkdkkf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -857,11 +827,11 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   vertical-align: top;
 }
 
-#kenyihjdsn .gt_row_group_first td {
+#ozlkwkdkkf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kenyihjdsn .gt_summary_row {
+#ozlkwkdkkf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -871,16 +841,16 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   padding-right: 5px;
 }
 
-#kenyihjdsn .gt_first_summary_row {
+#ozlkwkdkkf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_first_summary_row.thick {
+#ozlkwkdkkf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kenyihjdsn .gt_last_summary_row {
+#ozlkwkdkkf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -890,7 +860,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-bottom-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_grand_summary_row {
+#ozlkwkdkkf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -900,7 +870,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   padding-right: 5px;
 }
 
-#kenyihjdsn .gt_first_grand_summary_row {
+#ozlkwkdkkf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -910,11 +880,11 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-top-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_striped {
+#ozlkwkdkkf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kenyihjdsn .gt_table_body {
+#ozlkwkdkkf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -923,7 +893,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-bottom-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_footnotes {
+#ozlkwkdkkf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -937,7 +907,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-right-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_footnote {
+#ozlkwkdkkf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -946,7 +916,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   padding-right: 5px;
 }
 
-#kenyihjdsn .gt_sourcenotes {
+#ozlkwkdkkf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -960,7 +930,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   border-right-color: #D3D3D3;
 }
 
-#kenyihjdsn .gt_sourcenote {
+#ozlkwkdkkf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -968,78 +938,71 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
   padding-right: 5px;
 }
 
-#kenyihjdsn .gt_left {
+#ozlkwkdkkf .gt_left {
   text-align: left;
 }
 
-#kenyihjdsn .gt_center {
+#ozlkwkdkkf .gt_center {
   text-align: center;
 }
 
-#kenyihjdsn .gt_right {
+#ozlkwkdkkf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kenyihjdsn .gt_font_normal {
+#ozlkwkdkkf .gt_font_normal {
   font-weight: normal;
 }
 
-#kenyihjdsn .gt_font_bold {
+#ozlkwkdkkf .gt_font_bold {
   font-weight: bold;
 }
 
-#kenyihjdsn .gt_font_italic {
+#ozlkwkdkkf .gt_font_italic {
   font-style: italic;
 }
 
-#kenyihjdsn .gt_super {
+#ozlkwkdkkf .gt_super {
   font-size: 65%;
 }
 
-#kenyihjdsn .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#kenyihjdsn .gt_footnote_marks {
+#ozlkwkdkkf .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#kenyihjdsn .gt_asterisk {
+#ozlkwkdkkf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kenyihjdsn .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+#ozlkwkdkkf .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#kenyihjdsn .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+#ozlkwkdkkf .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#kenyihjdsn .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+#ozlkwkdkkf .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ozlkwkdkkf .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ozlkwkdkkf .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="table gt_table">
 <thead class="gt_col_headings"><tr>
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Característica</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Característica</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">
 <strong>N = 358</strong><sup class="gt_footnote_marks">1</sup>
 </th>
     </tr></thead>
@@ -1049,15 +1012,15 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Si</td>
+<td class="gt_row gt_left">    Si</td>
 <td class="gt_row gt_center">194 (55%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
+<td class="gt_row gt_left">    No</td>
 <td class="gt_row gt_center">159 (45%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">5</td>
 </tr>
 <tr>
@@ -1065,19 +1028,19 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">1 vez</td>
+<td class="gt_row gt_left">    1 vez</td>
 <td class="gt_row gt_center">36 (19%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">2 veces</td>
+<td class="gt_row gt_left">    2 veces</td>
 <td class="gt_row gt_center">48 (25%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">&gt; 2 veces</td>
+<td class="gt_row gt_left">    &gt; 2 veces</td>
 <td class="gt_row gt_center">110 (57%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">164</td>
 </tr>
 <tr>
@@ -1085,19 +1048,19 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Baja</td>
+<td class="gt_row gt_left">    Baja</td>
 <td class="gt_row gt_center">31 (16%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Media</td>
+<td class="gt_row gt_left">    Media</td>
 <td class="gt_row gt_center">126 (65%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Alta</td>
+<td class="gt_row gt_left">    Alta</td>
 <td class="gt_row gt_center">37 (19%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">164</td>
 </tr>
 <tr>
@@ -1105,7 +1068,7 @@ intercuartil). Los detalles se pueden apreciar en la <a href="#tab2">Tabla 2</a>
 <td class="gt_row gt_center">180 (90, 300)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">164</td>
 </tr>
 </tbody>
@@ -1125,15 +1088,14 @@ variables patrón de verano (<code>ss_patron_verano</code>) e invierno
 (<code>ss_patron_invierno</code>), tipo de patron estacional
 (<code>ss_patron_tipo</code>), la clasificación del puntaje de
 estacionalidad (<code>ss_index</code>) y la clasificación de severidad
-de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
-3</a> muestra los estadísticos descriptivos de estas variables.</p>
+de estacionalidad (<code>ss_severidad</code>).</p>
 <div id="tab3">
-<div id="vgdzwxlobr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ivkxqyyorg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#vgdzwxlobr .gt_table {
+#ivkxqyyorg .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1158,7 +1120,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-left-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_heading {
+#ivkxqyyorg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1170,7 +1132,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-right-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_title {
+#ivkxqyyorg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1182,7 +1144,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-bottom-width: 0;
 }
 
-#vgdzwxlobr .gt_subtitle {
+#ivkxqyyorg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1194,13 +1156,13 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-top-width: 0;
 }
 
-#vgdzwxlobr .gt_bottom_border {
+#ivkxqyyorg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_col_headings {
+#ivkxqyyorg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1215,7 +1177,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-right-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_col_heading {
+#ivkxqyyorg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1235,7 +1197,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   overflow-x: hidden;
 }
 
-#vgdzwxlobr .gt_column_spanner_outer {
+#ivkxqyyorg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1247,15 +1209,15 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   padding-right: 4px;
 }
 
-#vgdzwxlobr .gt_column_spanner_outer:first-child {
+#ivkxqyyorg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vgdzwxlobr .gt_column_spanner_outer:last-child {
+#ivkxqyyorg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vgdzwxlobr .gt_column_spanner {
+#ivkxqyyorg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1267,7 +1229,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   width: 100%;
 }
 
-#vgdzwxlobr .gt_group_heading {
+#ivkxqyyorg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1292,7 +1254,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   vertical-align: middle;
 }
 
-#vgdzwxlobr .gt_empty_group_heading {
+#ivkxqyyorg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1307,15 +1269,15 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   vertical-align: middle;
 }
 
-#vgdzwxlobr .gt_from_md > :first-child {
+#ivkxqyyorg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vgdzwxlobr .gt_from_md > :last-child {
+#ivkxqyyorg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vgdzwxlobr .gt_row {
+#ivkxqyyorg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1334,7 +1296,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   overflow-x: hidden;
 }
 
-#vgdzwxlobr .gt_stub {
+#ivkxqyyorg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1347,7 +1309,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   padding-right: 5px;
 }
 
-#vgdzwxlobr .gt_stub_row_group {
+#ivkxqyyorg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1361,11 +1323,11 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   vertical-align: top;
 }
 
-#vgdzwxlobr .gt_row_group_first td {
+#ivkxqyyorg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vgdzwxlobr .gt_summary_row {
+#ivkxqyyorg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1375,16 +1337,16 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   padding-right: 5px;
 }
 
-#vgdzwxlobr .gt_first_summary_row {
+#ivkxqyyorg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_first_summary_row.thick {
+#ivkxqyyorg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vgdzwxlobr .gt_last_summary_row {
+#ivkxqyyorg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1394,7 +1356,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-bottom-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_grand_summary_row {
+#ivkxqyyorg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1404,7 +1366,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   padding-right: 5px;
 }
 
-#vgdzwxlobr .gt_first_grand_summary_row {
+#ivkxqyyorg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1414,11 +1376,11 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-top-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_striped {
+#ivkxqyyorg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vgdzwxlobr .gt_table_body {
+#ivkxqyyorg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1427,7 +1389,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-bottom-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_footnotes {
+#ivkxqyyorg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1441,7 +1403,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-right-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_footnote {
+#ivkxqyyorg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1450,7 +1412,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   padding-right: 5px;
 }
 
-#vgdzwxlobr .gt_sourcenotes {
+#ivkxqyyorg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1464,7 +1426,7 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   border-right-color: #D3D3D3;
 }
 
-#vgdzwxlobr .gt_sourcenote {
+#ivkxqyyorg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1472,78 +1434,71 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
   padding-right: 5px;
 }
 
-#vgdzwxlobr .gt_left {
+#ivkxqyyorg .gt_left {
   text-align: left;
 }
 
-#vgdzwxlobr .gt_center {
+#ivkxqyyorg .gt_center {
   text-align: center;
 }
 
-#vgdzwxlobr .gt_right {
+#ivkxqyyorg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vgdzwxlobr .gt_font_normal {
+#ivkxqyyorg .gt_font_normal {
   font-weight: normal;
 }
 
-#vgdzwxlobr .gt_font_bold {
+#ivkxqyyorg .gt_font_bold {
   font-weight: bold;
 }
 
-#vgdzwxlobr .gt_font_italic {
+#ivkxqyyorg .gt_font_italic {
   font-style: italic;
 }
 
-#vgdzwxlobr .gt_super {
+#ivkxqyyorg .gt_super {
   font-size: 65%;
 }
 
-#vgdzwxlobr .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#vgdzwxlobr .gt_footnote_marks {
+#ivkxqyyorg .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#vgdzwxlobr .gt_asterisk {
+#ivkxqyyorg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vgdzwxlobr .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+#ivkxqyyorg .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#vgdzwxlobr .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+#ivkxqyyorg .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#vgdzwxlobr .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+#ivkxqyyorg .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ivkxqyyorg .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ivkxqyyorg .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="table gt_table">
 <thead class="gt_col_headings"><tr>
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Característica</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Característica</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">
 <strong>N = 358</strong><sup class="gt_footnote_marks">1</sup>
 </th>
     </tr></thead>
@@ -1561,19 +1516,19 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Verano</td>
+<td class="gt_row gt_left">    Verano</td>
 <td class="gt_row gt_center">3 (0.9%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Invierno</td>
+<td class="gt_row gt_left">    Invierno</td>
 <td class="gt_row gt_center">96 (29%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mixto</td>
+<td class="gt_row gt_left">    Mixto</td>
 <td class="gt_row gt_center">232 (70%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">27</td>
 </tr>
 <tr>
@@ -1581,19 +1536,19 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Normal</td>
+<td class="gt_row gt_left">    Normal</td>
 <td class="gt_row gt_center">86 (24%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Winter blues</td>
+<td class="gt_row gt_left">    Winter blues</td>
 <td class="gt_row gt_center">55 (15%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">SAD</td>
+<td class="gt_row gt_left">    SAD</td>
 <td class="gt_row gt_center">216 (61%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">1</td>
 </tr>
 <tr>
@@ -1601,31 +1556,31 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
 <td class="gt_row gt_center"></td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No es problema</td>
+<td class="gt_row gt_left">    No es problema</td>
 <td class="gt_row gt_center">42 (13%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Leve</td>
+<td class="gt_row gt_left">    Leve</td>
 <td class="gt_row gt_center">72 (23%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moderado</td>
+<td class="gt_row gt_left">    Moderado</td>
 <td class="gt_row gt_center">58 (18%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Importante</td>
+<td class="gt_row gt_left">    Importante</td>
 <td class="gt_row gt_center">44 (14%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Severo</td>
+<td class="gt_row gt_left">    Severo</td>
 <td class="gt_row gt_center">57 (18%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Grave</td>
+<td class="gt_row gt_left">    Grave</td>
 <td class="gt_row gt_center">43 (14%)</td>
 </tr>
 <tr>
-<td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Desconocido</td>
+<td class="gt_row gt_left">    Desconocido</td>
 <td class="gt_row gt_center">42</td>
 </tr>
 </tbody>
@@ -1636,31 +1591,6 @@ de estacionalidad (<code>ss_severidad</code>). La <a href="#tab3">Tabla
 </table>
 </div>
 </div>
-<p>La <a href="#tab3">Tabla 3</a> nos muestra que para el tipo de patrón
-sólo 3 personas (&lt; 1%) tienen un patrón de Verano, mientras que una
-proporción significativamente mayor tiene un patrón estacional Mixto por
-sobre uno de Invierno (70% vs 29%), <span class="math inline">\(\chi^2_{gof}\)</span> (1) = 56.39, <em>p</em> &lt;
-0.001, <span class="math inline">\(C_{Pearson}\)</span> = 0.38,
-CI<sub>0.95%</sub>[0.31, 1].</p>
-<p>Para la clasificación del puntaje de estacionalidad (i.e., Seasonal
-Score Index), la mayoría de las personas calificaron con en el grupo SAD
-(i.e., Trastorno afectivo estacional por sus siglas en inglés), <span class="math inline">\(\chi^2_{gof}\)</span> (2) = 122.64, <em>p</em>
-&lt; 0.001, <span class="math inline">\(C_{Pearson}\)</span> = 0.51,
-CI<sub>0.95%</sub>[0.44, 1], mientras que la proporción de aquellos que
-calificaron en el grupo Normal (para los estándares del cuestionario de
-evaluación de patrones estacionales, o SPAQ) fue mayor a que la de
-aquellos que calificaron en <em>Winter blues</em> (24% vs 15%), <span class="math inline">\(\chi^2_{gof}\)</span> (1) = 6.82, <em>p</em> =
-0.009, <span class="math inline">\(C_{Pearson}\)</span> = 0.21,
-CI<sub>0.95%</sub>[0.08, 1].</p>
-<p>En el caso de la clasificación de la severidad de la estacionalidad,
-observamos que la proporción entre los grupos no es homogénea, <span class="math inline">\(\chi^2_{gof}\)</span> (5) = 13.35, <em>p</em> =
-0.02, <span class="math inline">\(C_{Pearson}\)</span> = 0.2,
-CI<sub>0.95%</sub>[0.06, 1]. Estimamos que cerca de un tercio de las
-personas evaluadas (32%, n = 100) tienen una estacionalidad severa o
-grave, mientras que sólo un 13% (n = 42) afirma que la estacionalidad no
-es un problema para ellos, <span class="math inline">\(\chi^2_{gof}\)</span> (1) = 23.69, <em>p</em> &lt;
-0.001, <span class="math inline">\(C_{Pearson}\)</span> = 0.38,
-CI<sub>0.95%</sub>[0.26, 1].</p>
 </div>
 <div class="section level3">
 <h3 id="bienestar-de-ryff">Bienestar de Ryff<a class="anchor" aria-label="anchor" href="#bienestar-de-ryff"></a>
@@ -1673,14 +1603,14 @@ encontramos los dominios de Autoaceptación
 (<code>riff_autonomia</code>), Dominio del entorno
 (<code>riff_dominio_entorno</code>), Crecimiento personal
 (<code>riff_crecimiento_personal</code>) y Propósito en la vida
-(<code>riff_proposito_vida</code>). Para más detalle ver la <a href="#tab4">Tabla 4</a></p>
+(<code>riff_proposito_vida</code>).</p>
 <div id="tab4">
-<div id="tytgxqxmup" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="wbvkbzglzv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#tytgxqxmup .gt_table {
+#wbvkbzglzv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1705,7 +1635,7 @@ encontramos los dominios de Autoaceptación
   border-left-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_heading {
+#wbvkbzglzv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1717,7 +1647,7 @@ encontramos los dominios de Autoaceptación
   border-right-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_title {
+#wbvkbzglzv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1729,7 +1659,7 @@ encontramos los dominios de Autoaceptación
   border-bottom-width: 0;
 }
 
-#tytgxqxmup .gt_subtitle {
+#wbvkbzglzv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1741,13 +1671,13 @@ encontramos los dominios de Autoaceptación
   border-top-width: 0;
 }
 
-#tytgxqxmup .gt_bottom_border {
+#wbvkbzglzv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_col_headings {
+#wbvkbzglzv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1762,7 +1692,7 @@ encontramos los dominios de Autoaceptación
   border-right-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_col_heading {
+#wbvkbzglzv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1782,7 +1712,7 @@ encontramos los dominios de Autoaceptación
   overflow-x: hidden;
 }
 
-#tytgxqxmup .gt_column_spanner_outer {
+#wbvkbzglzv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1794,15 +1724,15 @@ encontramos los dominios de Autoaceptación
   padding-right: 4px;
 }
 
-#tytgxqxmup .gt_column_spanner_outer:first-child {
+#wbvkbzglzv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tytgxqxmup .gt_column_spanner_outer:last-child {
+#wbvkbzglzv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tytgxqxmup .gt_column_spanner {
+#wbvkbzglzv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1814,7 +1744,7 @@ encontramos los dominios de Autoaceptación
   width: 100%;
 }
 
-#tytgxqxmup .gt_group_heading {
+#wbvkbzglzv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1839,7 +1769,7 @@ encontramos los dominios de Autoaceptación
   vertical-align: middle;
 }
 
-#tytgxqxmup .gt_empty_group_heading {
+#wbvkbzglzv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1854,15 +1784,15 @@ encontramos los dominios de Autoaceptación
   vertical-align: middle;
 }
 
-#tytgxqxmup .gt_from_md > :first-child {
+#wbvkbzglzv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tytgxqxmup .gt_from_md > :last-child {
+#wbvkbzglzv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tytgxqxmup .gt_row {
+#wbvkbzglzv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1881,7 +1811,7 @@ encontramos los dominios de Autoaceptación
   overflow-x: hidden;
 }
 
-#tytgxqxmup .gt_stub {
+#wbvkbzglzv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1894,7 +1824,7 @@ encontramos los dominios de Autoaceptación
   padding-right: 5px;
 }
 
-#tytgxqxmup .gt_stub_row_group {
+#wbvkbzglzv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1908,11 +1838,11 @@ encontramos los dominios de Autoaceptación
   vertical-align: top;
 }
 
-#tytgxqxmup .gt_row_group_first td {
+#wbvkbzglzv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#tytgxqxmup .gt_summary_row {
+#wbvkbzglzv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1922,16 +1852,16 @@ encontramos los dominios de Autoaceptación
   padding-right: 5px;
 }
 
-#tytgxqxmup .gt_first_summary_row {
+#wbvkbzglzv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_first_summary_row.thick {
+#wbvkbzglzv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#tytgxqxmup .gt_last_summary_row {
+#wbvkbzglzv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1941,7 +1871,7 @@ encontramos los dominios de Autoaceptación
   border-bottom-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_grand_summary_row {
+#wbvkbzglzv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1951,7 +1881,7 @@ encontramos los dominios de Autoaceptación
   padding-right: 5px;
 }
 
-#tytgxqxmup .gt_first_grand_summary_row {
+#wbvkbzglzv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1961,11 +1891,11 @@ encontramos los dominios de Autoaceptación
   border-top-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_striped {
+#wbvkbzglzv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#tytgxqxmup .gt_table_body {
+#wbvkbzglzv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1974,7 +1904,7 @@ encontramos los dominios de Autoaceptación
   border-bottom-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_footnotes {
+#wbvkbzglzv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1988,7 +1918,7 @@ encontramos los dominios de Autoaceptación
   border-right-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_footnote {
+#wbvkbzglzv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1997,7 +1927,7 @@ encontramos los dominios de Autoaceptación
   padding-right: 5px;
 }
 
-#tytgxqxmup .gt_sourcenotes {
+#wbvkbzglzv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2011,7 +1941,7 @@ encontramos los dominios de Autoaceptación
   border-right-color: #D3D3D3;
 }
 
-#tytgxqxmup .gt_sourcenote {
+#wbvkbzglzv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2019,78 +1949,71 @@ encontramos los dominios de Autoaceptación
   padding-right: 5px;
 }
 
-#tytgxqxmup .gt_left {
+#wbvkbzglzv .gt_left {
   text-align: left;
 }
 
-#tytgxqxmup .gt_center {
+#wbvkbzglzv .gt_center {
   text-align: center;
 }
 
-#tytgxqxmup .gt_right {
+#wbvkbzglzv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tytgxqxmup .gt_font_normal {
+#wbvkbzglzv .gt_font_normal {
   font-weight: normal;
 }
 
-#tytgxqxmup .gt_font_bold {
+#wbvkbzglzv .gt_font_bold {
   font-weight: bold;
 }
 
-#tytgxqxmup .gt_font_italic {
+#wbvkbzglzv .gt_font_italic {
   font-style: italic;
 }
 
-#tytgxqxmup .gt_super {
+#wbvkbzglzv .gt_super {
   font-size: 65%;
 }
 
-#tytgxqxmup .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#tytgxqxmup .gt_footnote_marks {
+#wbvkbzglzv .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#tytgxqxmup .gt_asterisk {
+#wbvkbzglzv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#tytgxqxmup .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+#wbvkbzglzv .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#tytgxqxmup .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+#wbvkbzglzv .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#tytgxqxmup .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+#wbvkbzglzv .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#wbvkbzglzv .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#wbvkbzglzv .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="table gt_table">
 <thead class="gt_col_headings"><tr>
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Característica</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Característica</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">
 <strong>N = 358</strong><sup class="gt_footnote_marks">1</sup>
 </th>
     </tr></thead>

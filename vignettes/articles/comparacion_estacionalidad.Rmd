@@ -27,15 +27,11 @@ library(seasonalSensitivity)
 ggstatsplot::ggbarstats(dataset, ss_index, genero)
 ```
 
-No se apreció una asociación entre factores, sin embargo, se observó una proporción heterogénea de cada uno de los niveles de `ss_index` en cada género.
-
 # Deporte
 
 ```{r deporte-ss_index}
 ggstatsplot::ggbarstats(dataset, ss_index, deporte)
 ```
-
-No se apreció una asociación entre factores, sin embargo, se observó una proporción heterogénea de cada uno de los niveles de `ss_index` en cada nivel de `deporte.`
 
 ## Días de la semana que realiza deporte
 
@@ -43,15 +39,11 @@ No se apreció una asociación entre factores, sin embargo, se observó una prop
 ggstatsplot::ggbarstats(dataset, ss_index, deporte_dias_semana)
 ```
 
-No se apreció una asociación entre factores, sin embargo, se observó una proporción heterogénea de cada uno de los niveles de `ss_index` en cada nivel de `deporte_dias_semana`
-
 ## Intensidad del deporte
 
 ```{r deporte_intensidad-ss_index}
 ggstatsplot::ggbarstats(dataset, ss_index, deporte_intensidad)
 ```
-
-Se aprecia una asociación entre la intensidad del deporte realizado y la sensibilidad estacional, en donde aquellos que realizan ejercicio de baja intensidad hay una mayor proporción de personas con SAD, mientras que la proporción entre los niveles de `ss_index` se homogeniza a mayor intensidad. ¿Quiere decir esto que una mayor intensidad durante el la realización de ejercicio podría vincularse a una menor sensibilidad estacional?
 
 ## Minutos por sesión
 
@@ -59,8 +51,6 @@ Se aprecia una asociación entre la intensidad del deporte realizado y la sensib
 ggstatsplot::ggbetweenstats(dataset, ss_index, deporte_minutos_sesion, type = "np", 
                             p.adjust.method = "none")
 ```
-
-No se observaron diferencias en los minutos de deporte realizado por sesión deportiva.
 
 # Sensibilidad estacional
 
@@ -71,8 +61,6 @@ ggstatsplot::ggbetweenstats(dataset, ss_index, ss_patron_verano, type = "np",
                             p.adjust.method = "none")
 ```
 
-Se observó que `ss_index` tuvo un efecto positivo sobre la variable `ss_patron_verano`, en donde aquellos en el grupo SAD tuvieron un puntaje mayor que aquellos en el grupo Winter blues y Normal.
-
 ## Patrón de invierno
 
 ```{r ss_patron_invierno-ss_index}
@@ -80,29 +68,21 @@ ggstatsplot::ggbetweenstats(dataset, ss_index, ss_patron_invierno, type = "np",
                             p.adjust.method = "none")
 ```
 
-Una tendencia similar se observó en relación a los hallazgos previos. El grupo SAD tuvo mayore puntajes en `ss_patron_invierno` que aquellos en el grupo Winter blues y Normal.
-
 ## Tipo de patrón estacional
 
 ```{r ss_patron_tipo-ss_index}
 ggstatsplot::ggbarstats(dataset, ss_index, ss_patron_tipo)
 ```
 
-A priori observamos que existe una asociación entre el tipo de patron estacional y el índice de severidad de sensibilidad estacional, sin embargo aquellos en el grupo Verano tienen un tamaño muestral muy bajo (n = 3). Para esto replicaremos la prueba eliminando este grupo:
-
 ```{r ss_patron_tipo-ss_index-2}
 ggstatsplot::ggbarstats(dataset[ss_patron_tipo != "Verano"], ss_index, ss_patron_tipo)
 ```
-
-Ahora tenemos una imagen un poco más clara de lo que sucede, aquellos con un patrón de tipo mixto tienen una mayor proporción de personas con SAD que aquellas con un patrón de verano, sin embargo, para los dos grupos la proporción de los niveles de `ss_index` es heterogénea,
 
 ## Clasificación de severidad de estacionalidad
 
 ```{r ss_severidad-ss_index}
 ggstatsplot::ggbarstats(dataset, ss_index, ss_severidad)
 ```
-
-Aquí la imagen es bastante descriptiva por si sola y los estadísticos lo corrobora, es intuitivo pensar que a mayor severidad percibida de la sensibilidad estacional existe una mayor proporción de casos con SAD.
 
 # Bienestar de Ryff
 
@@ -113,16 +93,12 @@ ggstatsplot::ggbetweenstats(dataset, ss_index, riff_autoaceptacion, type = "np",
                             p.adjust.method = "none")
 ```
 
-Observamos que existe un efecto pequeño de `ss_index` sobre la autoaceptación, pero significativo. Donde hallamos que a mayor sensibilidad estacional existe un menor puntaje en este dominio.
-
 ## Relaciones positivas
 
 ```{r riff_relaciones_positivas-ss_index}
 ggstatsplot::ggbetweenstats(dataset, ss_index, riff_relaciones_positivas, type = "np", 
                             p.adjust.method = "none")
 ```
-
-No observamos diferencias en el dominio de relaciones positivas por `ss_index`.
 
 ## Autonomía
 
@@ -131,16 +107,12 @@ ggstatsplot::ggbetweenstats(dataset, ss_index, riff_autonomia, type = "np",
                             p.adjust.method = "none")
 ```
 
-Observamos que existe un efecto pequeño de `ss_index` sobre la autonomía, pero significativo. Donde hallamos que a mayor sensibilidad estacional existe un menor puntaje en este dominio.
-
 ## Dominio del entorno
 
 ```{r riff_dominio_entorno-ss_index}
 ggstatsplot::ggbetweenstats(dataset, ss_index, riff_dominio_entorno, type = "np",
                             p.adjust.method = "none")
 ```
-
-Conclusiones similares a los resultados anteriores pueden extraerse aquí.
 
 ## Crecimiento personal
 
@@ -149,13 +121,9 @@ ggstatsplot::ggbetweenstats(dataset, ss_index, riff_crecimiento_personal, type =
                             p.adjust.method = "none")
 ```
 
-Un efecto más pequeño que los anteriores ($\widehat{\epsilon}^2$, 0.02 vs 0.05, ambos pequeños), puede observarse aquí, en donde tener SAD se asoció a menor puntaje en el dominio de crecimiento personal comparado con aquellos en el grupo Winter blues.
-
 ## Propósito en la vida
 
 ```{r riff_proposito_vida-ss_index}
 ggstatsplot::ggbetweenstats(dataset, ss_index, riff_proposito_vida, type = "np",
                             p.adjust.method = "none")
 ```
-
-Conclusiones similares a los resultados anteriores pueden extraerse aquí.
