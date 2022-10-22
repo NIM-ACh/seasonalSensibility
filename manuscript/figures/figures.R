@@ -12,7 +12,7 @@ fig1 <- ggstatsplot::ggbarstats(
   results.subtitle = FALSE,
   caption = NULL,
   xlab = "Intensity",
-  legend.title = "SSI",
+  legend.title = "",
   package = "ggsci",
   palette = "default_jama",
   ggplot.component = ggplot2::theme(plot.caption = ggplot2::element_blank(),
@@ -36,7 +36,7 @@ a <- ggstatsplot::ggbarstats(
   y = ss_severidad,
   results.subtitle = FALSE,
   bf.message = FALSE,
-  legend.title = "SSI",
+  legend.title = "",
   xlab = "Severity",
   package = "ggsci",
   palette = "default_jama"
@@ -49,7 +49,7 @@ b <- ggstatsplot::ggbarstats(
   y = ss_patron_tipo,
   results.subtitle = FALSE,
   bf.message = FALSE,
-  legend.title = "SSI",
+  legend.title = NA,
   xlab = "Pattern",
   package = "ggsci",
   palette = "default_jama"
@@ -171,4 +171,12 @@ pdf(file = "manuscript/figures/fig3.pdf", width = 12, height = 16)
 print(fig3)
 dev.off()
 
-
+zip(
+  zipfile = "manuscript/figures/figures.zip",
+  files = list.files(
+    path = "manuscript/figures/",
+    pattern = "pdf$|tiff$",
+    ignore.case = TRUE,
+    full.names = TRUE
+  )
+)
