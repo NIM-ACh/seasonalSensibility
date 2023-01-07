@@ -5,13 +5,14 @@ library(ggplot2)
 
 # Figure 1 ----------------------------------------------------------------
 
+xlevels <- c("Low", "Moderate", "High")
 fig1 <- ggstatsplot::ggbarstats(
-  data = dataset,
+  data = data.table::copy(dataset)[, deporte_intensidad := `levels<-`(deporte_intensidad, xlevels)][],
   x = ss_index,
   y = deporte_intensidad,
   results.subtitle = FALSE,
   caption = NULL,
-  xlab = "Intensity",
+  xlab = "Self-Perceived Intensity",
   legend.title = "",
   package = "ggsci",
   palette = "default_jama",
