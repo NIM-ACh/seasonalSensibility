@@ -9,7 +9,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/seasonalSensitivity)](https://CRAN.R-project.org/package=seasonalSensitivity)
-[![R-CMD-check](https://github.com/NIM-ACh/seasonalSensitivity/workflows/R-CMD-check/badge.svg)](https://github.com/NIM-ACh/seasonalSensitivity/actions)
+[![R-CMD-check](https://github.com/nim-ach/seasonalSensitivity/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nim-ach/seasonalSensitivity/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Este paquete de `R` contiene herramientas complementarias para la
@@ -75,6 +75,7 @@ median_iqr <- function(x) {
 # La implementamos usando syntaxis data.table: DT[i, j, by]
 dataset[, .("median (IQR)" = median_iqr(riff_autonomia)), ss_index]
 #>        ss_index median (IQR)
+#>          <fctr>       <char>
 #> 1:       Normal       41 (9)
 #> 2:          SAD     37 (8.2)
 #> 3: Winter blues       38 (9)

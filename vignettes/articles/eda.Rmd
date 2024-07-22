@@ -35,8 +35,8 @@ Los tamaños del efecto (i.e., *effect sizes*) usados para las pruebas estadíst
 ## Variables sociodemográficas
 
 ```{r}
-sex <- dataset[, table(genero) |> chisq.test() |> ASQ3::report_chi()]
-age <- dataset[, table(edad) |> chisq.test() |> ASQ3::report_chi()]
+sex <- dataset[, table(genero) |> chisq.test()]
+age <- dataset[, table(edad) |> chisq.test()]
 ```
 
 :::{#tab1}
@@ -53,11 +53,8 @@ bold_labels(x = tbl)
 
 ```{r, include=FALSE}
 n <- dataset[, .N]
-sport <- dataset[, table(deporte) |> chisq.test() |> ASQ3::report_chi()]
-sport_days <- dataset[, table(deporte_dias_semana) |> chisq.test() |> ASQ3::report_chi()]
-
-# dataset[!is.na(deporte), .(.N, "%" = round(.N*100/n, 1)), deporte]
-# dataset[!is.na(deporte_dias_semana), .(.N, "%" = round(.N*100/n, 1)), deporte_dias_semana]
+sport <- dataset[, table(deporte) |> chisq.test()]
+sport_days <- dataset[, table(deporte_dias_semana) |> chisq.test()]
 ```
 
 ```{r ddspie, echo=FALSE}
@@ -95,11 +92,11 @@ bold_labels(x = tbl)
 :::
 
 ```{r, include=FALSE}
-patron <- chisq.test(c(96,232)) |> ASQ3::report_chi()
-ss <- dataset$ss_index |> table() |> chisq.test() |> ASQ3::report_chi()
-ss_2 <- chisq.test(c(86, 55)) |> ASQ3::report_chi()
-severity <- dataset$ss_severidad |> table() |> chisq.test() |> ASQ3::report_chi()
-severity_2 <- chisq.test(c(100, 42)) |> ASQ3::report_chi()
+patron <- chisq.test(c(96,232))
+ss <- dataset$ss_index |> table() |> chisq.test() 
+ss_2 <- chisq.test(c(86, 55))
+severity <- dataset$ss_severidad |> table() |> chisq.test()
+severity_2 <- chisq.test(c(100, 42))
 ```
 
 ### Bienestar de Ryff

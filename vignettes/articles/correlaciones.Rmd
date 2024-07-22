@@ -32,7 +32,7 @@ Veamos todas las correlaciones de manera gráfica.
 cor_table <- correlation::correlation(variables_numericas, method = "spearman", p_adjust = "none")
 
 # Redondeamos a los tres decimales los valores numéricos
-cor_table <- as.data.table(cor_table)
+cor_table <- as.data.frame(cor_table) |> as.data.table()
 cor_table[, 3:8 := lapply(.SD, round, digits = 3), .SDcols = 3:8]
 
 # Seleccionamos las variables a presentar

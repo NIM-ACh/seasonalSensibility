@@ -23,7 +23,7 @@ n_colwise <- function(.data, .cols = "all", .by, char.only = FALSE) {
   }
 
   if (identical("all", .cols)) {
-    .cols <- TRUE
+    .cols <- rep(TRUE, times = ncol(.data))
   }
 
   j_lapply <- substitute(lapply(.SD, n_not_na))

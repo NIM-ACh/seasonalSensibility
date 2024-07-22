@@ -74,6 +74,28 @@ dev.off()
 
 # Figure 3 ------------------------------------------------------------------------------------
 
+## Modificar el formato de los valores p según las recomendaciones de la
+## revista. Esta función se encarga de ello automáticamente.
+change_p_values <- function(df) {
+  building <- ggplot_build(df)
+
+  labels <- building$data[[7]]$annotation
+
+  p_values <- substr(labels, 28L, nchar(labels) - 2L)
+  p_values <- as.numeric(p_values)
+  p_values <- paste0("italic(p) ", data.table::fifelse(
+    test = p_values < 0.001,
+    yes = "< 0.001",
+    no = paste("==", round(p_values, 3))
+  ))
+
+  building$data[[7]]$annotation <- p_values
+
+  plot <- ggplot_gtable(building)
+  return(plot)
+}
+
+
 a <- ggstatsplot::ggbetweenstats(
   data = dataset,
   x = ss_index,
@@ -86,7 +108,7 @@ a <- ggstatsplot::ggbetweenstats(
   package = "ggsci",
   palette = "default_jama",
   ggplot.component = theme(plot.caption = element_blank())
-)
+) |> change_p_values()
 
 b <- ggstatsplot::ggbetweenstats(
   data = dataset,
@@ -114,7 +136,7 @@ c <- ggstatsplot::ggbetweenstats(
   package = "ggsci",
   palette = "default_jama",
   ggplot.component = theme(plot.caption = element_blank())
-)
+) |> change_p_values()
 
 d <- ggstatsplot::ggbetweenstats(
   data = dataset,
@@ -128,7 +150,7 @@ d <- ggstatsplot::ggbetweenstats(
   package = "ggsci",
   palette = "default_jama",
   ggplot.component = theme(plot.caption = element_blank())
-)
+) |> change_p_values()
 
 e <- ggstatsplot::ggbetweenstats(
   data = dataset,
@@ -142,7 +164,7 @@ e <- ggstatsplot::ggbetweenstats(
   package = "ggsci",
   palette = "default_jama",
   ggplot.component = theme(plot.caption = element_blank())
-)
+) |> change_p_values()
 
 f <- ggstatsplot::ggbetweenstats(
   data = dataset,
@@ -155,7 +177,7 @@ f <- ggstatsplot::ggbetweenstats(
   package = "ggsci",
   palette = "default_jama",
   results.subtitle = FALSE
-)
+) |> change_p_values()
 
 fig3 <- ggpubr::ggarrange(
   plotlist = list(a, b, c, d, e, f),
